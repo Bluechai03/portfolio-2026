@@ -14,7 +14,7 @@ Become a design engineer who ships weekly — systems, products, and open source
 
 | Project | Status | Notes |
 |---------|--------|-------|
-| Portfolio 2026 | In progress | Homepage hero, about, projects shipped (Week 1) |
+| Portfolio 2026 | In progress | Live: https://portfolio-2026-six-gilt.vercel.app/ |
 | Design System + Storybook | Planned | Month 2 focus |
 | Consumer App | Planned | Month 3 focus |
 | UI Playground | Planned | Interaction lab |
@@ -52,7 +52,7 @@ Become a design engineer who ships weekly — systems, products, and open source
 - [x] Build hero section (brand-first, full-bleed atmosphere)
 - [x] Add About and Projects sections
 - [ ] Connect custom domain (optional)
-- [ ] Deploy to Vercel (connect repo in Vercel dashboard)
+- [x] Deploy to Vercel — https://portfolio-2026-six-gilt.vercel.app/
 - [ ] Share with one friend for feedback
 - [ ] Sync this page into Notion when MCP is authenticated
 
@@ -67,4 +67,4 @@ Become a design engineer who ships weekly — systems, products, and open source
 
 ## Next smallest ship
 
-Deploy this PR to Vercel, then ask one friend: *Does the first screen feel like Anna — or like any design portfolio?*
+Send https://portfolio-2026-six-gilt.vercel.app/ to one friend. Ask: *Does the first screen feel like Anna — or like any design portfolio?*
