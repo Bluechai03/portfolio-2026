@@ -25,7 +25,7 @@ pnpm build
 pnpm start
 ```
 
-Deploy by importing [`Bluechai03/portfolio-2026`](https://github.com/Bluechai03/portfolio-2026) into [Vercel](https://vercel.com/new).
+**Live:** [portfolio-2026-six-gilt.vercel.app](https://portfolio-2026-six-gilt.vercel.app/)
 
 ## Journey
 
