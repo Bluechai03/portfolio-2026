@@ -20,6 +20,10 @@ export function Hero() {
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 pt-28 md:px-10 md:pb-20 md:pt-32">
         <p className="animate-rise font-display text-sm font-semibold tracking-[0.22em] text-jade uppercase">
           {site.role}
+          <span className="mx-2 text-muted" aria-hidden="true">
+            ·
+          </span>
+          <span className="text-ink-soft">{site.location}</span>
         </p>
         <h1
           id="hero-brand"
@@ -27,7 +31,7 @@ export function Hero() {
         >
           {site.name}
         </h1>
-        <p className="animate-rise animate-rise-delay-2 mt-6 max-w-md text-lg leading-relaxed text-ink-soft md:text-xl">
+        <p className="animate-rise animate-rise-delay-2 mt-6 max-w-lg text-lg leading-relaxed text-ink-soft md:text-xl">
           {site.heroSupport}
         </p>
         <div className="animate-rise animate-rise-delay-3 mt-10 flex flex-wrap items-center gap-4">

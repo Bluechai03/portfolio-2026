@@ -14,13 +14,13 @@ export function SiteFooter() {
           </p>
           <h2
             id="contact-heading"
-            className="font-display mt-4 max-w-[14ch] text-3xl leading-tight font-semibold tracking-tight md:text-4xl"
+            className="font-display mt-4 max-w-[18ch] text-3xl leading-tight font-semibold tracking-tight md:text-4xl"
           >
-            {site.tagline}
+            Let&apos;s build something people enjoy using
           </h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-bone/70">
-            Smallest thing I can ship today — then share it. Reach out if you want to build
-            together.
+            Open to Design Engineer and Product Engineer conversations — especially teams that
+            treat craft as a product requirement.
           </p>
         </div>
 
@@ -39,6 +39,7 @@ export function SiteFooter() {
           >
             GitHub
           </a>
+          <p className="text-sm text-bone/50">{site.location}</p>
         </div>
       </div>
     </footer>

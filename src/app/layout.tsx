@@ -17,7 +17,7 @@ const syne = Syne({
 
 export const metadata: Metadata = {
   title: `${site.name} — ${site.role}`,
-  description: `${site.tagline} Portfolio of ${site.name}, ${site.role}.`,
+  description: site.mission,
 };
 
 export default function RootLayout({
