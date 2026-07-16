@@ -9,18 +9,18 @@ export function SiteFooter() {
     >
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-16 md:flex-row md:items-end md:justify-between md:px-10 md:py-20">
         <div>
-          <p className="font-display text-sm font-semibold tracking-[0.2em] text-jade uppercase">
+          <p className="font-display text-sm font-semibold tracking-[0.2em] text-accent uppercase">
             Contact
           </p>
           <h2
             id="contact-heading"
-            className="font-display mt-4 max-w-[18ch] text-3xl leading-tight font-semibold tracking-tight md:text-4xl"
+            className="font-display mt-4 max-w-[14ch] text-3xl leading-tight font-semibold tracking-tight md:text-4xl"
           >
-            Let&apos;s build something people enjoy using
+            {site.tagline}
           </h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-bone/70">
-            Open to Design Engineer and Product Engineer conversations — especially teams that
-            treat craft as a product requirement.
+            Smallest thing I can ship today — then share it. Reach out if you want to build
+            together.
           </p>
         </div>
 
@@ -39,7 +39,6 @@ export function SiteFooter() {
           >
             GitHub
           </a>
-          <p className="text-sm text-bone/50">{site.location}</p>
         </div>
       </div>
     </footer>
