@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #e8eef2;
-  --bg-deep: #d2dde6;
+  --bg: #eef3f8;
+  --bg-deep: #d7e3ef;
   --ink: #12181f;
   --ink-soft: #3a4550;
   --muted: #5c6b78;
   --line: color-mix(in srgb, var(--ink) 12%, transparent);
-  --jade: #0f6b63;
-  --jade-deep: #0a4f4a;
-  --bone: #f4f7f8;
-  --glow-mist: #c5d4df;
+  --accent: #005b96;
+  --accent-deep: #004578;
+  --bone: #f5f8fb;
+  --glow-mist: #b8cfe3;
   --background: var(--bg);
   --foreground: var(--ink);
 }
@@ -24,8 +24,8 @@
   --color-ink-soft: var(--ink-soft);
   --color-muted: var(--muted);
   --color-line: var(--line);
-  --color-jade: var(--jade);
-  --color-jade-deep: var(--jade-deep);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
   --color-bone: var(--bone);
   --color-glow-mist: var(--glow-mist);
   --font-sans: var(--font-figtree);
@@ -84,15 +84,6 @@
   }
   90% {
     transform: translate(1%, -1%);
-  }
-}
-
-@keyframes underline-in {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
   }
 }
 

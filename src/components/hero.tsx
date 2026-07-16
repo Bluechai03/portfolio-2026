@@ -12,18 +12,14 @@ export function Hero() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(120% 80% at 12% 20%, #f4f7f8 0%, transparent 55%), radial-gradient(90% 70% at 85% 30%, var(--glow-mist) 0%, transparent 50%), linear-gradient(165deg, var(--bg) 0%, var(--bg-deep) 100%)",
+            "radial-gradient(120% 80% at 12% 20%, #f5f8fb 0%, transparent 55%), radial-gradient(90% 70% at 85% 30%, var(--glow-mist) 0%, transparent 50%), linear-gradient(165deg, var(--bg) 0%, var(--bg-deep) 100%)",
         }}
       />
       <HeroVisual />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 pt-28 md:px-10 md:pb-20 md:pt-32">
-        <p className="animate-rise font-display text-sm font-semibold tracking-[0.22em] text-jade uppercase">
+        <p className="animate-rise font-display text-sm font-semibold tracking-[0.22em] text-accent uppercase">
           {site.role}
-          <span className="mx-2 text-muted" aria-hidden="true">
-            ·
-          </span>
-          <span className="text-ink-soft">{site.location}</span>
         </p>
         <h1
           id="hero-brand"
@@ -31,13 +27,13 @@ export function Hero() {
         >
           {site.name}
         </h1>
-        <p className="animate-rise animate-rise-delay-2 mt-6 max-w-lg text-lg leading-relaxed text-ink-soft md:text-xl">
+        <p className="animate-rise animate-rise-delay-2 mt-6 max-w-md text-lg leading-relaxed text-ink-soft md:text-xl">
           {site.heroSupport}
         </p>
         <div className="animate-rise animate-rise-delay-3 mt-10 flex flex-wrap items-center gap-4">
           <a
             href="#work"
-            className="inline-flex h-12 items-center justify-center bg-jade px-7 text-sm font-semibold tracking-wide text-bone transition-colors hover:bg-jade-deep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-jade"
+            className="inline-flex h-12 items-center justify-center bg-accent px-7 text-sm font-semibold tracking-wide text-bone transition-colors hover:bg-accent-deep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           >
             View work
           </a>
