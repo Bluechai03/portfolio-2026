@@ -152,7 +152,7 @@ export function HeroVisual() {
             fontFamily="ui-sans-serif, system-ui, sans-serif"
             fontSize="12"
           >
-            Design tokens · motion · a11y
+            Motion · spacing · a11y · performance
           </text>
           <rect x="204" y="572" width="88" height="10" rx="2" fill="#0f6b63" />
           <rect
