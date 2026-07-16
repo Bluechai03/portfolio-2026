@@ -31,14 +31,24 @@ export function SiteFooter() {
           >
             {site.email}
           </a>
-          <a
-            href={site.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-underline text-sm text-bone/70 hover:text-bone"
-          >
-            GitHub
-          </a>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 md:justify-end">
+            <a
+              href={site.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline text-sm text-bone/70 hover:text-bone"
+            >
+              LinkedIn
+            </a>
+            <a
+              href={site.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline text-sm text-bone/70 hover:text-bone"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </footer>

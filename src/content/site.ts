@@ -3,6 +3,7 @@ export const site = {
   role: "Design Engineer",
   email: "montero.katreena@gmail.com",
   github: "https://github.com/Bluechai03",
+  linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   tagline: "Build proof, not just knowledge.",
   heroSupport:
     "I design systems and ship interfaces — turning taste into production software, week by week.",
