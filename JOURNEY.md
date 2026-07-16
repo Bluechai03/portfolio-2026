@@ -20,6 +20,11 @@ Become a design engineer who ships weekly — systems, products, and open source
 | UI Playground | Planned | Interaction lab |
 | Open Source | Planned | Month 4 focus |
 | AI Workflow | Ongoing | Plan → Figma → architecture → Cursor → review → polish |
+| Dance tool / product | Idea | Future: build something that helps with dance (choreography, practice, timing). Do **not** mention dance in About — show it through a project when ready. |
+
+## Future project notes (private)
+
+- **Dance:** Anna wants a future product that helps with dance. Keep this for the project pipeline only — not in public About copy until there is a shippable artifact.
 
 ## Monthly Focus
 

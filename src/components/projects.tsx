@@ -5,7 +5,7 @@ export function Projects() {
     <section id="work" className="border-t border-line" aria-labelledby="work-heading">
       <div className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10 md:py-28">
         <div className="mb-12 max-w-2xl md:mb-16">
-          <p className="font-display text-sm font-semibold tracking-[0.2em] text-jade uppercase">
+          <p className="font-display text-sm font-semibold tracking-[0.2em] text-accent uppercase">
             Selected work
           </p>
           <h2
@@ -40,7 +40,7 @@ export function Projects() {
                     {project.description}
                   </p>
                 </div>
-                <span className="font-display text-sm font-medium tracking-[0.08em] text-jade uppercase md:justify-self-end">
+                <span className="font-display text-sm font-medium tracking-[0.08em] text-accent uppercase md:justify-self-end">
                   {project.status}
                 </span>
               </a>
