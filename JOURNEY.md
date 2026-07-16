@@ -54,7 +54,7 @@ Become a design engineer who ships weekly — systems, products, and open source
 - [ ] Connect custom domain (optional)
 - [x] Deploy to Vercel — https://portfolio-2026-six-gilt.vercel.app/
 - [ ] Share with one friend for feedback
-- [ ] Sync this page into Notion when MCP is authenticated
+- [x] Sync this page into Notion — https://app.notion.com/p/39f9ce14f243813dafc8e53004cd1cd4
 
 ## AI Workflow (operating system)
 
