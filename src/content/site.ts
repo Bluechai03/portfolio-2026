@@ -6,12 +6,12 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   tagline: "Build proof, not just knowledge.",
   heroSupport:
-    "I care about how software feels in someone's hands — the motion, the spacing, the quiet details — and I ship that care as production-ready React, a little more each week.",
+    "I build frontend interfaces with React and Next.js, and I care a lot about how they feel to use — spacing, motion, accessibility, and the small details that make something feel finished.",
   about: {
-    headline: "At the seam of design and engineering",
+    headline: "Design and code, side by side",
     body: [
-      "I'm a frontend-focused engineer based in Dubai, drawn to the place where design and code meet. The details that make a product feel alive — motion, spacing, accessibility, responsiveness, and performance — are the ones I naturally spend time on.",
-      "During the day I ship production interfaces; outside of that I build things you can actually click through, like this portfolio, a design system, and smaller products with real polish. I believe consistency beats intensity, and that one meaningful commit is often enough to keep moving forward.",
+      "I'm a frontend engineer based in Dubai. Most of my work sits between design and engineering — taking ideas from Figma and turning them into interfaces that work well on real devices.",
+      "I spend my days shipping production UI, and outside of that I'm building things here: this portfolio, a design system, and a few side projects. I try to ship something small every week rather than waiting for perfect.",
     ],
     focus: ["Portfolio", "Design System", "Consumer App", "Open Source", "AI Workflow"],
   },
@@ -20,7 +20,7 @@ export const site = {
       year: "2026",
       title: "Portfolio 2026",
       description:
-        "The site you're on now — a living space for how I think about craft, with a brand-first homepage, intentional motion, and a clear sense of how I like to ship.",
+        "This site — a simple place to share what I'm working on and how I approach frontend work.",
       status: "In progress",
       href: "#work",
     },
@@ -28,7 +28,7 @@ export const site = {
       year: "2026",
       title: "Design System + Storybook",
       description:
-        "A shared language of tokens, primitives, and documented patterns so every product surface I build next stays sharp and consistent.",
+        "Reusable components, tokens, and docs so I can build faster and stay consistent across projects.",
       status: "Next up",
       href: "#",
     },
@@ -36,7 +36,7 @@ export const site = {
       year: "2026",
       title: "Consumer App",
       description:
-        "An end-to-end product shaped around real users, with accessible flows, solid architecture, and room for delight in the weekly work.",
+        "A small product built end-to-end, with a focus on clear UX, accessibility, and steady weekly progress.",
       status: "Planned",
       href: "#",
     },
@@ -44,15 +44,15 @@ export const site = {
       year: "2026",
       title: "UI Playground",
       description:
-        "A place to try interaction ideas and micro-motion studies, keeping only what earns its way into the system.",
+        "A space to try interaction and motion ideas before bringing the useful ones into real projects.",
       status: "Planned",
       href: "#",
     },
   ],
   projectsIntro:
-    "I'd rather show a few things in motion than a long wishlist. Each project below is a shippable slice of the year ahead — a roadmap I'm actively working through.",
+    "These are the projects I'm focused on this year. Some are already underway; others are next — I'll keep this list honest as things ship.",
   contactSupport:
-    "If you're looking for someone who cares about how interfaces feel as much as how they're built, I'd love to hear from you. I'm open to remote Design Engineer and Product Engineer roles, and always happy to collaborate on products people enjoy using.",
+    "If you're hiring for a remote Design Engineer or Product Engineer role, or just want to chat about frontend work, feel free to reach out.",
   nav: [
     { label: "Work", href: "#work" },
     { label: "About", href: "#about" },
