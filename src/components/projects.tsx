@@ -12,38 +12,40 @@ export function Projects() {
             id="work-heading"
             className="font-display mt-4 text-3xl leading-tight font-semibold tracking-tight text-ink md:text-4xl"
           >
-            Projects in motion
+            A small collection, built with care
           </h2>
           <p className="mt-4 max-w-lg text-lg leading-relaxed text-ink-soft">
-            Proof over polish theater. Each line is a shippable slice of the year ahead.
+            Fewer projects, more craft — production interfaces people actually use, plus the
+            products I&apos;m shipping next.
           </p>
         </div>
 
         <ul className="divide-y divide-line border-y border-line">
           {site.projects.map((project, index) => (
-            <li key={project.title}>
-              <a
-                href={project.href}
-                className="project-row group grid gap-4 py-8 outline-none focus-visible:bg-bone/70 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:py-10"
-              >
-                <span className="font-display text-sm tracking-wide text-muted tabular-nums">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <div>
-                  <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                    <h3 className="font-display text-2xl font-semibold tracking-tight text-ink md:text-3xl">
-                      {project.title}
-                    </h3>
-                    <span className="text-sm text-muted">{project.year}</span>
-                  </div>
-                  <p className="mt-3 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
-                    {project.description}
-                  </p>
+            <li
+              key={project.title}
+              className="project-row grid gap-4 py-8 md:grid-cols-[4rem_1fr_7rem] md:items-baseline md:gap-8 md:py-10"
+            >
+              <span className="font-display text-sm tracking-wide text-muted tabular-nums">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <div>
+                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                  <h3 className="font-display text-2xl font-semibold tracking-tight text-ink md:text-3xl">
+                    {project.title}
+                  </h3>
+                  <span className="text-sm text-muted">{project.year}</span>
                 </div>
-                <span className="font-display text-sm font-medium tracking-[0.08em] text-jade uppercase md:justify-self-end">
-                  {project.status}
-                </span>
-              </a>
+                <p className="mt-3 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
+                  {project.description}
+                </p>
+                <p className="mt-3 text-sm tracking-wide text-muted">
+                  {project.stack.join(" · ")}
+                </p>
+              </div>
+              <span className="font-display text-sm font-medium tracking-[0.08em] text-jade uppercase md:justify-self-end">
+                {project.status}
+              </span>
             </li>
           ))}
         </ul>
