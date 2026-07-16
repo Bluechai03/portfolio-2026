@@ -30,7 +30,7 @@ export function Hero() {
         <p className="animate-rise animate-rise-delay-2 mt-6 max-w-md text-lg leading-relaxed text-ink-soft md:text-xl">
           {site.heroSupport}
         </p>
-        <div className="animate-rise animate-rise-delay-3 mt-10 flex flex-wrap items-center gap-4">
+        <div className="animate-rise animate-rise-delay-3 mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
           <a
             href="#work"
             className="inline-flex h-12 items-center justify-center bg-accent px-7 text-sm font-semibold tracking-wide text-bone transition-colors hover:bg-accent-deep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
@@ -39,9 +39,9 @@ export function Hero() {
           </a>
           <a
             href="#contact"
-            className="link-underline inline-flex h-12 items-center text-sm font-semibold tracking-wide text-ink"
+            className="inline-flex h-12 items-center justify-center text-sm font-semibold tracking-wide text-ink"
           >
-            Get in touch
+            <span className="link-underline">Get in touch</span>
           </a>
         </div>
       </div>
