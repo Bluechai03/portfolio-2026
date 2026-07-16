@@ -19,8 +19,7 @@ export function SiteFooter() {
             {site.tagline}
           </h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-bone/70">
-            Smallest thing I can ship today — then share it. Reach out if you want to build
-            together.
+            {site.contactSupport}
           </p>
         </div>
 

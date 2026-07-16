@@ -6,12 +6,12 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   tagline: "Build proof, not just knowledge.",
   heroSupport:
-    "I design systems and ship interfaces — turning taste into production software, week by week.",
+    "I build frontend interfaces with React and Next.js, and I put steady care into how they feel for real people — clear layouts, thoughtful motion, accessibility, and the small details that make something dependable.",
   about: {
-    headline: "Crafting at the seam of design and code",
+    headline: "Steady work, thoughtful interfaces",
     body: [
-      "I'm a frontend-focused engineer in Dubai, originally from the Philippines. I care about the details that make products feel polished — motion, spacing, accessibility, responsiveness, and performance.",
-      "By day I ship production interfaces; by night I build proof: this portfolio, a design system, and products people can actually click. Consistency over intensity — one meaningful commit is enough.",
+      "I'm a frontend engineer based in Dubai. I like sitting between design and engineering — taking ideas from Figma and turning them into interfaces that are fair to use on everyday devices, not only the ideal ones.",
+      "I show up for the unglamorous parts too: polishing edge cases, collaborating patiently with designers and teammates, and shipping something small every week instead of waiting for perfect. I care about being someone others can rely on when the work simply needs to get done well.",
     ],
     focus: ["Portfolio", "Design System", "Consumer App", "Open Source", "AI Workflow"],
   },
@@ -20,7 +20,7 @@ export const site = {
       year: "2026",
       title: "Portfolio 2026",
       description:
-        "This site — a living proof of craft. Brand-first homepage, restrained motion, and a clear path from vision to ship.",
+        "This site — an honest place to share what I'm building and how I like to work with others.",
       status: "In progress",
       href: "#work",
     },
@@ -28,7 +28,7 @@ export const site = {
       year: "2026",
       title: "Design System + Storybook",
       description:
-        "Tokens, primitives, and documented patterns. The shared language behind every product surface I build next.",
+        "Reusable components, tokens, and docs so teams can build together with less friction and more consistency.",
       status: "Next up",
       href: "#",
     },
@@ -36,7 +36,7 @@ export const site = {
       year: "2026",
       title: "Consumer App",
       description:
-        "An end-to-end product with real users in mind — accessibility, architecture, and polish in weekly slices.",
+        "A small product built end-to-end, focused on clear UX, accessibility, and patient weekly progress.",
       status: "Planned",
       href: "#",
     },
@@ -44,11 +44,15 @@ export const site = {
       year: "2026",
       title: "UI Playground",
       description:
-        "A lab for interaction ideas, motion studies, and components that earn their place in the system.",
+        "A quiet space to try interaction and motion ideas, then keep only what truly helps people.",
       status: "Planned",
       href: "#",
     },
   ],
+  projectsIntro:
+    "These are the projects I'm committed to this year. I'll keep this list honest as things ship — slow, steady progress over big promises.",
+  contactSupport:
+    "If you're looking for a remote Design Engineer or Product Engineer who's reliable, collaborative, and happy to do the careful work, I'd love to hear from you. You're welcome to reach out anytime.",
   nav: [
     { label: "Work", href: "#work" },
     { label: "About", href: "#about" },
