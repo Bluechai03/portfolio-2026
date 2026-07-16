@@ -4,7 +4,15 @@ export function HeroVisual() {
       className="pointer-events-none absolute inset-0 overflow-hidden"
       aria-hidden="true"
     >
-      <div className="animate-drift absolute -right-[12%] top-[8%] h-[78%] w-[68%] md:-right-[6%] md:w-[58%]">
+      <div
+        className="animate-drift absolute -right-[8%] top-[8%] h-[78%] w-[62%] opacity-80 md:-right-[2%] md:w-[52%] md:opacity-90"
+        style={{
+          maskImage:
+            "linear-gradient(90deg, transparent 0%, black 28%, black 100%)",
+          WebkitMaskImage:
+            "linear-gradient(90deg, transparent 0%, black 28%, black 100%)",
+        }}
+      >
         <svg
           viewBox="0 0 720 820"
           fill="none"

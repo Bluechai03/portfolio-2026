@@ -16,6 +16,11 @@ export function Hero() {
         }}
       />
       <HeroVisual />
+      {/* Keep name readable where the craft visual overlaps */}
+      <div
+        className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[min(72%,42rem)] bg-gradient-to-r from-bg via-bg/88 to-transparent md:w-[min(58%,36rem)]"
+        aria-hidden="true"
+      />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 pt-28 md:px-10 md:pb-20 md:pt-32">
         <p className="animate-rise font-display text-sm font-semibold tracking-[0.22em] text-accent uppercase">
@@ -23,7 +28,7 @@ export function Hero() {
         </p>
         <h1
           id="hero-brand"
-          className="animate-rise animate-rise-delay-1 font-display mt-4 max-w-[12ch] text-[clamp(3.25rem,12vw,7.5rem)] leading-[0.9] font-semibold tracking-[-0.04em] text-ink"
+          className="animate-rise animate-rise-delay-1 font-display mt-4 max-w-[12ch] text-[clamp(3.25rem,12vw,7.5rem)] leading-[0.9] font-semibold tracking-[-0.04em] text-ink [text-shadow:0_1px_0_rgb(245_248_251_/_0.65),0_0_28px_rgb(245_248_251_/_0.55)]"
         >
           {site.name}
         </h1>
