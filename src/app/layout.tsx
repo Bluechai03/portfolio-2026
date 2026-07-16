@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ViewTransition } from "react";
 import { Figtree, Syne } from "next/font/google";
 import { site } from "@/content/site";
 import "./globals.css";
@@ -27,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${figtree.variable} ${syne.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-bg text-ink">{children}</body>
+      <body className="flex min-h-full flex-col bg-bg text-ink">
+        <ViewTransition>{children}</ViewTransition>
+      </body>
     </html>
   );
 }
