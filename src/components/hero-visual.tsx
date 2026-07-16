@@ -4,7 +4,15 @@ export function HeroVisual() {
       className="pointer-events-none absolute inset-0 overflow-hidden"
       aria-hidden="true"
     >
-      <div className="animate-drift absolute -right-[12%] top-[8%] h-[78%] w-[68%] md:-right-[6%] md:w-[58%]">
+      <div
+        className="animate-drift absolute -right-[8%] top-[8%] h-[78%] w-[62%] opacity-80 md:-right-[2%] md:w-[52%] md:opacity-90"
+        style={{
+          maskImage:
+            "linear-gradient(90deg, transparent 0%, black 28%, black 100%)",
+          WebkitMaskImage:
+            "linear-gradient(90deg, transparent 0%, black 28%, black 100%)",
+        }}
+      >
         <svg
           viewBox="0 0 720 820"
           fill="none"
@@ -13,17 +21,17 @@ export function HeroVisual() {
         >
           <defs>
             <linearGradient id="plane" x1="80" y1="40" x2="640" y2="760" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#f4f7f8" stopOpacity="0.95" />
-              <stop offset="0.55" stopColor="#c5d4df" stopOpacity="0.88" />
-              <stop offset="1" stopColor="#0f6b63" stopOpacity="0.35" />
+              <stop stopColor="#f5f8fb" stopOpacity="0.95" />
+              <stop offset="0.55" stopColor="#b8cfe3" stopOpacity="0.88" />
+              <stop offset="1" stopColor="#005B96" stopOpacity="0.35" />
             </linearGradient>
             <linearGradient id="frame" x1="160" y1="120" x2="560" y2="620" gradientUnits="userSpaceOnUse">
               <stop stopColor="#12181f" stopOpacity="0.08" />
-              <stop offset="1" stopColor="#0f6b63" stopOpacity="0.22" />
+              <stop offset="1" stopColor="#005B96" stopOpacity="0.22" />
             </linearGradient>
             <linearGradient id="accent" x1="220" y1="280" x2="480" y2="520" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#0f6b63" />
-              <stop offset="1" stopColor="#0a4f4a" />
+              <stop stopColor="#005B96" />
+              <stop offset="1" stopColor="#004578" />
             </linearGradient>
           </defs>
 
@@ -152,9 +160,9 @@ export function HeroVisual() {
             fontFamily="ui-sans-serif, system-ui, sans-serif"
             fontSize="12"
           >
-            Design tokens · motion · a11y
+            Motion · spacing · a11y · performance
           </text>
-          <rect x="204" y="572" width="88" height="10" rx="2" fill="#0f6b63" />
+          <rect x="204" y="572" width="88" height="10" rx="2" fill="#005B96" />
           <rect
             x="304"
             y="572"

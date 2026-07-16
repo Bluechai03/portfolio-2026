@@ -3,14 +3,15 @@ export const site = {
   role: "Design Engineer",
   email: "montero.katreena@gmail.com",
   github: "https://github.com/Bluechai03",
+  linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   tagline: "Build proof, not just knowledge.",
   heroSupport:
     "I design systems and ship interfaces — turning taste into production software, week by week.",
   about: {
     headline: "Crafting at the seam of design and code",
     body: [
-      "I am building a practice around shipping: portfolios, design systems, consumer products, and open source. Consistency beats intensity — one meaningful commit is enough.",
-      "My north star is proof. Every week I move a real artifact forward: a hero that feels like mine, a component that is accessible, a feature someone can click.",
+      "I'm a frontend-focused engineer in Dubai, originally from the Philippines. I care about the details that make products feel polished — motion, spacing, accessibility, responsiveness, and performance.",
+      "By day I ship production interfaces; by night I build proof: this portfolio, a design system, and products people can actually click. Consistency over intensity — one meaningful commit is enough.",
     ],
     focus: ["Portfolio", "Design System", "Consumer App", "Open Source", "AI Workflow"],
   },

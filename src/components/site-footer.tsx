@@ -9,7 +9,7 @@ export function SiteFooter() {
     >
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-16 md:flex-row md:items-end md:justify-between md:px-10 md:py-20">
         <div>
-          <p className="font-display text-sm font-semibold tracking-[0.2em] text-jade uppercase">
+          <p className="font-display text-sm font-semibold tracking-[0.2em] text-accent uppercase">
             Contact
           </p>
           <h2
@@ -31,14 +31,24 @@ export function SiteFooter() {
           >
             {site.email}
           </a>
-          <a
-            href={site.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-underline text-sm text-bone/70 hover:text-bone"
-          >
-            GitHub
-          </a>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 md:justify-end">
+            <a
+              href={site.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline text-sm text-bone/70 hover:text-bone"
+            >
+              LinkedIn
+            </a>
+            <a
+              href={site.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline text-sm text-bone/70 hover:text-bone"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </footer>

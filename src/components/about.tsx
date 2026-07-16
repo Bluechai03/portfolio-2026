@@ -9,7 +9,7 @@ export function About() {
     >
       <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_1.2fr] md:gap-16 md:px-10 md:py-28">
         <div>
-          <p className="font-display text-sm font-semibold tracking-[0.2em] text-jade uppercase">
+          <p className="font-display text-sm font-semibold tracking-[0.2em] text-accent uppercase">
             About
           </p>
           <h2
