@@ -12,7 +12,7 @@ export function Projects() {
             id="work-heading"
             className="font-display mt-4 text-3xl leading-tight font-semibold tracking-tight text-ink md:text-4xl"
           >
-            Work I&apos;m moving forward
+            What I&apos;m working on
           </h2>
           <p className="mt-4 max-w-lg text-lg leading-relaxed text-ink-soft">
             {site.projectsIntro}
