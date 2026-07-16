@@ -11,7 +11,7 @@ export const site = {
     headline: "Crafting at the seam of design and code",
     body: [
       "I'm a frontend-focused engineer in Dubai, originally from the Philippines. I care about the details that make products feel polished — motion, spacing, accessibility, responsiveness, and performance.",
-      "By day I ship production interfaces; by night I build proof: this portfolio, a design system, and products people can actually click. Dance keeps me close to rhythm and timing — the same instincts I bring to interaction design.",
+      "By day I ship production interfaces; by night I build proof: this portfolio, a design system, and products people can actually click. Consistency over intensity — one meaningful commit is enough.",
     ],
     focus: ["Portfolio", "Design System", "Consumer App", "Open Source", "AI Workflow"],
   },
