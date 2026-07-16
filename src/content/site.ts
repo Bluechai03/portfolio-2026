@@ -6,12 +6,12 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   tagline: "Build proof, not just knowledge.",
   heroSupport:
-    "I design systems and ship interfaces — turning taste into production software, week by week.",
+    "I turn taste into interfaces people actually enjoy — crisp motion, thoughtful spacing, and production-ready React, shipped week by week.",
   about: {
-    headline: "Crafting at the seam of design and code",
+    headline: "Where design meets code — and ships",
     body: [
-      "I'm a frontend-focused engineer in Dubai, originally from the Philippines. I care about the details that make products feel polished — motion, spacing, accessibility, responsiveness, and performance.",
-      "By day I ship production interfaces; by night I build proof: this portfolio, a design system, and products people can actually click. Consistency over intensity — one meaningful commit is enough.",
+      "I'm a frontend-focused engineer based in Dubai. I obsess over the details that make a product feel alive: motion, spacing, accessibility, responsiveness, and performance.",
+      "By day I ship production UI. By night I build proof you can click — this portfolio, a design system, and products with real polish. Consistency beats intensity. One meaningful commit is enough to keep the momentum.",
     ],
     focus: ["Portfolio", "Design System", "Consumer App", "Open Source", "AI Workflow"],
   },
@@ -20,7 +20,7 @@ export const site = {
       year: "2026",
       title: "Portfolio 2026",
       description:
-        "This site — a living proof of craft. Brand-first homepage, restrained motion, and a clear path from vision to ship.",
+        "You're on it — a living lab for my craft. Brand-first homepage, intentional motion, and a clear signal of how I think and ship.",
       status: "In progress",
       href: "#work",
     },
@@ -28,7 +28,7 @@ export const site = {
       year: "2026",
       title: "Design System + Storybook",
       description:
-        "Tokens, primitives, and documented patterns. The shared language behind every product surface I build next.",
+        "Tokens, primitives, and documented patterns — the shared language that keeps every future product sharp and consistent.",
       status: "Next up",
       href: "#",
     },
@@ -36,7 +36,7 @@ export const site = {
       year: "2026",
       title: "Consumer App",
       description:
-        "An end-to-end product with real users in mind — accessibility, architecture, and polish in weekly slices.",
+        "A real product slice with users in mind: accessible flows, solid architecture, and weekly doses of delight.",
       status: "Planned",
       href: "#",
     },
@@ -44,11 +44,15 @@ export const site = {
       year: "2026",
       title: "UI Playground",
       description:
-        "A lab for interaction ideas, motion studies, and components that earn their place in the system.",
+        "A sandbox for interaction ideas and micro-motion — experiments that earn their way into the system.",
       status: "Planned",
       href: "#",
     },
   ],
+  projectsIntro:
+    "Fewer projects, more energy. Each one is a shippable slice of the year — not a wishlist, a roadmap in motion.",
+  contactSupport:
+    "Got a product that needs sharper UI? Let's talk. I'm open to remote Design Engineer and Product Engineer roles — and always down to build something people love using.",
   nav: [
     { label: "Work", href: "#work" },
     { label: "About", href: "#about" },
