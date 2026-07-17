@@ -18,6 +18,7 @@ export function ConfirmToast() {
     if (!dialogOpen) return;
 
     const previous = document.activeElement;
+    const trigger = triggerRef.current;
     cancelRef.current?.focus();
 
     function onKeyDown(event: KeyboardEvent) {
@@ -33,7 +34,7 @@ export function ConfirmToast() {
       if (previous instanceof HTMLElement) {
         previous.focus();
       } else {
-        triggerRef.current?.focus();
+        trigger?.focus();
       }
     };
   }, [dialogOpen]);
