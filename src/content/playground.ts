@@ -17,7 +17,7 @@ export const playground = {
     {
       id: "reveal",
       title: "Quiet reveal",
-      note: "Staggered entrance for a short stack — calm enough to use in real UI.",
+      note: "Press Reveal stack to play a staggered entrance — calm enough to use in real UI.",
     },
   ],
 } as const;
