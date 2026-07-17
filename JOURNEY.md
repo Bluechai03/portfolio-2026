@@ -17,7 +17,7 @@ Become a design engineer who ships weekly — systems, products, and open source
 | Portfolio 2026 | In progress | Live: https://portfolio-2026-six-gilt.vercel.app/ |
 | Design System + Storybook | Planned | Month 2 focus |
 | Consumer App | Planned | Month 3 focus |
-| UI Playground | Planned | Interaction lab |
+| UI Playground | In progress | `/playground` — soft press, focus path, quiet reveal |
 | Open Source | Planned | Month 4 focus |
 | AI Workflow | Ongoing | Plan → Figma → architecture → Cursor → review → polish |
 | Dance tool / product | Idea | Future: build something that helps with dance (choreography, practice, timing). Do **not** mention dance in About — show it through a project when ready. |
@@ -58,8 +58,16 @@ Become a design engineer who ships weekly — systems, products, and open source
 - [x] Add About and Projects sections
 - [ ] Connect custom domain (optional)
 - [x] Deploy to Vercel — https://portfolio-2026-six-gilt.vercel.app/
-- [ ] Share with one friend for feedback
+- [~] Friend feedback — ongoing through the journey (ask on each project ship, not a Week 1 gate)
 - [x] Sync this page into Notion — https://app.notion.com/p/39f9ce14f243813dafc8e53004cd1cd4
+
+### Week 2 — First proof beyond the homepage
+
+- [x] Choose ship: UI Playground
+- [x] Scaffold `/playground` with first interaction demos
+- [x] Link Projects entry to `/playground`
+- [ ] Expand playground with one more purposeful demo
+- [ ] Ask one person for feedback on that ship (taste, clarity, usefulness)
 
 ## AI Workflow (operating system)
 
@@ -70,6 +78,10 @@ Become a design engineer who ships weekly — systems, products, and open source
 5. Review with AI  
 6. Polish yourself  
 
+## Feedback habit
+
+Ask for feedback when something ships — not before. One question per ask, tied to the artifact (e.g. *Does this interaction feel intentional, or decorative?*).
+
 ## Next smallest ship
 
-Send https://portfolio-2026-six-gilt.vercel.app/ to one friend. Ask: *Does the first screen feel like Anna — or like any design portfolio?*
+Open `/playground`, try the three demos on keyboard + mouse, then add one more interaction that teaches something about real product UI.

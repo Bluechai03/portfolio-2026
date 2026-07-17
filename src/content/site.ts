@@ -13,7 +13,7 @@ export const site = {
       "I'm a frontend engineer based in Dubai. I like sitting between design and engineering — taking ideas from Figma and turning them into interfaces that are fair to use on everyday devices, not only the ideal ones.",
       "I show up for the unglamorous parts too: polishing edge cases, collaborating patiently with designers and teammates, and shipping something small every week instead of waiting for perfect. I care about being someone others can rely on when the work simply needs to get done well.",
     ],
-    focus: ["Portfolio", "Design System", "Consumer App", "Open Source", "AI Workflow"],
+    focus: ["Portfolio", "UI Playground", "Design System", "Consumer App", "Open Source"],
   },
   projects: [
     {
@@ -23,6 +23,14 @@ export const site = {
         "This site — an honest place to share what I'm building and how I like to work with others.",
       status: "In progress",
       href: "#work",
+    },
+    {
+      year: "2026",
+      title: "UI Playground",
+      description:
+        "A quiet space to try interaction and motion ideas, then keep only what truly helps people.",
+      status: "In progress",
+      href: "/playground",
     },
     {
       year: "2026",
@@ -37,14 +45,6 @@ export const site = {
       title: "Consumer App",
       description:
         "A small product built end-to-end, focused on clear UX, accessibility, and patient weekly progress.",
-      status: "Planned",
-      href: "#",
-    },
-    {
-      year: "2026",
-      title: "UI Playground",
-      description:
-        "A quiet space to try interaction and motion ideas, then keep only what truly helps people.",
       status: "Planned",
       href: "#",
     },
