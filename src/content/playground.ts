@@ -19,5 +19,10 @@ export const playground = {
       title: "Quiet reveal",
       note: "Press Reveal stack to play a staggered entrance — calm enough to use in real UI.",
     },
+    {
+      id: "confirm-toast",
+      title: "Confirm → toast",
+      note: "Ask once, then acknowledge quietly. Confirm in the dialog; the toast is just the receipt.",
+    },
   ],
 } as const;

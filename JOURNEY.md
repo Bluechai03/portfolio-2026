@@ -17,7 +17,7 @@ Become a design engineer who ships weekly — systems, products, and open source
 | Portfolio 2026 | In progress | Live: https://portfolio-2026-six-gilt.vercel.app/ |
 | Design System + Storybook | Planned | Month 2 focus |
 | Consumer App | Planned | Month 3 focus |
-| UI Playground | In progress | `/playground` — soft press, focus path, quiet reveal |
+| UI Playground | In progress | `/playground` — soft press, focus path, quiet reveal, confirm → toast |
 | Open Source | Planned | Month 4 focus |
 | AI Workflow | Ongoing | Plan → Figma → architecture → Cursor → review → polish |
 | Dance tool / product | Idea | Future: build something that helps with dance (choreography, practice, timing). Do **not** mention dance in About — show it through a project when ready. |
@@ -66,7 +66,7 @@ Become a design engineer who ships weekly — systems, products, and open source
 - [x] Choose ship: UI Playground
 - [x] Scaffold `/playground` with first interaction demos
 - [x] Link Projects entry to `/playground`
-- [ ] Expand playground with one more purposeful demo
+- [x] Expand playground with confirm → toast demo (visual polish guided by Anna)
 - [ ] Ask one person for feedback on that ship (taste, clarity, usefulness)
 
 ## AI Workflow (operating system)
