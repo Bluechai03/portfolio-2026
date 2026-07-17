@@ -219,11 +219,7 @@ body {
   }
 }
 
-#quiet-reveal-list[data-open="false"] .reveal-item {
-  display: none;
-}
-
-#quiet-reveal-list[data-open="true"] .reveal-item {
+.reveal-item {
   animation: reveal-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: calc(var(--reveal-index, 0) * 70ms);
 }
