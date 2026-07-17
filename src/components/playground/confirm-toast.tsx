@@ -1,151 +1,138 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
+import { useState } from "react";
+import Alert from "@mui/material/Alert";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import Snackbar from "@mui/material/Snackbar";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
+import { PlaygroundMuiProvider } from "@/components/playground/mui-theme";
 
-const TOAST_MS = 3200;
+const paletteRoles = [
+  "primary",
+  "secondary",
+  "error",
+  "warning",
+  "info",
+  "success",
+] as const;
 
-export function ConfirmToast() {
-  const titleId = useId();
-  const descriptionId = useId();
-  const cancelRef = useRef<HTMLButtonElement>(null);
-  const triggerRef = useRef<HTMLButtonElement>(null);
-
+function ConfirmToastDemo() {
+  const theme = useTheme();
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [toastVisible, setToastVisible] = useState(false);
-  const [toastMessage, setToastMessage] = useState("");
+  const [toastOpen, setToastOpen] = useState(false);
 
-  useEffect(() => {
-    if (!dialogOpen) return;
-
-    const previous = document.activeElement;
-    const trigger = triggerRef.current;
-    cancelRef.current?.focus();
-
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        event.preventDefault();
-        setDialogOpen(false);
-      }
-    }
-
-    document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.removeEventListener("keydown", onKeyDown);
-      if (previous instanceof HTMLElement) {
-        previous.focus();
-      } else {
-        trigger?.focus();
-      }
-    };
-  }, [dialogOpen]);
-
-  useEffect(() => {
-    if (!toastVisible) return;
-
-    const timer = window.setTimeout(() => {
-      setToastVisible(false);
-    }, TOAST_MS);
-
-    return () => window.clearTimeout(timer);
-  }, [toastVisible, toastMessage]);
-
-  function openDialog() {
-    setDialogOpen(true);
-  }
-
-  function closeDialog() {
+  function handleConfirm() {
     setDialogOpen(false);
-  }
-
-  function confirmAction() {
-    setDialogOpen(false);
-    setToastMessage("Draft archived");
-    setToastVisible(true);
+    setToastOpen(true);
   }
 
   return (
-    <div className="relative min-h-[12rem]">
-      <div className="flex flex-col items-start gap-4">
-        <p className="max-w-md text-base leading-relaxed text-ink-soft">
-          Confirm first, then acknowledge. The toast should feel like a quiet receipt — not another
-          modal.
-        </p>
-        <button
-          ref={triggerRef}
-          type="button"
-          onClick={openDialog}
-          className="font-display rounded-md border border-line bg-bone px-5 py-3 text-sm font-semibold tracking-[0.06em] text-ink uppercase transition-[background-color,border-color,transform] duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-accent/40 hover:bg-bone focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg active:scale-[0.98]"
-        >
-          Archive draft
-        </button>
-      </div>
+    <Box>
+      <Stack spacing={2.5}>
+        <Typography variant="body1" color="text.secondary">
+          Confirm with a dialog, then acknowledge with a success toast — using MUI palette roles
+          (`primary`, `secondary`, `success`, and friends).
+        </Typography>
 
-      {dialogOpen ? (
-        <div className="confirm-overlay fixed inset-0 z-50 flex items-center justify-center px-6">
-          <button
-            type="button"
-            aria-label="Dismiss dialog"
-            className="absolute inset-0 bg-ink/35"
-            onClick={closeDialog}
-          />
-          <div
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby={titleId}
-            aria-describedby={descriptionId}
-            className="confirm-dialog relative z-10 w-full max-w-md rounded-md border border-line bg-bone p-6 shadow-[0_18px_50px_color-mix(in_srgb,var(--ink)_18%,transparent)] md:p-7"
-          >
-            <h3
-              id={titleId}
-              className="font-display text-xl font-semibold tracking-tight text-ink md:text-2xl"
+        <Stack direction="row" useFlexGap spacing={1} sx={{ flexWrap: "wrap" }}>
+          {paletteRoles.map((role) => (
+            <Box
+              key={role}
+              sx={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 1,
+                px: 1.25,
+                py: 0.75,
+                borderRadius: 1,
+                border: 1,
+                borderColor: "divider",
+                bgcolor: "background.paper",
+              }}
             >
-              Archive this draft?
-            </h3>
-            <p id={descriptionId} className="mt-3 text-base leading-relaxed text-ink-soft">
-              You can restore it later from Archives. This won&apos;t delete the file.
-            </p>
-            <div className="mt-7 flex flex-wrap justify-end gap-3">
-              <button
-                ref={cancelRef}
-                type="button"
-                onClick={closeDialog}
-                className="font-display rounded-md border border-line bg-bg px-4 py-2.5 text-sm font-semibold tracking-[0.04em] text-ink-soft uppercase transition-colors hover:border-accent/30 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bone"
-              >
-                Cancel
-              </button>
-              <button
-                type="button"
-                onClick={confirmAction}
-                className="font-display rounded-md bg-accent px-4 py-2.5 text-sm font-semibold tracking-[0.04em] text-bone uppercase transition-colors hover:bg-accent-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bone active:scale-[0.98]"
-              >
-                Archive
-              </button>
-            </div>
-          </div>
-        </div>
-      ) : null}
+              <Box
+                aria-hidden
+                sx={{
+                  width: 14,
+                  height: 14,
+                  borderRadius: 0.5,
+                  bgcolor: `${role}.main`,
+                }}
+              />
+              <Typography variant="caption" color="text.secondary" sx={{ letterSpacing: "0.04em" }}>
+                {role}
+              </Typography>
+            </Box>
+          ))}
+        </Stack>
 
-      <div
-        className="pointer-events-none fixed inset-x-0 bottom-6 z-[60] flex justify-center px-6"
-        aria-live="polite"
-        aria-atomic="true"
+        <Box>
+          <Button variant="outlined" color="secondary" onClick={() => setDialogOpen(true)}>
+            Archive draft
+          </Button>
+        </Box>
+      </Stack>
+
+      <Dialog
+        open={dialogOpen}
+        onClose={() => setDialogOpen(false)}
+        aria-labelledby="archive-dialog-title"
+        aria-describedby="archive-dialog-description"
       >
-        {toastVisible ? (
-          <div
-            role="status"
-            className="confirm-toast pointer-events-auto flex items-center gap-3 rounded-md border border-line bg-ink px-4 py-3 text-sm text-bone shadow-[0_12px_40px_color-mix(in_srgb,var(--ink)_25%,transparent)]"
-          >
-            <span className="font-display font-medium tracking-[0.02em]">{toastMessage}</span>
-            <button
-              type="button"
-              onClick={() => setToastVisible(false)}
-              className="rounded-sm px-1.5 py-0.5 text-bone/70 transition-colors hover:text-bone focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bone/50"
-            >
-              Dismiss
-            </button>
-          </div>
-        ) : null}
-      </div>
-    </div>
+        <DialogTitle id="archive-dialog-title">Archive this draft?</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="archive-dialog-description">
+            You can restore it later from Archives. This won&apos;t delete the file.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions sx={{ px: 3, pb: 2.5 }}>
+          <Button color="secondary" onClick={() => setDialogOpen(false)}>
+            Cancel
+          </Button>
+          <Button variant="contained" color="primary" onClick={handleConfirm} autoFocus>
+            Archive
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+      <Snackbar
+        open={toastOpen}
+        autoHideDuration={3200}
+        onClose={(_, reason) => {
+          if (reason === "clickaway") return;
+          setToastOpen(false);
+        }}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      >
+        <Alert
+          onClose={() => setToastOpen(false)}
+          severity="success"
+          variant="filled"
+          sx={{
+            width: "100%",
+            bgcolor: theme.palette.success.main,
+            color: theme.palette.success.contrastText,
+          }}
+        >
+          Draft archived
+        </Alert>
+      </Snackbar>
+    </Box>
+  );
+}
+
+export function ConfirmToast() {
+  return (
+    <PlaygroundMuiProvider>
+      <ConfirmToastDemo />
+    </PlaygroundMuiProvider>
   );
 }
