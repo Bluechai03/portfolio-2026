@@ -58,8 +58,15 @@ Become a design engineer who ships weekly — systems, products, and open source
 - [x] Add About and Projects sections
 - [ ] Connect custom domain (optional)
 - [x] Deploy to Vercel — https://portfolio-2026-six-gilt.vercel.app/
-- [ ] Share with one friend for feedback
+- [~] Friend feedback — ongoing through the journey (ask on each project ship, not a Week 1 gate)
 - [x] Sync this page into Notion — https://app.notion.com/p/39f9ce14f243813dafc8e53004cd1cd4
+
+### Week 2 — First proof beyond the homepage
+
+- [ ] Choose ship: UI Playground **or** Design System + Storybook slice
+- [ ] Scaffold the chosen project in-repo (or linked repo) and deploy something linkable
+- [ ] Add/update Projects entry on the portfolio once there’s a real URL
+- [ ] Ask one person for feedback on that ship (taste, clarity, usefulness)
 
 ## AI Workflow (operating system)
 
@@ -70,6 +77,10 @@ Become a design engineer who ships weekly — systems, products, and open source
 5. Review with AI  
 6. Polish yourself  
 
+## Feedback habit
+
+Ask for feedback when something ships — not before. One question per ask, tied to the artifact (e.g. *Does this interaction feel intentional, or decorative?*).
+
 ## Next smallest ship
 
-Send https://portfolio-2026-six-gilt.vercel.app/ to one friend. Ask: *Does the first screen feel like Anna — or like any design portfolio?*
+Start Week 2: pick **UI Playground** (one interaction page) or **Design System slice** (tokens + 2–3 primitives in Storybook). Goal is a linkable proof, not a finished system.
