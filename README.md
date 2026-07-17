@@ -25,7 +25,7 @@ pnpm build
 pnpm start
 ```
 
-**Live:** [portfolio-2026-six-gilt.vercel.app](https://portfolio-2026-six-gilt.vercel.app/)
+**Live:** [annamontero.dev](https://annamontero.dev/)
 
 ## Journey
 

@@ -15,15 +15,6 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import { PlaygroundMuiProvider } from "@/components/playground/mui-theme";
 
-const paletteRoles = [
-  "primary",
-  "secondary",
-  "error",
-  "warning",
-  "info",
-  "success",
-] as const;
-
 function ConfirmToastDemo() {
   const theme = useTheme();
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -38,41 +29,8 @@ function ConfirmToastDemo() {
     <Box>
       <Stack spacing={2.5}>
         <Typography variant="body1" color="text.secondary">
-          Confirm with a dialog, then acknowledge with a success toast — using MUI palette roles
-          (`primary`, `secondary`, `success`, and friends).
+          Confirm with a dialog, then acknowledge with a success toast.
         </Typography>
-
-        <Stack direction="row" useFlexGap spacing={1} sx={{ flexWrap: "wrap" }}>
-          {paletteRoles.map((role) => (
-            <Box
-              key={role}
-              sx={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 1,
-                px: 1.25,
-                py: 0.75,
-                borderRadius: 1,
-                border: 1,
-                borderColor: "divider",
-                bgcolor: "background.paper",
-              }}
-            >
-              <Box
-                aria-hidden
-                sx={{
-                  width: 14,
-                  height: 14,
-                  borderRadius: 0.5,
-                  bgcolor: `${role}.main`,
-                }}
-              />
-              <Typography variant="caption" color="text.secondary" sx={{ letterSpacing: "0.04em" }}>
-                {role}
-              </Typography>
-            </Box>
-          ))}
-        </Stack>
 
         <Box>
           <Button variant="outlined" color="secondary" onClick={() => setDialogOpen(true)}>

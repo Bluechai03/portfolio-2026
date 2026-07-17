@@ -14,7 +14,7 @@ Become a design engineer who ships weekly — systems, products, and open source
 
 | Project | Status | Notes |
 |---------|--------|-------|
-| Portfolio 2026 | In progress | Live: https://portfolio-2026-six-gilt.vercel.app/ |
+| Portfolio 2026 | In progress | Live: https://annamontero.dev/ |
 | Design System + Storybook | Planned | Month 2 focus |
 | Consumer App | Planned | Month 3 focus |
 | UI Playground | In progress | `/playground` — soft press, focus path, quiet reveal, confirm → toast |
@@ -56,8 +56,8 @@ Become a design engineer who ships weekly — systems, products, and open source
 - [x] Design homepage direction (atelier mist + jade; Syne / Figtree)
 - [x] Build hero section (brand-first, full-bleed atmosphere)
 - [x] Add About and Projects sections
-- [ ] Connect custom domain (optional)
-- [x] Deploy to Vercel — https://portfolio-2026-six-gilt.vercel.app/
+- [x] Connect custom domain — https://annamontero.dev/
+- [x] Deploy to Vercel — https://annamontero.dev/
 - [~] Friend feedback — ongoing through the journey (ask on each project ship, not a Week 1 gate)
 - [x] Sync this page into Notion — https://app.notion.com/p/39f9ce14f243813dafc8e53004cd1cd4
 
