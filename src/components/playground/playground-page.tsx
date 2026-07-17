@@ -4,11 +4,13 @@ import { site } from "@/content/site";
 import { SoftPress } from "@/components/playground/soft-press";
 import { FocusPath } from "@/components/playground/focus-path";
 import { QuietReveal } from "@/components/playground/quiet-reveal";
+import { ConfirmToast } from "@/components/playground/confirm-toast";
 
 const demos = {
   "soft-press": SoftPress,
   "focus-path": FocusPath,
   reveal: QuietReveal,
+  "confirm-toast": ConfirmToast,
 } as const;
 
 export function PlaygroundPage() {
