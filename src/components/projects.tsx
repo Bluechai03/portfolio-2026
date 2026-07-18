@@ -1,4 +1,32 @@
+import Link from "next/link";
+import type { ReactNode } from "react";
 import { site } from "@/content/site";
+
+function ProjectLink({
+  href,
+  className,
+  children,
+}: {
+  href: string;
+  className: string;
+  children: ReactNode;
+}) {
+  const isInternal = href.startsWith("/") && !href.startsWith("//");
+
+  if (isInternal) {
+    return (
+      <Link href={href} className={className}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <a href={href} className={className}>
+      {children}
+    </a>
+  );
+}
 
 export function Projects() {
   return (
@@ -22,7 +50,7 @@ export function Projects() {
         <ul className="divide-y divide-line border-y border-line">
           {site.projects.map((project, index) => (
             <li key={project.title}>
-              <a
+              <ProjectLink
                 href={project.href}
                 className="project-row group grid gap-4 py-8 outline-none focus-visible:bg-bone/70 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:py-10"
               >
@@ -43,7 +71,7 @@ export function Projects() {
                 <span className="font-display text-sm font-medium tracking-[0.08em] text-accent uppercase md:justify-self-end">
                   {project.status}
                 </span>
-              </a>
+              </ProjectLink>
             </li>
           ))}
         </ul>
