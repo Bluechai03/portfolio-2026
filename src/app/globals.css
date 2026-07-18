@@ -207,3 +207,62 @@ body {
   background-color: color-mix(in srgb, var(--bone) 70%, transparent);
   padding-left: 0.5rem;
 }
+
+@keyframes reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.6rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-item {
+  animation: reveal-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--reveal-index, 0) * 70ms);
+}
+
+@keyframes confirm-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes confirm-dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes confirm-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.confirm-overlay {
+  animation: confirm-overlay-in 0.22s ease both;
+}
+
+.confirm-dialog {
+  animation: confirm-dialog-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.confirm-toast {
+  animation: confirm-toast-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
