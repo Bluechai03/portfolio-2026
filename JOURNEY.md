@@ -15,7 +15,7 @@ Become a design engineer who ships weekly — systems, products, and open source
 | Project | Status | Notes |
 |---------|--------|-------|
 | Portfolio 2026 | In progress | Live: https://annamontero.dev/ |
-| Design System + Storybook | Planned | Month 2 focus |
+| Design System + Storybook | In progress | `/system` — tokens + Button, TextField, Badge slice |
 | Consumer App | Planned | Month 3 focus |
 | UI Playground | In progress | `/playground` — soft press, focus path, quiet reveal, confirm → toast |
 | Open Source | Planned | Month 4 focus |
@@ -69,6 +69,14 @@ Become a design engineer who ships weekly — systems, products, and open source
 - [x] Expand playground with confirm → toast demo (visual polish guided by Anna)
 - [ ] Ask one person for feedback on that ship (taste, clarity, usefulness)
 
+### Week 3 — Design system slice
+
+- [x] Scaffold `/system` living docs
+- [x] Add shared tokens (color, space, type, radius)
+- [x] Ship first primitives: Button, TextField, Badge
+- [ ] Add Storybook when the set is worth documenting component-by-component
+- [ ] Reuse primitives on homepage/playground where it helps
+
 ## AI Workflow (operating system)
 
 1. Plan with ChatGPT / Cursor  
@@ -84,4 +92,4 @@ Ask for feedback when something ships — not before. One question per ask, tied
 
 ## Next smallest ship
 
-Open `/playground`, try the three demos on keyboard + mouse, then add one more interaction that teaches something about real product UI.
+Open `/system`, review the token + primitive slice, then either reuse a primitive on the homepage or add Storybook once the set feels stable.

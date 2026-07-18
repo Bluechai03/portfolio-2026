@@ -58,7 +58,7 @@ function ConfirmToastDemo() {
     <Box>
       <Stack spacing={2.5}>
         <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 36 * 8 }}>
-          Ask once, then acknowledge quietly. The dialog decides; the toast is only the receipt.
+          Confirm first, then a small toast after. Nothing fancy.
         </Typography>
 
         <Box>

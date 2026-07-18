@@ -30,12 +30,20 @@ export function PlaygroundPage() {
           >
             {site.name}
           </Link>
-          <Link
-            href="/"
-            className="link-underline text-sm text-ink-soft transition-colors hover:text-ink"
-          >
-            Back home
-          </Link>
+          <nav className="flex items-center gap-5">
+            <Link
+              href="/system"
+              className="link-underline text-sm text-ink-soft transition-colors hover:text-ink"
+            >
+              System
+            </Link>
+            <Link
+              href="/"
+              className="link-underline text-sm text-ink-soft transition-colors hover:text-ink"
+            >
+              Back home
+            </Link>
+          </nav>
         </div>
       </header>
 
