@@ -28,7 +28,7 @@ export const site = {
       year: "2026",
       title: "UI Playground",
       description:
-        "A quiet space to try interaction and motion ideas, then keep only what truly helps people.",
+        "Little interaction experiments — motion, focus, confirms — before I put them into real work.",
       status: "In progress",
       href: "/playground",
     },
@@ -36,7 +36,7 @@ export const site = {
       year: "2026",
       title: "Design System + Storybook",
       description:
-        "Reusable components, tokens, and docs so teams can build together with less friction and more consistency.",
+        "Shared tokens and a few components I'm building as I go. Storybook later, when there's enough to document.",
       status: "In progress",
       href: "/system",
     },

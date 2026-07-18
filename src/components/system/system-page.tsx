@@ -128,13 +128,13 @@ export function SystemPage() {
                   </p>
                   <div className="mt-4 space-y-3">
                     <p className="font-display text-2xl font-semibold tracking-tight text-ink">
-                      Syne for display
+                      Syne for headings
                     </p>
                     <p className="text-base leading-relaxed text-ink-soft">
-                      Figtree for body — readable, calm, and steady at product scale.
+                      Figtree for everything else. That&apos;s the pairing for now.
                     </p>
                     <p className="text-sm text-muted">
-                      Radius: {tokens.radius.sm} / {tokens.radius.md} / {tokens.radius.lg}
+                      Corner radius: {tokens.radius.sm} / {tokens.radius.md} / {tokens.radius.lg}
                     </p>
                   </div>
                 </div>
