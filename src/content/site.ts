@@ -37,8 +37,8 @@ export const site = {
       title: "Design System + Storybook",
       description:
         "Reusable components, tokens, and docs so teams can build together with less friction and more consistency.",
-      status: "Next up",
-      href: "#",
+      status: "In progress",
+      href: "/system",
     },
     {
       year: "2026",
