@@ -22,7 +22,7 @@ export const playground = {
     {
       id: "confirm-toast",
       title: "Confirm → toast",
-      note: "MUI Dialog + Snackbar. Confirm first; the toast is the quiet receipt.",
+      note: "Ask once, then acknowledge quietly. Dialog decides; toast is only the receipt.",
     },
   ],
 } as const;
