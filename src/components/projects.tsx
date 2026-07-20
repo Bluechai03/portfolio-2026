@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { Badge } from "@/design-system";
 import { site } from "@/content/site";
 
 function ProjectLink({
@@ -68,9 +69,9 @@ export function Projects() {
                     {project.description}
                   </p>
                 </div>
-                <span className="font-display text-sm font-medium tracking-[0.08em] text-accent uppercase md:justify-self-end">
+                <Badge tone={project.tone} className="md:justify-self-end">
                   {project.status}
-                </span>
+                </Badge>
               </ProjectLink>
             </li>
           ))}

@@ -1,5 +1,6 @@
 import { site } from "@/content/site";
 import { HeroVisual } from "@/components/hero-visual";
+import { Button } from "@/design-system";
 
 export function Hero() {
   return (
@@ -36,12 +37,7 @@ export function Hero() {
           {site.heroSupport}
         </p>
         <div className="animate-rise animate-rise-delay-3 mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
-          <a
-            href="#work"
-            className="inline-flex h-12 items-center justify-center bg-accent px-7 text-sm font-semibold tracking-wide text-bone transition-colors hover:bg-accent-deep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
-          >
-            View work
-          </a>
+          <Button href="#work">View work</Button>
           <a
             href="#contact"
             className="inline-flex h-12 items-center justify-center text-sm font-semibold tracking-wide text-ink"
