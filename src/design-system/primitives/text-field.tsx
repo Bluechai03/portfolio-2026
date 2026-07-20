@@ -32,13 +32,13 @@ export function TextField({
         className={[
           "rounded-md border bg-bone/60 px-3.5 py-2.5 text-base text-ink outline-none transition-[border-color,box-shadow,background-color] duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] placeholder:text-muted",
           error
-            ? "border-[color:var(--danger)] focus-visible:ring-2 focus-visible:ring-[color:var(--danger)]"
+            ? "border-danger focus-visible:ring-2 focus-visible:ring-danger"
             : "border-line focus-visible:border-accent focus-visible:ring-2 focus-visible:ring-accent",
         ].join(" ")}
         {...props}
       />
       {error ? (
-        <p id={errorId} className="text-sm text-[color:var(--danger)]" role="alert">
+        <p id={errorId} className="text-sm text-danger" role="alert">
           {error}
         </p>
       ) : hint ? (

@@ -22,6 +22,7 @@ export const site = {
       description:
         "This site — an honest place to share what I'm building and how I like to work with others.",
       status: "In progress",
+      tone: "accent",
       href: "#work",
     },
     {
@@ -30,6 +31,7 @@ export const site = {
       description:
         "Little interaction experiments — motion, focus, confirms — before I put them into real work.",
       status: "In progress",
+      tone: "accent",
       href: "/playground",
     },
     {
@@ -38,6 +40,7 @@ export const site = {
       description:
         "Shared tokens and a few components I'm building as I go. Storybook later, when there's enough to document.",
       status: "In progress",
+      tone: "accent",
       href: "/system",
     },
     {
@@ -46,6 +49,7 @@ export const site = {
       description:
         "A small product built end-to-end, focused on clear UX, accessibility, and patient weekly progress.",
       status: "Planned",
+      tone: "neutral",
       href: "#",
     },
   ],

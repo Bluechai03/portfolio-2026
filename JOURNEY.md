@@ -74,8 +74,9 @@ Become a design engineer who ships weekly — systems, products, and open source
 - [x] Scaffold `/system` living docs
 - [x] Add shared tokens (color, space, type, radius)
 - [x] Ship first primitives: Button, TextField, Badge
+- [x] Code quality pass: shared page shell for /playground + /system, danger/success as real theme colors, drop unused deps
+- [x] Reuse primitives on homepage — Button (hero CTA) and Badge (project status)
 - [ ] Add Storybook when the set is worth documenting component-by-component
-- [ ] Reuse primitives on homepage/playground where it helps
 
 ## AI Workflow (operating system)
 

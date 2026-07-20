@@ -40,6 +40,8 @@
   --color-accent-deep: var(--accent-deep);
   --color-bone: var(--bone);
   --color-glow-mist: var(--glow-mist);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
   --font-sans: var(--font-figtree);
   --font-display: var(--font-syne);
 }
