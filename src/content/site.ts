@@ -27,6 +27,11 @@ export const site = {
           "Built real-time interfaces on WebSockets for a live data product — live sections and data grids that update without a reload, under real performance and reliability constraints.",
       },
       {
+        title: "Proof-of-concept ownership",
+        description:
+          "Regularly trusted with early proof-of-concept work: explore an idea, own it end to end, then hand it off cleanly for the team to build on.",
+      },
+      {
         title: "Cross-functional delivery",
         description:
           "Partnered across design, QA, backend, and DevOps to turn Figma into a production MUI component system, shipping MVPs to deadline.",
