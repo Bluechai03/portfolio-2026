@@ -25,6 +25,9 @@ Become a design engineer who ships weekly — systems, products, and open source
 ## Future project notes (private)
 
 - **Dance:** Anna wants a future product that helps with dance. Keep this for the project pipeline only — not in public About copy until there is a shippable artifact.
+- **Dance v0 plan:** Practice Timer — metronome + session log persisted via Supabase, with a live realtime update as the one feature that proves the real-time/API skill the portfolio currently can't show. ~10-session build order scoped in chat 2026-07-21; ask to re-surface it when ready to start.
+- **Interval Walking Timer:** inspired by japaneseintervalwalking.com (3min fast / 3min slow × 5). Web-only v0 for now — Apple Watch HR integration is parked as a future native v1 (needs a Mac, no web API can read Watch HR). Differentiator: DeviceMotion-based cadence detection ("are you actually walking fast enough") as the skills-proof feature, since HR isn't reachable from a browser. 10-session build order scoped in chat 2026-07-23. Build collaboration mode: hybrid — see [[mentor-mode-skill-projects]].
+  - **Future feature idea (not in v0):** suggest songs matching the BPM of the phase you're supposed to be walking at (fast-phase BPM vs slow-phase BPM) — a music-tempo-matching feature, likely needs a music API (e.g. Spotify's audio-features/BPM data) once v0's core loop is solid.
 
 ## Monthly Focus
 
@@ -76,6 +79,7 @@ Become a design engineer who ships weekly — systems, products, and open source
 - [x] Ship first primitives: Button, TextField, Badge
 - [x] Code quality pass: shared page shell for /playground + /system, danger/success as real theme colors, drop unused deps
 - [x] Reuse primitives on homepage — Button (hero CTA) and Badge (project status)
+- [~] "Experience" section (real production work from Splash Software) — built (`src/components/experience.tsx`), not yet wired into the page. Held back: unsure whether to duplicate CV content on the site. Revisit before shipping.
 - [ ] Add Storybook when the set is worth documenting component-by-component
 
 ## AI Workflow (operating system)
