@@ -15,6 +15,29 @@ export const site = {
     ],
     focus: ["Portfolio", "UI Playground", "Design System", "Consumer App", "Open Source"],
   },
+  experience: {
+    eyebrow: "Experience",
+    headline: "3+ years shipping production interfaces",
+    intro:
+      "Selected work from my day job at Splash Software (2022–present). Described in general terms — most of it lives behind an NDA.",
+    items: [
+      {
+        title: "Real-time product UI",
+        description:
+          "Built real-time interfaces on WebSockets for a live data product — live sections and data grids that update without a reload, under real performance and reliability constraints.",
+      },
+      {
+        title: "Cross-functional delivery",
+        description:
+          "Partnered across design, QA, backend, and DevOps to turn Figma into a production MUI component system, shipping MVPs to deadline.",
+      },
+      {
+        title: "Content systems & internal tools",
+        description:
+          "Shipped CMS-driven pages, a public developer docs portal, and back-office dashboards — the less glamorous surfaces that still need to be fast, accessible, and easy to maintain.",
+      },
+    ],
+  },
   projects: [
     {
       year: "2026",
@@ -42,6 +65,15 @@ export const site = {
       status: "In progress",
       tone: "accent",
       href: "/system",
+    },
+    {
+      year: "2026",
+      title: "Interval Walking Timer",
+      description:
+        "A Japanese interval-walking timer (3 min fast / 3 min slow) I actually use — building toward live cadence feedback and, eventually, an Apple Watch companion.",
+      status: "In progress",
+      tone: "accent",
+      href: "https://interval-walking-timer.vercel.app",
     },
     {
       year: "2026",
