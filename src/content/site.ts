@@ -1,19 +1,19 @@
 export const site = {
   name: "Anna Montero",
-  role: "Design Engineer",
+  role: "Product Engineer",
   email: "montero.katreena@gmail.com",
   github: "https://github.com/Bluechai03",
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   tagline: "Build proof, not just knowledge.",
   heroSupport:
-    "I build frontend interfaces, currently with React and Next.js, and I put steady care into how they feel for real people: clear layouts, thoughtful motion, accessibility, and the small details that make something dependable.",
+    "I build frontend interfaces, currently with React and Next.js, and I put steady care into how they hold up for real people: clear layouts, reliable data, and the small details that make something dependable.",
   about: {
     headline: "Steady work, thoughtful interfaces",
     body: [
       "I'm a frontend engineer based in Dubai. I like sitting between design and engineering — taking ideas from Figma and turning them into interfaces that are fair to use on everyday devices, not only the ideal ones.",
       "I show up for the unglamorous parts too: polishing edge cases, collaborating patiently with designers and teammates, and shipping something small every week instead of waiting for perfect. I care about being someone others can rely on when the work simply needs to get done well.",
     ],
-    focus: ["Portfolio", "UI Playground", "Design System", "Consumer App", "Open Source"],
+    focus: ["Portfolio", "Design System", "Interval Walking Timer", "Consumer App", "UI Playground", "Open Source"],
   },
   experience: {
     eyebrow: "Experience",
@@ -34,7 +34,7 @@ export const site = {
       {
         title: "Content systems & internal tools",
         description:
-          "Shipped CMS-driven pages, a public developer docs portal, and back-office dashboards — the less glamorous surfaces that still need to be fast, accessible, and easy to maintain.",
+          "Shipped CMS-driven pages, a public developer docs portal, and back-office dashboards — the less glamorous surfaces that still need to be fast, reliable, and easy to maintain.",
       },
     ],
   },
@@ -50,12 +50,12 @@ export const site = {
     },
     {
       year: "2026",
-      title: "UI Playground",
+      title: "Interval Walking Timer",
       description:
-        "Little interaction experiments — motion, focus, confirms — before I put them into real work.",
+        "A Japanese interval-walking timer (3 min fast / 3 min slow) I actually use — building toward live cadence feedback and, eventually, an Apple Watch companion.",
       status: "In progress",
       tone: "accent",
-      href: "/playground",
+      href: "https://interval-walking-timer.vercel.app",
     },
     {
       year: "2026",
@@ -68,30 +68,31 @@ export const site = {
     },
     {
       year: "2026",
-      title: "Interval Walking Timer",
-      description:
-        "A Japanese interval-walking timer (3 min fast / 3 min slow) I actually use — building toward live cadence feedback and, eventually, an Apple Watch companion.",
-      status: "In progress",
-      tone: "accent",
-      href: "https://interval-walking-timer.vercel.app",
-    },
-    {
-      year: "2026",
       title: "Consumer App",
       description:
-        "A small product built end-to-end, focused on clear UX, accessibility, and patient weekly progress.",
+        "A small product built end-to-end, focused on clear UX, real reliability, and patient weekly progress.",
       status: "Planned",
       tone: "neutral",
       href: "#",
+    },
+    {
+      year: "2026",
+      title: "UI Playground",
+      description:
+        "Small interaction experiments where I explore UX ideas like motion and focus before they land in real product work.",
+      status: "In progress",
+      tone: "accent",
+      href: "/playground",
     },
   ],
   projectsIntro:
     "These are the projects I'm committed to this year. I'll keep this list honest as things ship — slow, steady progress over big promises.",
   contactSupport:
-    "If you're looking for a remote Design Engineer or Product Engineer who's reliable, collaborative, and happy to do the careful work, I'd love to hear from you. You're welcome to reach out anytime.",
+    "If you're looking for a remote Product Engineer or Design Engineer who's reliable, collaborative, and happy to do the careful work, I'd love to hear from you. You're welcome to reach out anytime.",
   nav: [
-    { label: "Work", href: "#work" },
     { label: "About", href: "#about" },
+    { label: "Experience", href: "#experience" },
+    { label: "Work", href: "#work" },
     { label: "Contact", href: "#contact" },
   ],
 } as const;
