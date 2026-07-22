@@ -19,7 +19,7 @@ export const site = {
     eyebrow: "Experience",
     headline: "3+ years shipping production interfaces",
     intro:
-      "Selected work from my day job at Splash Software (2022–present). Described in general terms — most of it lives behind an NDA.",
+      "A few highlights from the day-to-day work I ship in my current role.",
     items: [
       {
         title: "Real-time product UI",
