@@ -6,7 +6,7 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   tagline: "Build proof, not just knowledge.",
   heroSupport:
-    "I build frontend interfaces with React and Next.js, and I put steady care into how they feel for real people — clear layouts, thoughtful motion, accessibility, and the small details that make something dependable.",
+    "I build frontend interfaces, currently with React and Next.js, and I put steady care into how they feel for real people: clear layouts, thoughtful motion, accessibility, and the small details that make something dependable.",
   about: {
     headline: "Steady work, thoughtful interfaces",
     body: [
