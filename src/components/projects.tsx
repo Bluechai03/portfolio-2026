@@ -29,6 +29,28 @@ function ProjectLink({
   );
 }
 
+function ArrowIcon() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      className="transition-transform duration-200 md:group-hover:translate-x-1"
+    >
+      <path
+        d="M3 8H13M13 8L9 4M13 8L9 12"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export function Projects() {
   return (
     <section id="work" className="border-t border-line" aria-labelledby="work-heading">
@@ -49,12 +71,11 @@ export function Projects() {
         </div>
 
         <ul className="divide-y divide-line border-y border-line">
-          {site.projects.map((project, index) => (
-            <li key={project.title}>
-              <ProjectLink
-                href={project.href}
-                className="project-row group grid gap-4 py-8 outline-none focus-visible:bg-bone/70 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:py-10"
-              >
+          {site.projects.map((project, index) => {
+            const isShipped = project.href !== "#";
+
+            const rowContent = (
+              <>
                 <span className="font-display text-sm tracking-wide text-muted tabular-nums">
                   {String(index + 1).padStart(2, "0")}
                 </span>
@@ -68,13 +89,39 @@ export function Projects() {
                   <p className="mt-3 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
                     {project.description}
                   </p>
+                  {isShipped ? (
+                    <span
+                      aria-hidden="true"
+                      className="mt-3 inline-flex items-center gap-1.5 font-display text-sm font-semibold tracking-[0.06em] text-accent uppercase opacity-100 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100 md:group-focus-visible:opacity-100"
+                    >
+                      View project
+                      <ArrowIcon />
+                    </span>
+                  ) : null}
                 </div>
                 <Badge tone={project.tone} className="md:justify-self-end">
                   {project.status}
                 </Badge>
-              </ProjectLink>
-            </li>
-          ))}
+              </>
+            );
+
+            return (
+              <li key={project.title}>
+                {isShipped ? (
+                  <ProjectLink
+                    href={project.href}
+                    className="project-row group grid gap-4 py-8 outline-none focus-visible:bg-bone/70 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:py-10"
+                  >
+                    {rowContent}
+                  </ProjectLink>
+                ) : (
+                  <div className="grid gap-4 py-8 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:py-10">
+                    {rowContent}
+                  </div>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>
