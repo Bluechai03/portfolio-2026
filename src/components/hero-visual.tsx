@@ -160,7 +160,7 @@ export function HeroVisual() {
             fontFamily="ui-sans-serif, system-ui, sans-serif"
             fontSize="12"
           >
-            Motion · spacing · a11y · performance
+            Systems · data · reliability · scale
           </text>
           <rect x="204" y="572" width="88" height="10" rx="2" fill="#005B96" />
           <rect

@@ -1,4 +1,4 @@
-# Design Engineer Journey
+# Product Engineer Journey
 
 **Owner:** Anna Montero  
 **North star:** Build proof, not just knowledge.  
@@ -8,7 +8,9 @@
 
 ## Vision
 
-Become a design engineer who ships weekly — systems, products, and open source — with taste that survives production. Consistency over intensity. One meaningful commit is enough.
+Become a product engineer who ships weekly — systems, products, and open source — with judgment that survives production. Consistency over intensity. One meaningful commit is enough.
+
+**Positioning note (2026-07-23):** Repositioned primary target from Design Engineer to Product Engineer. The 3 years at Splash Software are stronger, more honest evidence of product/systems ownership (real-time WebSocket UI, CMS-driven pages, dashboards, cross-functional MVP delivery across design/QA/backend/DevOps) than of deep accessibility/motion craft specifically — Anna doesn't consider a11y/motion a strength she can back up in an interview, so leading with "Design Engineer" was a claim the portfolio couldn't fully defend. Figma-to-production and systems work (design tokens, primitives) still count as real, secondary evidence of design fluency — this isn't abandoning design sensibility, just changing the lead claim. Resume can keep dual-listing both titles for search breadth; the site should lead with Product Engineer.
 
 ## Project List
 
@@ -79,7 +81,8 @@ Become a design engineer who ships weekly — systems, products, and open source
 - [x] Ship first primitives: Button, TextField, Badge
 - [x] Code quality pass: shared page shell for /playground + /system, danger/success as real theme colors, drop unused deps
 - [x] Reuse primitives on homepage — Button (hero CTA) and Badge (project status)
-- [~] "Experience" section (real production work from Splash Software) — built (`src/components/experience.tsx`), not yet wired into the page. Held back: unsure whether to duplicate CV content on the site. Revisit before shipping.
+- [x] "Experience" section shipped — wired into the page and nav (About → Experience → Work → Contact)
+- [x] Product Engineer repositioning: reordered Projects to lead with Interval Walking Timer + Design System, moved UI Playground last and reframed its copy, dropped "accessibility"/"motion" claims from hero + Experience + hero SVG copy, softened Consumer App's "accessibility" to "real reliability"
 - [ ] Add Storybook when the set is worth documenting component-by-component
 
 ## AI Workflow (operating system)
@@ -97,4 +100,4 @@ Ask for feedback when something ships — not before. One question per ask, tied
 
 ## Next smallest ship
 
-Open `/system`, review the token + primitive slice, then either reuse a primitive on the homepage or add Storybook once the set feels stable.
+Send the feedback ask for the confirm → toast demo (oldest open item, two minutes). The Product Engineer repositioning is done as of 2026-07-23.
