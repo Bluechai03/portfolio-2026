@@ -6,7 +6,7 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   tagline: "Shipping something small every week.",
   heroSupport:
-    "I build frontend products with React, Next.js, and MUI: real-time UIs, dashboards, and CMS-driven pages that run in production.",
+    "I build frontend products with React, Next.js, and MUI, from early proofs of concept to dashboards and CMS-driven pages in production.",
   about: {
     headline: "From Figma to production",
     body: [
@@ -22,11 +22,6 @@ export const site = {
       "Highlights from my current role.",
     items: [
       {
-        title: "Real-time product UI",
-        description:
-          "Built real-time interfaces over WebSockets for a live data product: sections and data grids that update without a page reload.",
-      },
-      {
         title: "Proof-of-concept ownership",
         description:
           "Often given early proof-of-concept work: I explore the idea, build it end to end, then hand it off to the team.",
@@ -40,6 +35,11 @@ export const site = {
         title: "Content systems & internal tools",
         description:
           "Shipped CMS-driven pages, a public developer docs portal, and internal back-office dashboards.",
+      },
+      {
+        title: "Live data UI",
+        description:
+          "Built sections and data grids for a live data product that update without a page reload.",
       },
     ],
   },
