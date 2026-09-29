@@ -4,14 +4,14 @@ export const site = {
   email: "montero.katreena@gmail.com",
   github: "https://github.com/Bluechai03",
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
-  tagline: "Build proof, not just knowledge.",
+  tagline: "Shipping something small every week.",
   heroSupport:
-    "I build frontend interfaces, currently with React and Next.js, and I put steady care into how they hold up for real people: clear layouts, reliable data, and the small details that make something dependable.",
+    "I build frontend products with React and Next.js: real-time UIs, dashboards, and CMS-driven pages that run in production.",
   about: {
-    headline: "Steady work, thoughtful interfaces",
+    headline: "From Figma to production",
     body: [
-      "I'm a frontend engineer based in Dubai. I like sitting between design and engineering — taking ideas from Figma and turning them into interfaces that are fair to use on everyday devices, not only the ideal ones.",
-      "I show up for the unglamorous parts too: polishing edge cases, collaborating patiently with designers and teammates, and shipping something small every week instead of waiting for perfect. I care about being someone others can rely on when the work simply needs to get done well.",
+      "I'm a frontend engineer based in Dubai. Most of my work sits between design and engineering: taking designs from Figma and building them into production interfaces.",
+      "I like working closely with designers and backend teammates, handling the edge cases, and shipping in small steps.",
     ],
     focus: ["Portfolio", "Design System", "Interval Walking Timer", "Consumer App", "UI Playground", "Open Source"],
   },
@@ -19,27 +19,27 @@ export const site = {
     eyebrow: "Experience",
     headline: "3+ years shipping production interfaces",
     intro:
-      "A few highlights from the day-to-day work I ship in my current role.",
+      "Highlights from my current role.",
     items: [
       {
         title: "Real-time product UI",
         description:
-          "Built real-time interfaces on WebSockets for a live data product — live sections and data grids that update without a reload, under real performance and reliability constraints.",
+          "Built real-time interfaces over WebSockets for a live data product: sections and data grids that update without a page reload.",
       },
       {
         title: "Proof-of-concept ownership",
         description:
-          "Regularly trusted with early proof-of-concept work: explore an idea, own it end to end, then hand it off cleanly for the team to build on.",
+          "Often given early proof-of-concept work: I explore the idea, build it end to end, then hand it off to the team.",
       },
       {
         title: "Cross-functional delivery",
         description:
-          "Partnered across design, QA, backend, and DevOps to turn Figma into a production MUI component system, shipping MVPs to deadline.",
+          "Worked with design, QA, backend, and DevOps to turn Figma designs into a production MUI component system and ship MVPs on deadline.",
       },
       {
         title: "Content systems & internal tools",
         description:
-          "Shipped CMS-driven pages, a public developer docs portal, and back-office dashboards — the less glamorous surfaces that still need to be fast, reliable, and easy to maintain.",
+          "Shipped CMS-driven pages, a public developer docs portal, and internal back-office dashboards.",
       },
     ],
   },
@@ -48,7 +48,7 @@ export const site = {
       year: "2026",
       title: "Portfolio 2026",
       description:
-        "This site — an honest place to share what I'm building and how I like to work with others.",
+        "This site, where I share what I'm building.",
       status: "In progress",
       tone: "accent",
       href: "#work",
@@ -57,7 +57,7 @@ export const site = {
       year: "2026",
       title: "Interval Walking Timer",
       description:
-        "A Japanese interval-walking timer (3 min fast / 3 min slow) I actually use — building toward live cadence feedback and, eventually, an Apple Watch companion.",
+        "A timer for Japanese interval walking (3 min fast / 3 min slow) that I use myself. Next: live cadence feedback, and later an Apple Watch app.",
       status: "In progress",
       tone: "accent",
       href: "https://interval-walking-timer.vercel.app",
@@ -66,7 +66,7 @@ export const site = {
       year: "2026",
       title: "Design System + Storybook",
       description:
-        "Shared tokens and a few components I'm building as I go. Storybook later, when there's enough to document.",
+        "Shared tokens and a first set of components: Button, TextField, and Badge. Storybook once there's enough to document.",
       status: "In progress",
       tone: "accent",
       href: "/system",
@@ -75,7 +75,7 @@ export const site = {
       year: "2026",
       title: "Consumer App",
       description:
-        "A small product built end-to-end, focused on clear UX, real reliability, and patient weekly progress.",
+        "A small product I'll build end to end, planned for later this year.",
       status: "Planned",
       tone: "neutral",
       href: "#",
@@ -84,16 +84,16 @@ export const site = {
       year: "2026",
       title: "UI Playground",
       description:
-        "Small interaction experiments where I explore UX ideas like motion and focus before they land in real product work.",
+        "Small interaction experiments, like press states, focus, and toasts, that I try out before using them in real work.",
       status: "In progress",
       tone: "accent",
       href: "/playground",
     },
   ],
   projectsIntro:
-    "These are the projects I'm committed to this year. I'll keep this list honest as things ship — slow, steady progress over big promises.",
+    "What I'm working on this year. I'll update this list as things ship.",
   contactSupport:
-    "If you're looking for a remote Product Engineer or Design Engineer who's reliable, collaborative, and happy to do the careful work, I'd love to hear from you. You're welcome to reach out anytime.",
+    "If you're hiring for a remote Product Engineer or Design Engineer role, I'd like to hear from you.",
   nav: [
     { label: "About", href: "#about" },
     { label: "Experience", href: "#experience" },
