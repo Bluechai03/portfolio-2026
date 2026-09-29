@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 
 const swatches = [
   { name: "accent", value: color.accent },
+  { name: "mocha", value: color.mocha },
   { name: "ink", value: color.ink },
   { name: "inkSoft", value: color.inkSoft },
   { name: "muted", value: color.muted },

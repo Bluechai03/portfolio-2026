@@ -1,20 +1,21 @@
 /**
- * Atelier tokens — single source for color, type, space, and radius.
+ * Atelier tokens (dark: brown, tan, mocha + blue) — single source for color, type, space, and radius.
  * CSS variables in globals.css stay the runtime source; this mirrors them for TS.
  */
 export const color = {
-  bg: "#eef3f8",
-  bgDeep: "#d7e3ef",
-  ink: "#12181f",
-  inkSoft: "#3a4550",
-  muted: "#5c6b78",
-  line: "color-mix(in srgb, #12181f 12%, transparent)",
-  accent: "#005b96",
-  accentDeep: "#004578",
-  bone: "#f5f8fb",
-  glowMist: "#b8cfe3",
-  danger: "#b42318",
-  success: "#2e7d32",
+  bg: "#1a120e",
+  bgDeep: "#120c09",
+  ink: "#faf3ea",
+  inkSoft: "#efe2d4",
+  muted: "#e8bf96",
+  line: "color-mix(in srgb, #faf3ea 16%, transparent)",
+  accent: "#6ea8dd",
+  accentDeep: "#9fc7ee",
+  mocha: "#a88b74",
+  bone: "#2b1e18",
+  glowMist: "#1f3a52",
+  danger: "#f08a7c",
+  success: "#7fc98c",
 } as const;
 
 export const space = {

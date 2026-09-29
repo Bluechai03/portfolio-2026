@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #eef3f8;
-  --bg-deep: #d7e3ef;
-  --ink: #12181f;
-  --ink-soft: #3a4550;
-  --muted: #5c6b78;
-  --line: color-mix(in srgb, var(--ink) 12%, transparent);
-  --accent: #005b96;
-  --accent-deep: #004578;
-  --bone: #f5f8fb;
-  --glow-mist: #b8cfe3;
-  --danger: #b42318;
-  --success: #2e7d32;
+  color-scheme: dark;
+  --bg: #1a120e;
+  --bg-deep: #120c09;
+  --ink: #faf3ea;
+  --ink-soft: #efe2d4;
+  --muted: #e8bf96;
+  --line: color-mix(in srgb, var(--ink) 16%, transparent);
+  --accent: #6ea8dd;
+  --accent-deep: #9fc7ee;
+  --mocha: #a88b74;
+  --bone: #2b1e18;
+  --glow-mist: #1f3a52;
+  --danger: #f08a7c;
+  --success: #7fc98c;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -38,6 +40,7 @@
   --color-line: var(--line);
   --color-accent: var(--accent);
   --color-accent-deep: var(--accent-deep);
+  --color-mocha: var(--mocha);
   --color-bone: var(--bone);
   --color-glow-mist: var(--glow-mist);
   --color-danger: var(--danger);
@@ -184,7 +187,7 @@ body {
   position: absolute;
   inset: -50%;
   pointer-events: none;
-  opacity: 0.35;
+  opacity: 0.12;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
   animation: grain 0.8s steps(2) infinite;
   mix-blend-mode: soft-light;

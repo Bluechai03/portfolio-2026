@@ -21,17 +21,17 @@ export function HeroVisual() {
         >
           <defs>
             <linearGradient id="plane" x1="80" y1="40" x2="640" y2="760" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#f5f8fb" stopOpacity="0.95" />
-              <stop offset="0.55" stopColor="#b8cfe3" stopOpacity="0.88" />
-              <stop offset="1" stopColor="#005B96" stopOpacity="0.35" />
+              <stop style={{ stopColor: "var(--bone)" }} stopOpacity="0.95" />
+              <stop offset="0.55" style={{ stopColor: "var(--glow-mist)" }} stopOpacity="0.88" />
+              <stop offset="1" style={{ stopColor: "var(--accent)" }} stopOpacity="0.35" />
             </linearGradient>
             <linearGradient id="frame" x1="160" y1="120" x2="560" y2="620" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#12181f" stopOpacity="0.08" />
-              <stop offset="1" stopColor="#005B96" stopOpacity="0.22" />
+              <stop style={{ stopColor: "var(--ink)" }} stopOpacity="0.08" />
+              <stop offset="1" style={{ stopColor: "var(--accent)" }} stopOpacity="0.22" />
             </linearGradient>
             <linearGradient id="accent" x1="220" y1="280" x2="480" y2="520" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#005B96" />
-              <stop offset="1" stopColor="#004578" />
+              <stop style={{ stopColor: "var(--accent)" }} />
+              <stop offset="1" style={{ stopColor: "color-mix(in srgb, var(--accent) 70%, var(--bg-deep))" }} />
             </linearGradient>
           </defs>
 
@@ -42,7 +42,7 @@ export function HeroVisual() {
           />
           <path
             d="M84 96C84 58 115 28 153 28H612C650 28 680 58 680 96V700C680 738 650 768 612 768H153C115 768 84 738 84 700V96Z"
-            stroke="#12181f"
+            style={{ stroke: "var(--ink)" }}
             strokeOpacity="0.12"
             strokeWidth="1.5"
           />
@@ -55,7 +55,7 @@ export function HeroVisual() {
               y1="72"
               x2={x}
               y2="724"
-              stroke="#12181f"
+              style={{ stroke: "var(--ink)" }}
               strokeOpacity="0.08"
             />
           ))}
@@ -66,7 +66,7 @@ export function HeroVisual() {
               y1={y}
               x2="648"
               y2={y}
-              stroke="#12181f"
+              style={{ stroke: "var(--ink)" }}
               strokeOpacity="0.07"
             />
           ))}
@@ -79,7 +79,7 @@ export function HeroVisual() {
             height="248"
             rx="4"
             fill="url(#frame)"
-            stroke="#12181f"
+            style={{ stroke: "var(--ink)" }}
             strokeOpacity="0.18"
           />
           <rect
@@ -88,7 +88,7 @@ export function HeroVisual() {
             width="180"
             height="16"
             rx="2"
-            fill="#12181f"
+            style={{ fill: "var(--ink)" }}
             fillOpacity="0.55"
           />
           <rect
@@ -97,7 +97,7 @@ export function HeroVisual() {
             width="280"
             height="8"
             rx="2"
-            fill="#12181f"
+            style={{ fill: "var(--ink)" }}
             fillOpacity="0.18"
           />
           <rect
@@ -106,7 +106,7 @@ export function HeroVisual() {
             width="240"
             height="8"
             rx="2"
-            fill="#12181f"
+            style={{ fill: "var(--ink)" }}
             fillOpacity="0.12"
           />
           <rect x="204" y="292" width="112" height="72" rx="3" fill="url(#accent)" opacity="0.85" />
@@ -116,9 +116,8 @@ export function HeroVisual() {
             width="120"
             height="72"
             rx="3"
-            fill="#f4f7f8"
+            style={{ fill: "var(--bg-deep)", stroke: "var(--ink)" }}
             fillOpacity="0.7"
-            stroke="#12181f"
             strokeOpacity="0.12"
           />
 
@@ -129,13 +128,13 @@ export function HeroVisual() {
             width="368"
             height="164"
             rx="4"
-            fill="#12181f"
+            style={{ fill: "var(--ink)" }}
             fillOpacity="0.88"
           />
           <text
             x="204"
             y="510"
-            fill="#f4f7f8"
+            style={{ fill: "var(--bg-deep)" }}
             fontFamily="ui-sans-serif, system-ui, sans-serif"
             fontSize="28"
             fontWeight="600"
@@ -146,7 +145,7 @@ export function HeroVisual() {
           <text
             x="268"
             y="506"
-            fill="#9fb8b4"
+            style={{ fill: "var(--mocha)" }}
             fontFamily="ui-sans-serif, system-ui, sans-serif"
             fontSize="13"
             letterSpacing="2"
@@ -156,20 +155,20 @@ export function HeroVisual() {
           <text
             x="204"
             y="552"
-            fill="#c5d4df"
+            style={{ fill: "var(--ink-soft)" }}
             fontFamily="ui-sans-serif, system-ui, sans-serif"
             fontSize="12"
           >
             Systems · data · reliability · scale
           </text>
-          <rect x="204" y="572" width="88" height="10" rx="2" fill="#005B96" />
+          <rect x="204" y="572" width="88" height="10" rx="2" style={{ fill: "var(--accent)" }} />
           <rect
             x="304"
             y="572"
             width="64"
             height="10"
             rx="2"
-            fill="#f4f7f8"
+            style={{ fill: "var(--bg-deep)" }}
             fillOpacity="0.25"
           />
         </svg>
