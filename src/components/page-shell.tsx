@@ -30,7 +30,7 @@ export function PageShell({
       <div aria-hidden="true" className="grain pointer-events-none absolute inset-0 opacity-40" />
 
       <header className="relative z-10 border-b border-line/70">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-6 md:px-10">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-6 md:px-10">
           <Link
             href="/"
             className="font-display text-sm font-semibold tracking-[0.08em] text-ink uppercase transition-colors hover:text-accent"
@@ -55,7 +55,7 @@ export function PageShell({
       </header>
 
       <main id="main" tabIndex={-1} className="relative z-10 focus:outline-none">
-        <section className="mx-auto w-full max-w-6xl px-6 pt-16 pb-12 md:px-10 md:pt-24 md:pb-16">
+        <section className="mx-auto w-full max-w-6xl px-4 pt-16 pb-12 md:px-10 md:pt-24 md:pb-16">
           <p className="animate-rise font-display text-sm font-semibold tracking-[0.2em] text-accent uppercase">
             {eyebrow}
           </p>
@@ -69,7 +69,7 @@ export function PageShell({
 
         <section
           aria-label={sectionAriaLabel}
-          className="mx-auto w-full max-w-6xl space-y-16 px-6 pb-24 md:space-y-20 md:px-10 md:pb-32"
+          className="mx-auto w-full max-w-6xl space-y-16 px-4 pb-24 md:space-y-20 md:px-10 md:pb-32"
         >
           {children}
         </section>
