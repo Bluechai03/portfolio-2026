@@ -72,7 +72,7 @@ Become a product engineer who ships weekly — systems, products, and open sourc
 - [x] Scaffold `/playground` with first interaction demos
 - [x] Link Projects entry to `/playground`
 - [x] Expand playground with confirm → toast demo (visual polish guided by Anna)
-- [ ] Ask one person for feedback on that ship (taste, clarity, usefulness)
+- [-] ~~Ask one person for feedback on that ship~~ — dropped 2026-09-29: the playground is no longer the lead project, so feedback there isn't the most useful ask
 
 ### Week 3 — Design system slice
 
@@ -84,6 +84,11 @@ Become a product engineer who ships weekly — systems, products, and open sourc
 - [x] "Experience" section shipped — wired into the page and nav (About → Experience → Work → Contact)
 - [x] Product Engineer repositioning: reordered Projects to lead with Interval Walking Timer + Design System, moved UI Playground last and reframed its copy, dropped "accessibility"/"motion" claims from hero + Experience + hero SVG copy, softened Consumer App's "accessibility" to "real reliability"
 - [ ] Add Storybook when the set is worth documenting component-by-component
+
+### Week 4 — Honest cleanup (2026-09-29)
+
+- [x] Standardize on pnpm: removed stray `package-lock.json`, added a `preinstall` guard that rejects npm/yarn, ignored other lockfiles
+- [x] Made the Interval Walking Timer row honest: status "Planned", copy says "starting soon", link points to the repo instead of an empty deploy
 
 ## AI Workflow (operating system)
 
@@ -100,4 +105,4 @@ Ask for feedback when something ships — not before. One question per ask, tied
 
 ## Next smallest ship
 
-Send the feedback ask for the confirm → toast demo (oldest open item, two minutes). The Product Engineer repositioning is done as of 2026-07-23.
+Interval Walking Timer v0, one evening: Start button, 3 min fast / 3 min slow × 5, a beep on each phase change, deployed to Vercel. No cadence detection, no styling pass, no settings. Once it works on a real walk, flip the portfolio row back to "In progress" and link the live app.
