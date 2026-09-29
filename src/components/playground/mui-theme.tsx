@@ -11,13 +11,13 @@ export const playgroundMuiTheme = createTheme({
       main: "#6EA8DD",
       dark: "#4F8BC2",
       light: "#9FC7EE",
-      contrastText: "#2B1E18",
+      contrastText: "#211712",
     },
     secondary: {
       main: "#DFA878",
       dark: "#B8895F",
       light: "#ECC39E",
-      contrastText: "#2B1E18",
+      contrastText: "#211712",
     },
     error: {
       main: "#F08A7C",
@@ -32,11 +32,11 @@ export const playgroundMuiTheme = createTheme({
       main: "#7FC98C",
       light: "#1C2A1E",
       dark: "#B6E3BD",
-      contrastText: "#1A120E",
+      contrastText: "#120B08",
     },
     background: {
-      default: "#1A120E",
-      paper: "#2B1E18",
+      default: "#120B08",
+      paper: "#211712",
     },
     text: {
       primary: "#FAF3EA",
@@ -86,10 +86,10 @@ export const playgroundMuiTheme = createTheme({
         },
         outlined: {
           borderColor: "rgba(250, 243, 234, 0.16)",
-          backgroundColor: "rgba(43, 30, 24, 0.7)",
+          backgroundColor: "rgba(33, 23, 18, 0.7)",
           "&:hover": {
             borderColor: "rgba(110, 168, 221, 0.4)",
-            backgroundColor: "#2B1E18",
+            backgroundColor: "#211712",
           },
         },
       },
