@@ -51,7 +51,7 @@ export const site = {
         "This site, where I share what I'm building.",
       status: "In progress",
       tone: "accent",
-      href: "#work",
+      href: "https://github.com/Bluechai03/portfolio-2026",
     },
     {
       year: "2026",
