@@ -11,7 +11,7 @@ export const site = {
   about: {
     headline: "From Figma to production",
     body: [
-      "I'm a frontend engineer based in Dubai. Most of my work sits between design and engineering: taking designs from Figma and building them into production interfaces.",
+      "I'm a frontend engineer based in Dubai. The part of the work I enjoy most sits between design and engineering: taking designs from Figma and building them into production interfaces.",
       "I like working closely with designers and backend teammates, handling the edge cases, and shipping in small steps.",
     ],
     focus: ["Portfolio", "Design System", "Interval Walking Timer", "Consumer App", "UI Playground", "Open Source"],
@@ -25,7 +25,7 @@ export const site = {
       {
         title: "Proof-of-concept ownership",
         description:
-          "Often given early proof-of-concept work: I explore the idea, build it end to end, then hand it off to the team.",
+          "Often given early proof-of-concept work, which I enjoy: I explore the idea, build it end to end, then hand it off to the team.",
       },
       {
         title: "Cross-functional delivery",
@@ -58,7 +58,7 @@ export const site = {
       year: "2026",
       title: "Interval Walking Timer",
       description:
-        "A timer for Japanese interval walking (3 min fast / 3 min slow). Starting soon; the plan is live cadence detection from phone motion.",
+        "A timer for Japanese interval walking (3 min fast / 3 min slow). Starting soon; I'm looking forward to trying live cadence detection from phone motion.",
       status: "Planned",
       tone: "neutral",
       href: "https://github.com/Bluechai03/interval-walking-timer",
@@ -85,7 +85,7 @@ export const site = {
       year: "2026",
       title: "UI Playground",
       description:
-        "Small interaction experiments, like press states, focus, and toasts, that I try out before using them in real work.",
+        "Small interaction details I care about, like press states, focus, and toasts, that I try out before using them in real work.",
       status: "In progress",
       tone: "accent",
       href: "/playground",
@@ -94,7 +94,7 @@ export const site = {
   projectsIntro:
     "What I'm working on this year. I'll update this list as things ship.",
   contactSupport:
-    "If you're hiring for a remote Product Engineer or Design Engineer role, I'd like to hear from you.",
+    "If you're hiring for a Product Engineer or Design Engineer role, remote or otherwise, I'd love to hear from you.",
   nav: [
     { label: "About", href: "#about" },
     { label: "Experience", href: "#experience" },
