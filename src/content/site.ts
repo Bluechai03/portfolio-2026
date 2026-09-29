@@ -57,8 +57,8 @@ export const site = {
       year: "2026",
       title: "Interval Walking Timer",
       description:
-        "A timer for Japanese interval walking (3 min fast / 3 min slow) that I use myself. Next: live cadence feedback, and later an Apple Watch app.",
-      status: "In progress",
+        "A timer for Japanese interval walking (3 min fast / 3 min slow). Starting soon; the plan is live cadence detection from phone motion.",
+      status: "Planned",
       tone: "accent",
       href: "https://interval-walking-timer.vercel.app",
     },
