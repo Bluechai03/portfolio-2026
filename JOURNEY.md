@@ -90,6 +90,9 @@ Become a product engineer who ships weekly — systems, products, and open sourc
 - [x] Standardize on pnpm: removed stray `package-lock.json`, added a `preinstall` guard that rejects npm/yarn, ignored other lockfiles
 - [x] Made the Interval Walking Timer row honest: status "Planned", copy says "starting soon", link points to the repo instead of an empty deploy
 - [x] New colour scheme — dark mode, brown + blue: dark brown surfaces and footer, cream text, tan labels, mocha graphic details, blue accent (`#6ea8dd`) and background glow. Started from a Color Hunt palette, then dropped the terracotta/rust and tuned for readability (less saturated background, brighter body text, softer hero grain). All text passes WCAG AA
+- [x] Copy tweaks: reworded the "Cross-functional delivery" bullet (no more vague "production component system") and added MUI to the hero stack line, since MUI is real day-job experience
+- [x] Floating back-to-top button — appears after scrolling, keyboard/screen-reader safe, respects reduced motion
+- [x] Keyboard + first-paint pass: fixed the `Button` focus ring (a Tailwind `outline-none` was silently cancelling it), visible focus on project rows and all links, "Skip to content" link, reduced-motion smooth scroll. Swapped the live SVG noise filter behind the hero grain for a pre-rendered tile — homepage first paint went from ~1.3s to ~0.2s with the same look. Lighthouse stays 100 on a11y / best practices / SEO; lesson: Lighthouse didn't catch the missing focus ring, only tabbing through did
 
 ## AI Workflow (operating system)
 
