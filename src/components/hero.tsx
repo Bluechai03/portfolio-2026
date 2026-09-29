@@ -29,7 +29,7 @@ export function Hero() {
         </p>
         <h1
           id="hero-brand"
-          className="animate-rise animate-rise-delay-1 font-display mt-4 max-w-[12ch] text-[clamp(3.25rem,12vw,7.5rem)] leading-[0.9] font-semibold tracking-[-0.04em] text-ink [text-shadow:0_0_28px_rgb(18_12_9_/_0.7)]"
+          className="animate-rise animate-rise-delay-1 font-display mt-4 max-w-[12ch] text-[clamp(3.25rem,12vw,7.5rem)] leading-[0.9] font-semibold tracking-[-0.04em] text-ink [text-shadow:0_0_28px_rgb(11_7_5_/_0.7)]"
         >
           {site.name}
         </h1>

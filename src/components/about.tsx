@@ -4,7 +4,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="border-t border-line bg-bone/40"
+      className="border-t border-line"
       aria-labelledby="about-heading"
     >
       <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_1.2fr] md:gap-16 md:px-10 md:py-28">
