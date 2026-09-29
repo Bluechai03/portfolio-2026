@@ -3,16 +3,16 @@
  * CSS variables in globals.css stay the runtime source; this mirrors them for TS.
  */
 export const color = {
-  bg: "#1a120e",
-  bgDeep: "#120c09",
+  bg: "#120b08",
+  bgDeep: "#0b0705",
   ink: "#faf3ea",
   inkSoft: "#efe2d4",
   muted: "#e8bf96",
-  line: "color-mix(in srgb, #faf3ea 16%, transparent)",
+  line: "color-mix(in srgb, #faf3ea 8%, transparent)",
   accent: "#6ea8dd",
   accentDeep: "#9fc7ee",
   mocha: "#a88b74",
-  bone: "#2b1e18",
+  bone: "#211712",
   glowMist: "#1f3a52",
   danger: "#f08a7c",
   success: "#7fc98c",
