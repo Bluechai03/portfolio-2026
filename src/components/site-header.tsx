@@ -4,7 +4,7 @@ import { MobileMenu } from "@/components/mobile-menu";
 export function SiteHeader() {
   return (
     <header className="absolute inset-x-0 top-0 z-30">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-6 md:px-10">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-6 md:px-10">
         <a
           href="#top"
           className="font-display text-sm font-semibold tracking-[0.08em] text-ink uppercase"
