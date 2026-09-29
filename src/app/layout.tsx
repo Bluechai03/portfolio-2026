@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ViewTransition } from "react";
 import { Figtree, Syne } from "next/font/google";
+import { BackToTop } from "@/components/back-to-top";
 import { site } from "@/content/site";
 import "./globals.css";
 
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${figtree.variable} ${syne.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-bg text-ink">
         <ViewTransition>{children}</ViewTransition>
+        <BackToTop />
       </body>
     </html>
   );
