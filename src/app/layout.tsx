@@ -30,6 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${figtree.variable} ${syne.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-bg text-ink">
+        <a href="#main" className="skip-link">
+          Skip to content
+        </a>
         <ViewTransition>{children}</ViewTransition>
         <BackToTop />
       </body>
