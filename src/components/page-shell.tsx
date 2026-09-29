@@ -54,7 +54,7 @@ export function PageShell({
         </div>
       </header>
 
-      <main className="relative z-10">
+      <main id="main" tabIndex={-1} className="relative z-10 focus:outline-none">
         <section className="mx-auto w-full max-w-6xl px-6 pt-16 pb-12 md:px-10 md:pt-24 md:pb-16">
           <p className="animate-rise font-display text-sm font-semibold tracking-[0.2em] text-accent uppercase">
             {eyebrow}

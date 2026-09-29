@@ -19,7 +19,7 @@ type ButtonAsAnchorProps = ButtonOwnProps &
 type ButtonProps = ButtonAsButtonProps | ButtonAsAnchorProps;
 
 const baseClass =
-  "inline-flex items-center justify-center font-semibold tracking-wide transition-colors duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] focus-visible:outline-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-55";
+  "inline-flex items-center justify-center font-semibold tracking-wide transition-colors duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-55";
 
 const variantClass: Record<ButtonVariant, string> = {
   primary: "bg-accent text-bone hover:bg-accent-deep disabled:bg-muted",

@@ -110,7 +110,7 @@ export function Projects() {
                 {isShipped ? (
                   <ProjectLink
                     href={project.href}
-                    className="project-row group grid gap-4 py-8 outline-none focus-visible:bg-bone/70 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:py-10"
+                    className="project-row group grid gap-4 py-8 focus-visible:bg-bone/70 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:py-10"
                   >
                     {rowContent}
                   </ProjectLink>
