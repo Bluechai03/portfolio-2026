@@ -89,6 +89,7 @@ Become a product engineer who ships weekly — systems, products, and open sourc
 
 - [x] Standardize on pnpm: removed stray `package-lock.json`, added a `preinstall` guard that rejects npm/yarn, ignored other lockfiles
 - [x] Made the Interval Walking Timer row honest: status "Planned", copy says "starting soon", link points to the repo instead of an empty deploy
+- [x] New colour scheme — dark mode, brown + blue: dark brown surfaces and footer, cream text, tan labels, mocha graphic details, blue accent (`#6ea8dd`) and background glow. Started from a Color Hunt palette, then dropped the terracotta/rust and tuned for readability (less saturated background, brighter body text, softer hero grain). All text passes WCAG AA
 
 ## AI Workflow (operating system)
 
