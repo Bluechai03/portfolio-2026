@@ -37,9 +37,9 @@ export const site = {
           "Shipped CMS-driven pages, a public developer docs portal, and internal back-office dashboards.",
       },
       {
-        title: "Live data UI",
+        title: "Real-time UI",
         description:
-          "Built sections and data grids for a live data product that update without a page reload.",
+          "Built WebSocket-driven sections and data grids that update without a page reload.",
       },
     ],
   },
