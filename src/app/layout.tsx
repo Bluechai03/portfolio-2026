@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ViewTransition } from "react";
 import { Figtree, Syne } from "next/font/google";
 import { site } from "@/content/site";
+import { pageMetadata } from "@/lib/metadata";
 import "./globals.css";
 
 const figtree = Figtree({
@@ -17,8 +18,12 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: `${site.name} — ${site.role}`,
-  description: `${site.tagline} Portfolio of ${site.name}, ${site.role}.`,
+  metadataBase: new URL(site.url),
+  ...pageMetadata({
+    title: `${site.name} — ${site.role}`,
+    description: `${site.tagline} Portfolio of ${site.name}, ${site.role}.`,
+    path: "/",
+  }),
 };
 
 export default function RootLayout({
