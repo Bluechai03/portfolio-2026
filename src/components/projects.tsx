@@ -54,7 +54,7 @@ function ArrowIcon() {
 export function Projects() {
   return (
     <section id="work" className="border-t border-line" aria-labelledby="work-heading">
-      <div className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10 md:py-28">
+      <div className="mx-auto w-full max-w-6xl px-4 py-20 md:px-10 md:py-28">
         <div className="mb-12 max-w-2xl md:mb-16">
           <p className="font-display text-sm font-semibold tracking-[0.2em] text-accent uppercase">
             Selected work
@@ -110,12 +110,12 @@ export function Projects() {
                 {isShipped ? (
                   <ProjectLink
                     href={project.href}
-                    className="project-row group grid gap-4 py-8 focus-visible:bg-bone/70 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:py-10"
+                    className="project-row group grid gap-4 py-8 focus-visible:bg-bone/70 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:px-4 md:py-10"
                   >
                     {rowContent}
                   </ProjectLink>
                 ) : (
-                  <div className="grid gap-4 py-8 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:py-10">
+                  <div className="grid gap-4 py-8 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:px-4 md:py-10">
                     {rowContent}
                   </div>
                 )}

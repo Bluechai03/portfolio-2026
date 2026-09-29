@@ -7,7 +7,7 @@ export function SiteFooter() {
       className="border-t border-line text-ink"
       aria-labelledby="contact-heading"
     >
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-16 md:flex-row md:items-end md:justify-between md:px-10 md:py-20">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 py-16 md:flex-row md:items-end md:justify-between md:px-10 md:py-20">
         <div>
           <p className="font-display text-sm font-semibold tracking-[0.2em] text-muted uppercase">
             Contact

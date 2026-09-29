@@ -255,6 +255,13 @@ body {
   padding-left: 0.5rem;
 }
 
+@media (min-width: 48rem) {
+  .project-row:hover,
+  .project-row:focus-within {
+    padding-left: 1.5rem;
+  }
+}
+
 @keyframes reveal-in {
   from {
     opacity: 0;
