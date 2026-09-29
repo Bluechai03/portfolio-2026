@@ -6,7 +6,7 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   tagline: "Shipping something small every week.",
   heroSupport:
-    "I build frontend products with React and Next.js: real-time UIs, dashboards, and CMS-driven pages that run in production.",
+    "I build frontend products with React, Next.js, and MUI: real-time UIs, dashboards, and CMS-driven pages that run in production.",
   about: {
     headline: "From Figma to production",
     body: [
@@ -34,7 +34,7 @@ export const site = {
       {
         title: "Cross-functional delivery",
         description:
-          "Worked with design, QA, backend, and DevOps to turn Figma designs into a production MUI component system and ship MVPs on deadline.",
+          "Took new products from Figma handoff to first release, working day to day with design, QA, backend, and DevOps.",
       },
       {
         title: "Content systems & internal tools",
