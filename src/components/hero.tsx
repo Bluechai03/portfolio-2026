@@ -23,7 +23,7 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 pt-28 md:px-10 md:pb-20 md:pt-32">
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-16 pt-28 md:px-10 md:pb-20 md:pt-32">
         <p className="animate-rise font-display text-sm font-semibold tracking-[0.22em] text-accent uppercase">
           {site.role}
         </p>
