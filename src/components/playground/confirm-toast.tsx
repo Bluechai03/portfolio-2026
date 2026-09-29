@@ -77,7 +77,7 @@ function ConfirmToastDemo() {
           transition: { timeout: 220 },
           backdrop: {
             sx: {
-              backgroundColor: "rgba(18, 24, 31, 0.38)",
+              backgroundColor: "rgba(18, 12, 9, 0.6)",
               backdropFilter: "blur(2px)",
             },
           },
@@ -116,8 +116,8 @@ function ConfirmToastDemo() {
             bgcolor: "success.light",
             color: "success.dark",
             border: "1px solid",
-            borderColor: "rgba(46, 125, 50, 0.22)",
-            boxShadow: "0 10px 28px rgba(18, 24, 31, 0.10)",
+            borderColor: "rgba(127, 201, 140, 0.25)",
+            boxShadow: "0 10px 28px rgba(0, 0, 0, 0.4)",
             "& .MuiAlert-icon": {
               color: "success.main",
             },

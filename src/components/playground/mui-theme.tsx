@@ -6,44 +6,44 @@ import type { ReactNode } from "react";
 /** Playground MUI theme — brand primary, full semantic palette. */
 export const playgroundMuiTheme = createTheme({
   palette: {
-    mode: "light",
+    mode: "dark",
     primary: {
-      main: "#005B96",
-      dark: "#004578",
-      light: "#337DB0",
-      contrastText: "#F5F8FB",
+      main: "#6EA8DD",
+      dark: "#4F8BC2",
+      light: "#9FC7EE",
+      contrastText: "#2B1E18",
     },
     secondary: {
-      main: "#5C6B78",
-      dark: "#3A4550",
-      light: "#8A96A1",
-      contrastText: "#F5F8FB",
+      main: "#DFA878",
+      dark: "#B8895F",
+      light: "#ECC39E",
+      contrastText: "#2B1E18",
     },
     error: {
-      main: "#D32F2F",
+      main: "#F08A7C",
     },
     warning: {
-      main: "#ED6C02",
+      main: "#F2B36B",
     },
     info: {
-      main: "#0288D1",
+      main: "#6EA8DD",
     },
     success: {
-      main: "#2E7D32",
-      light: "#E8F5E9",
-      dark: "#1B5E20",
-      contrastText: "#FFFFFF",
+      main: "#7FC98C",
+      light: "#1C2A1E",
+      dark: "#B6E3BD",
+      contrastText: "#1A120E",
     },
     background: {
-      default: "#EEF3F8",
-      paper: "#F5F8FB",
+      default: "#1A120E",
+      paper: "#2B1E18",
     },
     text: {
-      primary: "#12181F",
-      secondary: "#3A4550",
-      disabled: "#5C6B78",
+      primary: "#FAF3EA",
+      secondary: "#EFE2D4",
+      disabled: "#E8BF96",
     },
-    divider: "rgba(18, 24, 31, 0.12)",
+    divider: "rgba(250, 243, 234, 0.16)",
   },
   typography: {
     fontFamily: "var(--font-figtree), ui-sans-serif, sans-serif",
@@ -85,11 +85,11 @@ export const playgroundMuiTheme = createTheme({
           },
         },
         outlined: {
-          borderColor: "rgba(18, 24, 31, 0.16)",
-          backgroundColor: "rgba(245, 248, 251, 0.7)",
+          borderColor: "rgba(250, 243, 234, 0.16)",
+          backgroundColor: "rgba(43, 30, 24, 0.7)",
           "&:hover": {
-            borderColor: "rgba(0, 91, 150, 0.35)",
-            backgroundColor: "#F5F8FB",
+            borderColor: "rgba(110, 168, 221, 0.4)",
+            backgroundColor: "#2B1E18",
           },
         },
       },
@@ -102,9 +102,9 @@ export const playgroundMuiTheme = createTheme({
       styleOverrides: {
         paper: {
           borderRadius: 12,
-          border: "1px solid rgba(18, 24, 31, 0.10)",
+          border: "1px solid rgba(250, 243, 234, 0.10)",
           backgroundImage: "none",
-          boxShadow: "0 18px 48px rgba(18, 24, 31, 0.16)",
+          boxShadow: "0 18px 48px rgba(0, 0, 0, 0.5)",
         },
       },
     },
@@ -132,7 +132,7 @@ export const playgroundMuiTheme = createTheme({
     MuiDialogContentText: {
       styleOverrides: {
         root: {
-          color: "#3A4550",
+          color: "#EFE2D4",
           fontSize: "0.975rem",
         },
       },
