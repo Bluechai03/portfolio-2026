@@ -1,4 +1,5 @@
 import { site } from "@/content/site";
+import { MobileMenu } from "@/components/mobile-menu";
 
 export function SiteHeader() {
   return (
@@ -11,7 +12,7 @@ export function SiteHeader() {
           {site.name}
         </a>
         <div className="flex items-center gap-5 md:gap-8">
-          <nav aria-label="Primary" className="flex items-center gap-5 md:gap-8">
+          <nav aria-label="Primary" className="hidden items-center gap-5 sm:flex md:gap-8">
             {site.nav.map((item) => (
               <a
                 key={item.href}
@@ -43,6 +44,7 @@ export function SiteHeader() {
               GitHub
             </a>
           </nav>
+          <MobileMenu />
         </div>
       </div>
     </header>
