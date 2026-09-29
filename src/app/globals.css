@@ -2,16 +2,16 @@
 
 :root {
   color-scheme: dark;
-  --bg: #1a120e;
-  --bg-deep: #120c09;
+  --bg: #120b08;
+  --bg-deep: #0b0705;
   --ink: #faf3ea;
   --ink-soft: #efe2d4;
   --muted: #e8bf96;
-  --line: color-mix(in srgb, var(--ink) 16%, transparent);
+  --line: color-mix(in srgb, var(--ink) 8%, transparent);
   --accent: #6ea8dd;
   --accent-deep: #9fc7ee;
   --mocha: #a88b74;
-  --bone: #2b1e18;
+  --bone: #211712;
   --glow-mist: #1f3a52;
   --danger: #f08a7c;
   --success: #7fc98c;

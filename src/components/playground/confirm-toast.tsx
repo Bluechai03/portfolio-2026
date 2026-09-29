@@ -77,7 +77,7 @@ function ConfirmToastDemo() {
           transition: { timeout: 220 },
           backdrop: {
             sx: {
-              backgroundColor: "rgba(18, 12, 9, 0.6)",
+              backgroundColor: "rgba(11, 7, 5, 0.6)",
               backdropFilter: "blur(2px)",
             },
           },
