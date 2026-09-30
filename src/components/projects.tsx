@@ -74,51 +74,37 @@ export function Projects() {
           {site.projects.map((project, index) => {
             const isShipped = project.href !== "#";
 
-            const rowContent = (
-              <>
-                <span className="font-display text-sm tracking-wide text-muted tabular-nums">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <div>
-                  <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                    <h3 className="font-display text-2xl font-semibold tracking-tight text-ink md:text-3xl">
-                      {project.title}
-                    </h3>
-                    <span className="text-sm text-muted">{project.year}</span>
-                  </div>
-                  <p className="mt-3 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
-                    {project.description}
-                  </p>
-                  {isShipped ? (
-                    <span
-                      aria-hidden="true"
-                      className="mt-3 inline-flex items-center gap-1.5 font-display text-sm font-semibold tracking-[0.06em] text-accent uppercase opacity-100 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100 md:group-focus-visible:opacity-100"
-                    >
-                      View project
-                      <ArrowIcon />
-                    </span>
-                  ) : null}
-                </div>
-                <Badge tone={project.tone} className="md:justify-self-end">
-                  {project.status}
-                </Badge>
-              </>
-            );
-
             return (
               <li key={project.title}>
-                {isShipped ? (
-                  <ProjectLink
-                    href={project.href}
-                    className="project-row group grid gap-4 py-8 focus-visible:bg-bone/70 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:px-4 md:py-10"
-                  >
-                    {rowContent}
-                  </ProjectLink>
-                ) : (
-                  <div className="grid gap-4 py-8 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:px-4 md:py-10">
-                    {rowContent}
+                <div className="grid gap-4 py-8 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:px-4 md:py-10">
+                  <span className="font-display text-sm tracking-wide text-muted tabular-nums">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                      <h3 className="font-display text-2xl font-semibold tracking-tight text-ink md:text-3xl">
+                        {project.title}
+                      </h3>
+                      <span className="text-sm text-muted">{project.year}</span>
+                    </div>
+                    <p className="mt-3 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
+                      {project.description}
+                    </p>
+                    {isShipped ? (
+                      <ProjectLink
+                        href={project.href}
+                        className="group mt-3 inline-flex items-center gap-1.5 font-display text-sm font-semibold tracking-[0.06em] text-accent uppercase hover:underline focus-visible:underline"
+                      >
+                        View project
+                        <span className="sr-only">: {project.title}</span>
+                        <ArrowIcon />
+                      </ProjectLink>
+                    ) : null}
                   </div>
-                )}
+                  <Badge tone={project.tone} className="md:justify-self-end">
+                    {project.status}
+                  </Badge>
+                </div>
               </li>
             );
           })}

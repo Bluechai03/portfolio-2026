@@ -18,6 +18,7 @@ Become a product engineer who ships weekly — systems, products, and open sourc
 |---------|--------|-------|
 | Portfolio 2026 | In progress | Live: https://annamontero.dev/ |
 | Design System + Storybook | In progress | `/system` — tokens + Button, TextField, Badge slice |
+| Interval Walking Timer | In progress | Live: https://interval-walking-timer.vercel.app — repo: https://github.com/Bluechai03/interval-walking-timer |
 | Consumer App | Planned | Month 3 focus |
 | UI Playground | In progress | `/playground` — soft press, focus path, quiet reveal, confirm → toast |
 | Open Source | Planned | Month 4 focus |
@@ -96,6 +97,19 @@ Become a product engineer who ships weekly — systems, products, and open sourc
 - [x] Floating back-to-top button — appears after scrolling, keyboard/screen-reader safe, respects reduced motion
 - [x] Keyboard + first-paint pass: fixed the `Button` focus ring (a Tailwind `outline-none` was silently cancelling it), visible focus on project rows and all links, "Skip to content" link, reduced-motion smooth scroll. Swapped the live SVG noise filter behind the hero grain for a pre-rendered tile — homepage first paint went from ~1.3s to ~0.2s with the same look. Lighthouse stays 100 on a11y / best practices / SEO; lesson: Lighthouse didn't catch the missing focus ring, only tabbing through did
 
+### Week 4 — Interval Walking Timer v0 shipped (2026-09-30)
+
+- [x] Scaffolded the timer app and rendered the interval plan (3 min fast / 3 min slow × 5)
+- [x] Countdown timer with DaisyUI styling and a progress ring
+- [x] Phase-change cues and screen wake lock, so it works on a real walk with the screen off-limits to sleep
+- [x] Configurable plan settings persisted in localStorage
+- [x] Vitest suite covering timer, plan and cue logic
+- [x] Mobile-friendly and installable as a PWA
+- [x] Deployed to Vercel — https://interval-walking-timer.vercel.app
+- [x] Flipped the portfolio row from "Planned" to "In progress" and linked the live app instead of the repo
+- [ ] Take it on a real walk and note what breaks
+- [ ] DeviceMotion cadence detection (the skills-proof feature)
+
 ## AI Workflow (operating system)
 
 1. Plan with ChatGPT / Cursor  
@@ -111,4 +125,4 @@ Ask for feedback when something ships — not before. One question per ask, tied
 
 ## Next smallest ship
 
-Interval Walking Timer v0, one evening: Start button, 3 min fast / 3 min slow × 5, a beep on each phase change, deployed to Vercel. No cadence detection, no styling pass, no settings. Once it works on a real walk, flip the portfolio row back to "In progress" and link the live app.
+Take the Interval Walking Timer on a real walk and fix whatever breaks. Then start DeviceMotion cadence detection: a simple "are you walking fast enough" signal during the fast phase.

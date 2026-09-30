@@ -245,23 +245,6 @@ body {
   transform: scaleX(1);
 }
 
-.project-row {
-  transition: background-color 0.35s ease, padding-left 0.35s ease;
-}
-
-.project-row:hover,
-.project-row:focus-within {
-  background-color: color-mix(in srgb, var(--bone) 70%, transparent);
-  padding-left: 0.5rem;
-}
-
-@media (min-width: 48rem) {
-  .project-row:hover,
-  .project-row:focus-within {
-    padding-left: 1.5rem;
-  }
-}
-
 @keyframes reveal-in {
   from {
     opacity: 0;
