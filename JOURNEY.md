@@ -20,6 +20,7 @@ Become a product engineer who ships weekly — systems, products, and open sourc
 | Design System + Storybook | In progress | `/system` — tokens + Button, TextField, Badge slice |
 | Interval Walking Timer | In progress | Live: https://interval-walking-timer.vercel.app — repo: https://github.com/Bluechai03/interval-walking-timer |
 | Consumer App | Planned | Month 3 focus |
+| Class Booking App | Planned | Calendar booking for classes with notifications. Likely the Consumer App project. |
 | UI Playground | In progress | `/playground` — soft press, focus path, quiet reveal, confirm → toast |
 | Open Source | Planned | Month 4 focus |
 | AI Workflow | Ongoing | Plan → Figma → architecture → Cursor → review → polish |
@@ -31,6 +32,8 @@ Become a product engineer who ships weekly — systems, products, and open sourc
 - **Dance v0 plan:** Practice Timer — metronome + session log persisted via Supabase, with a live realtime update as the one feature that proves the real-time/API skill the portfolio currently can't show. ~10-session build order scoped in chat 2026-07-21; ask to re-surface it when ready to start.
 - **Interval Walking Timer:** inspired by japaneseintervalwalking.com (3min fast / 3min slow × 5). Web-only v0 for now — Apple Watch HR integration is parked as a future native v1 (needs a Mac, no web API can read Watch HR). Differentiator: DeviceMotion-based cadence detection ("are you actually walking fast enough") as the skills-proof feature, since HR isn't reachable from a browser. 10-session build order scoped in chat 2026-07-23. Build collaboration mode: hybrid — see [[mentor-mode-skill-projects]].
   - **Future feature idea (not in v0):** suggest songs matching the BPM of the phase you're supposed to be walking at (fast-phase BPM vs slow-phase BPM) — a music-tempo-matching feature, likely needs a music API (e.g. Spotify's audio-features/BPM data) once v0's core loop is solid.
+
+- **Class Booking App:** calendar booking for classes with notifications (idea 2026-09-30). Would be the Consumer App project. Proves backend, auth and persistence plus a notification pipeline. v0 scope: one studio, fixed weekly schedule, sign-in, book/cancel, email reminder before class. Later slices: waitlist, web push (iOS needs the installed PWA), admin view. Supabase (auth + Postgres + realtime) could be shared with the Practice Timer idea. Start after the Interval Walking Timer's next slice (real-walk test, cadence detection).
 
 ## Monthly Focus
 
