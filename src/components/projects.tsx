@@ -72,7 +72,8 @@ export function Projects() {
 
         <ul className="divide-y divide-line border-y border-line">
           {site.projects.map((project, index) => {
-            const isShipped = project.href !== "#";
+            const href: string = project.href;
+            const isShipped = href !== "#";
 
             return (
               <li key={project.title}>

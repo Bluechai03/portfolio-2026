@@ -28,6 +28,14 @@ export function SiteHeader() {
             className="hidden items-center gap-5 border-l border-line pl-5 sm:flex md:gap-6 md:pl-8"
           >
             <a
+              href={site.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline text-sm text-ink-soft transition-colors hover:text-ink"
+            >
+              Resume
+            </a>
+            <a
               href={site.linkedin}
               target="_blank"
               rel="noopener noreferrer"
