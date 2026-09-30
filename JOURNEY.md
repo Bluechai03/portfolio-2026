@@ -110,6 +110,13 @@ Become a product engineer who ships weekly — systems, products, and open sourc
 - [ ] Take it on a real walk and note what breaks
 - [ ] DeviceMotion cadence detection (the skills-proof feature)
 
+### Week 5: Application-ready (2026-10-01)
+
+- [x] Rebuilt the resume for the Product Engineer positioning: no phone number, no accessibility/craft claims, proof-of-concept ownership added, remote or on-site in Dubai. Source lives in `resume/resume.html`, the PDF in `public/resume.pdf`
+- [x] Resume link in the header, mobile menu and footer
+- [x] Removed the Consumer App placeholder row until there is something to show
+- [ ] Timer case study (problem, screenshots, two or three decisions)
+
 ## AI Workflow (operating system)
 
 1. Plan with ChatGPT / Cursor  

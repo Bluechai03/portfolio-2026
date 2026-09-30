@@ -32,6 +32,14 @@ export function SiteFooter() {
           </a>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 md:justify-end">
             <a
+              href={site.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline text-sm text-ink-soft hover:text-ink"
+            >
+              Resume
+            </a>
+            <a
               href={site.linkedin}
               target="_blank"
               rel="noopener noreferrer"
