@@ -1,6 +1,6 @@
-import { site } from "@/content/site";
-import { HeroVisual } from "@/components/hero-visual";
-import { Button } from "@/design-system";
+import { site } from '@/content/site'
+import { HeroVisual } from '@/components/hero-visual'
+import { Button } from '@/design-system'
 
 export function Hero() {
   return (
@@ -13,7 +13,7 @@ export function Hero() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(120% 80% at 12% 20%, var(--bone) 0%, transparent 55%), radial-gradient(90% 70% at 85% 30%, var(--glow-mist) 0%, transparent 50%), radial-gradient(70% 60% at 70% 85%, color-mix(in srgb, var(--accent) 14%, transparent) 0%, transparent 60%), linear-gradient(165deg, var(--bg) 0%, var(--bg-deep) 100%)",
+            'radial-gradient(120% 80% at 12% 20%, var(--bone) 0%, transparent 55%), radial-gradient(90% 70% at 85% 30%, var(--glow-mist) 0%, transparent 50%), radial-gradient(70% 60% at 70% 85%, color-mix(in srgb, var(--accent) 14%, transparent) 0%, transparent 60%), linear-gradient(165deg, var(--bg) 0%, var(--bg-deep) 100%)',
         }}
       />
       <HeroVisual />
@@ -29,7 +29,7 @@ export function Hero() {
         </p>
         <h1
           id="hero-brand"
-          className="animate-rise animate-rise-delay-1 font-display mt-4 max-w-[12ch] text-[clamp(3.25rem,12vw,7.5rem)] leading-[0.9] font-semibold tracking-[-0.04em] text-ink [text-shadow:0_0_28px_rgb(11_7_5_/_0.7)]"
+          className="animate-rise animate-rise-delay-1 font-display mt-4 max-w-[12ch] text-[clamp(3.25rem,12vw,6rem)] leading-[0.9] font-semibold tracking-[-0.04em] text-ink [text-shadow:0_0_28px_rgb(11_7_5_/_0.7)]"
         >
           {site.name}
         </h1>
@@ -47,5 +47,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }
