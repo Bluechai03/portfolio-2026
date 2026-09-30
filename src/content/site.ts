@@ -5,6 +5,7 @@ export const site = {
   email: "montero.katreena@gmail.com",
   github: "https://github.com/Bluechai03",
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
+  resume: "/resume.pdf",
   tagline: "Shipping something small every week.",
   heroSupport:
     "I build frontend products with React, Next.js, and MUI, from early proofs of concept to dashboards and CMS-driven pages in production.",
@@ -14,7 +15,7 @@ export const site = {
       "I'm a frontend engineer based in Dubai. The part of the work I enjoy most sits between design and engineering: taking designs from Figma and building them into production interfaces.",
       "I like working closely with designers and backend teammates, handling the edge cases, and shipping in small steps.",
     ],
-    focus: ["Portfolio", "Design System", "Interval Walking Timer", "Consumer App", "UI Playground", "Open Source"],
+    focus: ["Portfolio", "Design System", "Interval Walking Timer", "UI Playground", "Open Source"],
   },
   experience: {
     eyebrow: "Experience",
@@ -71,15 +72,6 @@ export const site = {
       status: "In progress",
       tone: "accent",
       href: "/system",
-    },
-    {
-      year: "2026",
-      title: "Consumer App",
-      description:
-        "A small product I'll build end to end, planned for later this year.",
-      status: "Planned",
-      tone: "neutral",
-      href: "#",
     },
     {
       year: "2026",
