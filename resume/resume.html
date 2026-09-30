@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Anna Montero - Resume</title>
+<style>
+  @page { size: A4; margin: 14mm 15mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", Arial, sans-serif; font-size: 9.6pt; line-height: 1.42; color: #1d1d1f; margin: 0; }
+  h1 { font-size: 24pt; margin: 0; letter-spacing: -0.01em; }
+  .title { font-size: 11.5pt; font-weight: 600; margin-top: 2px; color: #2f5f97; }
+  .contact { margin-top: 6px; color: #444; }
+  .contact span + span::before { content: "|"; margin: 0 7px; color: #aaa; }
+  .contact a { color: inherit; text-decoration: none; }
+  h2 { font-size: 9pt; letter-spacing: 0.16em; text-transform: uppercase; color: #2f5f97; border-bottom: 1px solid #d5d9df; padding-bottom: 3px; margin: 15px 0 7px; }
+  .job { margin-bottom: 9px; break-inside: avoid; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .job-head strong { font-size: 10.4pt; }
+  .dates { color: #555; white-space: nowrap; font-size: 9pt; }
+  ul { margin: 3px 0 0; padding-left: 16px; }
+  li { margin-bottom: 2px; }
+  p { margin: 0; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .edu { margin-bottom: 6px; }
+  .skills { display: grid; grid-template-columns: 92px 1fr; row-gap: 3px; }
+  .skills dt { font-weight: 600; margin: 0; }
+  .skills dd { margin: 0; }
+</style>
+</head>
+<body>
+  <h1>Anna Montero</h1>
+  <div class="title">Product Engineer &middot; Frontend Engineer</div>
+  <div class="contact">
+    <span>Dubai, UAE</span><span><a href="mailto:montero.katreena@gmail.com">montero.katreena@gmail.com</a></span><span><a href="https://annamontero.dev/">annamontero.dev</a></span><span><a href="https://www.linkedin.com/in/anna-montero-3a36301a4/">LinkedIn</a></span><span><a href="https://github.com/Bluechai03">GitHub</a></span>
+  </div>
+
+  <h2>Summary</h2>
+  <p>Product-minded frontend engineer with 4+ years building web UIs (including 3+ years in production React/Next.js/TypeScript). North star: build proof, not just knowledge. I own features end to end, including proof-of-concepts I'm trusted to explore, build, and hand off cleanly. Seeking Product Engineer or Design Engineer roles, remote or on-site in Dubai, that value good UX and real ownership.</p>
+
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-head"><strong>Frontend Developer, Splash Software</strong><span class="dates">Nov 2022 to Present &middot; 3+ years</span></div>
+    <ul>
+      <li>Shipped production React/Next.js/TypeScript UIs for consumer platforms and B2B sites: carousels, content and product grids, search, auth entry points, and multi-language responsive layouts.</li>
+      <li>Regularly trusted with early proof-of-concept work: explored the idea, built it end to end, then handed it off cleanly for the team to build on.</li>
+      <li>Built real-time interfaces on WebSockets for a live data product (live sections and data grids updating without a page reload) and interactive card systems.</li>
+      <li>Built CMS-driven pages with Strapi, a public developer docs portal (sidebar navigation, API tables), back-office dashboards with Chart.js, and an API-backed internal testing panel for engineering and QA.</li>
+      <li>Turned Figma designs into MUI component systems, working across design, QA, backend, and DevOps under the CTO to deliver MVPs on deadline. Deployed on Azure, Vercel, Cloudflare, and Netlify.</li>
+      <li>Built a Telegram music mini-app with Howler.js playback and responsive controls, deployed on Cloudflare Pages.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><strong>Web Developer, White Pearl Fashion LLC</strong><span class="dates">Dec 2021 to Oct 2022 &middot; 11 months</span></div>
+    <ul>
+      <li>Delivered e-commerce features that improved storefront usability and shopping flows.</li>
+      <li>Fixed UI defects and mobile responsiveness issues across the storefront.</li>
+      <li>Supported SEO and social campaigns to grow online presence.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><strong>Web Development Intern, HashGate Technology</strong><span class="dates">Sep 2021 to Dec 2021 &middot; 3 months</span></div>
+    <ul>
+      <li>Implemented Shopify storefront features and improved wishlist UX, including custom interaction details.</li>
+    </ul>
+  </div>
+
+  <div class="cols">
+    <div>
+      <h2>Education</h2>
+      <div class="edu"><strong>BSc Creative Computing</strong>, Bath Spa University<br>Oct 2021 &middot; Experience Design, Web Development, Responsive Web</div>
+      <div class="edu"><strong>Diploma in International Foundation</strong>, Future Education World<br>Jun 2019</div>
+    </div>
+    <div>
+      <h2>How I work</h2>
+      <ul>
+        <li>Proof over theory: ship weekly</li>
+        <li>Own features end to end</li>
+        <li>Figma to production, with design and backend teammates</li>
+        <li>Remote, or on-site in Dubai</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Frontend</dt><dd>React, Next.js, TypeScript, JavaScript, HTML, CSS/SCSS, Tailwind, MUI</dd>
+    <dt>Data &amp; APIs</dt><dd>Redux, React Context, REST APIs, WebSockets, Headless CMS (Strapi or similar)</dd>
+    <dt>Delivery</dt><dd>Figma to production, Responsive UI, Performance, Cross-functional delivery</dd>
+    <dt>Tooling</dt><dd>Git, GitHub, Azure, Vercel, Cloudflare Pages, Netlify</dd>
+  </dl>
+</body>
+</html>

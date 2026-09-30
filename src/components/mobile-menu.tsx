@@ -5,6 +5,7 @@ import { site } from "@/content/site";
 
 const links = [
   ...site.nav.map((item) => ({ ...item, external: false })),
+  { label: "Resume", href: site.resume, external: true },
   { label: "LinkedIn", href: site.linkedin, external: true },
   { label: "GitHub", href: site.github, external: true },
 ];
