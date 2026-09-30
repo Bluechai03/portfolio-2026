@@ -58,10 +58,10 @@ export const site = {
       year: "2026",
       title: "Interval Walking Timer",
       description:
-        "A timer for Japanese interval walking (3 min fast / 3 min slow). Starting soon; I'm looking forward to trying live cadence detection from phone motion.",
-      status: "Planned",
-      tone: "neutral",
-      href: "https://github.com/Bluechai03/interval-walking-timer",
+        "A timer for Japanese interval walking (3 min fast / 3 min slow). Audio cues on each phase change, screen wake lock, configurable plan, and installable as a PWA. Live cadence detection from phone motion is next.",
+      status: "In progress",
+      tone: "accent",
+      href: "https://interval-walking-timer.vercel.app",
     },
     {
       year: "2026",
