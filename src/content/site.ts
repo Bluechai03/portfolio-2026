@@ -1,6 +1,6 @@
 export const site = {
   name: "Anna Montero",
-  role: "Product Engineer",
+  role: "Frontend Product Engineer",
   url: "https://annamontero.dev",
   email: "montero.katreena@gmail.com",
   github: "https://github.com/Bluechai03",
