@@ -55,8 +55,7 @@ export const playgroundMuiTheme = createTheme({
     button: {
       fontFamily: "var(--font-syne), ui-sans-serif, sans-serif",
       fontWeight: 600,
-      letterSpacing: "0.06em",
-      textTransform: "uppercase",
+      letterSpacing: "0.01em",
     },
     body1: {
       lineHeight: 1.55,

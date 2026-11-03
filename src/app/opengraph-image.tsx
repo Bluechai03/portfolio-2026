@@ -21,7 +21,7 @@ export default function OpengraphImage() {
             "radial-gradient(90% 80% at 88% 18%, #1f3a52 0%, transparent 60%), radial-gradient(80% 70% at 8% 10%, #211712 0%, transparent 55%), linear-gradient(165deg, #120b08 0%, #0b0705 100%)",
         }}
       >
-        <div style={{ display: "flex", fontSize: 26, letterSpacing: 8, color: "#6ea8dd", textTransform: "uppercase" }}>
+        <div style={{ display: "flex", fontSize: 26, letterSpacing: 2, color: "#6ea8dd" }}>
           {site.role}
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>

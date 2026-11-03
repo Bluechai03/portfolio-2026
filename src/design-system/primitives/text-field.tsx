@@ -22,7 +22,7 @@ export function TextField({
 
   return (
     <div className={["flex w-full max-w-sm flex-col gap-2", className].join(" ")}>
-      <label htmlFor={id} className="font-display text-xs font-semibold tracking-[0.12em] text-ink uppercase">
+      <label htmlFor={id} className="font-display text-xs font-semibold tracking-[0.01em] text-ink">
         {label}
       </label>
       <input

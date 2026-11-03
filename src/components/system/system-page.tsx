@@ -25,7 +25,7 @@ function TokensSection() {
   return (
     <div className="space-y-8 rounded-md border border-line bg-bone/40 p-5 md:p-8">
       <div>
-        <p className="font-display text-xs font-semibold tracking-[0.14em] text-accent uppercase">
+        <p className="font-display text-xs font-semibold tracking-[0.01em] text-accent">
           Color
         </p>
         <ul className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
@@ -36,7 +36,7 @@ function TokensSection() {
                 style={{ background: swatch.value }}
                 aria-hidden
               />
-              <p className="mt-2 truncate font-display text-xs font-semibold tracking-[0.06em] text-ink uppercase">
+              <p className="mt-2 truncate font-display text-xs font-semibold tracking-[0.01em] text-ink">
                 {swatch.name}
               </p>
               <p className="truncate text-xs text-muted">{swatch.value}</p>
@@ -46,7 +46,7 @@ function TokensSection() {
       </div>
 
       <div>
-        <p className="font-display text-xs font-semibold tracking-[0.14em] text-accent uppercase">
+        <p className="font-display text-xs font-semibold tracking-[0.01em] text-accent">
           Space
         </p>
         <ul className="mt-4 space-y-2">
@@ -67,7 +67,7 @@ function TokensSection() {
       </div>
 
       <div>
-        <p className="font-display text-xs font-semibold tracking-[0.14em] text-accent uppercase">
+        <p className="font-display text-xs font-semibold tracking-[0.01em] text-accent">
           Type
         </p>
         <div className="mt-4 space-y-3">
