@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowUpIcon } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 
 export function BackToTop() {
@@ -29,15 +30,7 @@ export function BackToTop() {
         visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-3 opacity-0"
       }`}
     >
-      <svg aria-hidden="true" viewBox="0 0 20 20" fill="none" className="size-4">
-        <path
-          d="M10 16V4M4.5 9.5 10 4l5.5 5.5"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+      <ArrowUpIcon aria-hidden="true" size={16} />
     </button>
   );
 }

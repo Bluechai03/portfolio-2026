@@ -1,7 +1,12 @@
+import { ArrowUpRightIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { Badge } from "@/design-system";
+import { ProjectPreview } from "@/components/project-previews";
 import { site } from "@/content/site";
+
+function isInternal(href: string) {
+  return href.startsWith("/") && !href.startsWith("//");
+}
 
 function ProjectLink({
   href,
@@ -12,9 +17,7 @@ function ProjectLink({
   className: string;
   children: ReactNode;
 }) {
-  const isInternal = href.startsWith("/") && !href.startsWith("//");
-
-  if (isInternal) {
+  if (isInternal(href)) {
     return (
       <Link href={href} className={className}>
         {children}
@@ -29,39 +32,14 @@ function ProjectLink({
   );
 }
 
-function ArrowIcon() {
-  return (
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 16 16"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      className="transition-transform duration-200 md:group-hover:translate-x-1"
-    >
-      <path
-        d="M3 8H13M13 8L9 4M13 8L9 12"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
 export function Projects() {
   return (
     <section id="work" className="border-t border-line" aria-labelledby="work-heading">
       <div className="mx-auto w-full max-w-6xl px-4 py-20 md:px-10 md:py-28">
         <div className="mb-12 max-w-2xl md:mb-16">
-          <p className="font-display text-sm font-semibold tracking-[0.2em] text-accent uppercase">
-            Selected work
-          </p>
           <h2
             id="work-heading"
-            className="font-display mt-4 text-3xl leading-tight font-semibold tracking-tight text-ink md:text-4xl"
+            className="font-display text-3xl leading-tight font-semibold tracking-tight text-ink md:text-4xl"
           >
             What I&apos;m working on
           </h2>
@@ -71,40 +49,40 @@ export function Projects() {
         </div>
 
         <ul className="divide-y divide-line border-y border-line">
-          {site.projects.map((project, index) => {
-            const href: string = project.href;
-            const isShipped = href !== "#";
-
+          {site.projects.map((project) => {
             return (
               <li key={project.title}>
-                <div className="grid gap-4 py-8 md:grid-cols-[4rem_1fr_8rem] md:items-baseline md:gap-8 md:px-4 md:py-10">
-                  <span className="font-display text-sm tracking-wide text-muted tabular-nums">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+                <div className="grid gap-8 py-10 md:grid-cols-[minmax(0,1fr)_minmax(0,24rem)] md:items-center md:gap-16 md:py-14">
                   <div>
-                    <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                      <h3 className="font-display text-2xl font-semibold tracking-tight text-ink md:text-3xl">
-                        {project.title}
-                      </h3>
-                      <span className="text-sm text-muted">{project.year}</span>
-                    </div>
-                    <p className="mt-3 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
+                    <h3 className="font-display text-2xl font-semibold tracking-tight text-ink md:text-3xl">
+                      {project.title}
+                    </h3>
+                    <p className="mt-1 text-sm text-muted">{project.status}</p>
+                    <p className="mt-4 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
                       {project.description}
                     </p>
-                    {isShipped ? (
-                      <ProjectLink
-                        href={project.href}
-                        className="group mt-3 inline-flex items-center gap-1.5 font-display text-sm font-semibold tracking-[0.06em] text-accent uppercase hover:underline focus-visible:underline"
-                      >
-                        View project
-                        <span className="sr-only">: {project.title}</span>
-                        <ArrowIcon />
-                      </ProjectLink>
-                    ) : null}
+                    <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
+                      {project.links.map((link) => (
+                        <li key={link.href}>
+                          <ProjectLink
+                            href={link.href}
+                            className="inline-flex items-center gap-1.5 text-base font-semibold text-accent hover:text-accent-deep"
+                          >
+                            <span className="link-underline">{link.label}</span>
+                            <span className="sr-only">: {project.title}</span>
+                            {/* The icon marks links that leave this site. */}
+                            {isInternal(link.href) ? null : (
+                              <ArrowUpRightIcon size={16} aria-hidden="true" />
+                            )}
+                          </ProjectLink>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <Badge tone={project.tone} className="md:justify-self-end">
-                    {project.status}
-                  </Badge>
+                  <figure className="h-56 overflow-hidden rounded-lg border border-line bg-bg-deep">
+                    <figcaption className="sr-only">Live preview of {project.title}</figcaption>
+                    <ProjectPreview name={project.preview} />
+                  </figure>
                 </div>
               </li>
             );

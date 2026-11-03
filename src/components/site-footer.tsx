@@ -9,14 +9,11 @@ export function SiteFooter() {
     >
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 py-16 md:flex-row md:items-end md:justify-between md:px-10 md:py-20">
         <div>
-          <p className="font-display text-sm font-semibold tracking-[0.2em] text-muted uppercase">
-            Contact
-          </p>
           <h2
             id="contact-heading"
-            className="font-display mt-4 max-w-[14ch] text-3xl leading-tight font-semibold tracking-tight md:text-4xl"
+            className="font-display max-w-[14ch] text-3xl leading-tight font-semibold tracking-tight md:text-4xl"
           >
-            {site.tagline}
+            {site.contactHeading}
           </h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-ink-soft">
             {site.contactSupport}

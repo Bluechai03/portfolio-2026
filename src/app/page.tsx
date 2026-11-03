@@ -11,9 +11,9 @@ export default function Home() {
       <SiteHeader />
       <main id="main" tabIndex={-1} className="focus:outline-none">
         <Hero />
-        <About />
-        <Experience />
         <Projects />
+        <Experience />
+        <About />
       </main>
       <SiteFooter />
     </>

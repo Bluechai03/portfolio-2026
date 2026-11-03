@@ -1,5 +1,6 @@
 "use client";
 
+import { ListIcon, XIcon } from "@phosphor-icons/react";
 import { useEffect, useId, useRef, useState } from "react";
 import { site } from "@/content/site";
 
@@ -46,14 +47,9 @@ export function MobileMenu() {
         aria-controls={menuId}
         aria-label={open ? "Close menu" : "Open menu"}
         onClick={() => setOpen((value) => !value)}
-        className="-mr-2 flex size-10 flex-col items-center justify-center gap-[5px] text-ink"
+        className="-mr-2 flex size-10 items-center justify-center text-ink"
       >
-        <span
-          className={`h-px w-5 bg-current transition-transform duration-200 ${open ? "translate-y-[3px] rotate-45" : ""}`}
-        />
-        <span
-          className={`h-px w-5 bg-current transition-transform duration-200 ${open ? "-translate-y-[3px] -rotate-45" : ""}`}
-        />
+        {open ? <XIcon aria-hidden="true" size={22} /> : <ListIcon aria-hidden="true" size={22} />}
       </button>
       <nav
         id={menuId}

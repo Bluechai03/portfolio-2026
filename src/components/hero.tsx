@@ -1,43 +1,37 @@
 import { site } from '@/content/site'
-import { HeroVisual } from '@/components/hero-visual'
 import { Button } from '@/design-system'
 
 export function Hero() {
+  const [first, ...rest] = site.name.split(' ')
+
   return (
     <section
       id="top"
-      className="grain relative isolate flex min-h-svh flex-col justify-end overflow-hidden"
+      className="grain relative isolate overflow-hidden"
       aria-labelledby="hero-brand"
     >
       <div
         className="absolute inset-0 -z-10"
         style={{
           background:
-            'radial-gradient(120% 80% at 12% 20%, var(--bone) 0%, transparent 55%), radial-gradient(90% 70% at 85% 30%, var(--glow-mist) 0%, transparent 50%), radial-gradient(70% 60% at 70% 85%, color-mix(in srgb, var(--accent) 14%, transparent) 0%, transparent 60%), linear-gradient(165deg, var(--bg) 0%, var(--bg-deep) 100%)',
+            'radial-gradient(120% 80% at 12% 20%, var(--bone) 0%, transparent 55%), radial-gradient(90% 70% at 85% 30%, var(--glow-mist) 0%, transparent 50%), linear-gradient(165deg, var(--bg) 0%, var(--bg-deep) 100%)',
         }}
       />
-      <HeroVisual />
-      {/* Keep name readable where the craft visual overlaps */}
-      <div
-        className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[min(72%,42rem)] bg-gradient-to-r from-bg via-bg/88 to-transparent md:w-[min(58%,36rem)]"
-        aria-hidden="true"
-      />
 
-      <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-16 pt-28 md:px-10 md:pb-20 md:pt-32">
-        <p className="animate-rise font-display text-sm font-semibold tracking-[0.22em] text-accent uppercase">
-          {site.role}
-        </p>
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pt-36 pb-20 md:px-10 md:pt-48 md:pb-28">
+        {/* The name is the one big moment on the page; the second line steps in like a hanging indent. */}
         <h1
           id="hero-brand"
-          className="animate-rise animate-rise-delay-1 font-display mt-4 max-w-[12ch] text-[clamp(3.25rem,12vw,6rem)] leading-[0.9] font-semibold tracking-[-0.04em] text-ink [text-shadow:0_0_28px_rgb(11_7_5_/_0.7)]"
+          className="animate-rise font-display text-[clamp(3.75rem,15vw,10rem)] leading-[0.86] font-semibold tracking-[-0.05em] text-ink"
         >
-          {site.name}
+          <span className="block">{first}</span>
+          <span className="block pl-[0.6em]">{rest.join(' ')}</span>
         </h1>
-        <p className="animate-rise animate-rise-delay-2 mt-6 max-w-md text-lg leading-relaxed text-ink-soft md:text-xl">
-          {site.heroSupport}
+        <p className="animate-rise animate-rise-delay-1 mt-10 max-w-xl text-lg leading-relaxed text-ink-soft md:ml-[calc(0.6*clamp(3.75rem,15vw,10rem))] md:text-xl">
+          {site.role} in Dubai. {site.heroSupport}
         </p>
-        <div className="animate-rise animate-rise-delay-3 mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
-          <Button href="#work">View work</Button>
+        <div className="animate-rise animate-rise-delay-2 mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 md:ml-[calc(0.6*clamp(3.75rem,15vw,10rem))]">
+          <Button href="#work">See the work</Button>
           <a
             href="#contact"
             className="inline-flex h-12 items-center justify-center text-sm font-semibold tracking-wide text-ink"
