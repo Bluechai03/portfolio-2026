@@ -7,7 +7,7 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   resume: "/resume.pdf",
   heroSupport:
-    "Frontend product engineer in Dubai. I build React and Next.js interfaces that look right, feel easy to use, and hold up on a phone.",
+    "Frontend product engineer in Dubai. I build React, Next.js and TypeScript interfaces that look right, feel easy to use, and hold up on a phone.",
   about: {
     headline: "Interfaces people enjoy using",
     body: [
@@ -48,7 +48,7 @@ export const site = {
     {
       title: "Interval Walking Timer",
       description:
-        "I wanted a simple, reliable way to get healthier, and a routine I'd actually stick with. This timer runs Japanese interval walking (3 minutes fast, 3 minutes slow) with audio cues, so there's nothing to decide mid-walk. Installable as a PWA. Live cadence detection from phone motion is next.",
+        "I wanted a simple, reliable way to get healthier, and a routine I'd actually stick with. This timer runs Japanese interval walking (3 minutes fast, 3 minutes slow) with audio cues, so there's nothing to decide mid-walk. Written in TypeScript and covered by tests. Installable as a PWA. Live cadence detection from phone motion is next.",
       status: "Live",
       preview: "timer",
       links: [{ label: "Open the app", href: "https://interval-walking-timer.vercel.app" }],
