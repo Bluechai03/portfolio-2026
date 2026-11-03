@@ -7,7 +7,7 @@ export function SiteHeader() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-6 md:px-10">
         <a
           href="#top"
-          className="font-display text-sm font-semibold tracking-[0.08em] text-ink uppercase"
+          className="font-display text-base font-semibold tracking-tight text-ink"
         >
           {site.name}
         </a>

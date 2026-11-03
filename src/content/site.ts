@@ -15,10 +15,8 @@ export const site = {
       "I'm a frontend engineer based in Dubai. The part of the work I enjoy most sits between design and engineering: taking designs from Figma and building them into production interfaces.",
       "I like working closely with designers and backend teammates, handling the edge cases, and shipping in small steps.",
     ],
-    focus: ["Portfolio", "Design System", "Interval Walking Timer", "UI Playground", "Open Source"],
   },
   experience: {
-    eyebrow: "Experience",
     headline: "3+ years shipping production interfaces",
     intro:
       "Highlights from my current role.",
@@ -48,21 +46,14 @@ export const site = {
   projects: [
     {
       year: "2026",
-      title: "Portfolio 2026",
-      description:
-        "This site, where I share what I'm building.",
-      status: "In progress",
-      tone: "accent",
-      href: "https://github.com/Bluechai03/portfolio-2026",
-    },
-    {
-      year: "2026",
       title: "Interval Walking Timer",
       description:
         "A timer for Japanese interval walking (3 min fast / 3 min slow). Audio cues on each phase change, screen wake lock, configurable plan, and installable as a PWA. Live cadence detection from phone motion is next.",
       status: "In progress",
       tone: "accent",
       href: "https://interval-walking-timer.vercel.app",
+      preview: "timer",
+      linkLabel: "Open the app",
     },
     {
       year: "2026",
@@ -72,6 +63,8 @@ export const site = {
       status: "In progress",
       tone: "accent",
       href: "/system",
+      preview: "system",
+      linkLabel: "See the components",
     },
     {
       year: "2026",
@@ -81,16 +74,29 @@ export const site = {
       status: "In progress",
       tone: "accent",
       href: "/playground",
+      preview: "playground",
+      linkLabel: "Try the demos",
+    },
+    {
+      year: "2026",
+      title: "Portfolio 2026",
+      description:
+        "This site, where I share what I'm building.",
+      status: "In progress",
+      tone: "accent",
+      href: "https://github.com/Bluechai03/portfolio-2026",
+      preview: "portfolio",
+      linkLabel: "View the code on GitHub",
     },
   ],
   projectsIntro:
-    "What I'm working on this year. I'll update this list as things ship.",
+    "Each preview is the real thing, so try it. I'll update this list as things ship.",
   contactSupport:
     "If you're hiring for a Product Engineer or Design Engineer role, remote or otherwise, I'd love to hear from you.",
   nav: [
-    { label: "About", href: "#about" },
-    { label: "Experience", href: "#experience" },
     { label: "Work", href: "#work" },
+    { label: "Experience", href: "#experience" },
+    { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
   ],
 } as const;
