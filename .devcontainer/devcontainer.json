@@ -1,0 +1,15 @@
+{
+  // GitHub's default Codespaces image, named here because a config needs one.
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "codespaces": {
+      // Lets codespaces for this repo also push to the timer, so both
+      // projects can be worked on from one codespace.
+      "repositories": {
+        "Bluechai03/interval-walking-timer": {
+          "permissions": "write-all"
+        }
+      }
+    }
+  }
+}
