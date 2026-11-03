@@ -2,7 +2,6 @@
 
 import { Barlow_Condensed } from "next/font/google";
 import { useState } from "react";
-import { SoftPress } from "@/components/playground/soft-press";
 import { Badge, Button } from "@/design-system";
 
 // The timer preview uses the app's own countdown face.
@@ -52,32 +51,6 @@ function TimerPreview() {
   );
 }
 
-function SystemPreview() {
-  return (
-    <div className="flex h-full flex-col justify-center gap-5 p-5">
-      <div className="flex flex-wrap gap-3">
-        <Button size="sm">Save changes</Button>
-        <Button size="sm" variant="secondary">
-          Cancel
-        </Button>
-      </div>
-      <div className="flex flex-wrap gap-2">
-        <Badge>Draft</Badge>
-        <Badge tone="accent">In review</Badge>
-        <Badge tone="success">Published</Badge>
-      </div>
-    </div>
-  );
-}
-
-function PlaygroundPreview() {
-  return (
-    <div className="flex h-full flex-col justify-center p-5">
-      <SoftPress />
-    </div>
-  );
-}
-
 const SWATCHES = [
   { name: "Bone", value: "var(--bone)" },
   { name: "Mocha", value: "var(--mocha)" },
@@ -86,18 +59,16 @@ const SWATCHES = [
   { name: "Blue", value: "var(--accent)" },
 ];
 
+// The site's own tokens and components, from its design system.
 function PortfolioPreview() {
   return (
     <div className="flex h-full flex-col justify-between gap-4 p-5">
-      <div className="flex items-baseline gap-6">
-        <p>
-          <span className="font-display block text-5xl font-semibold tracking-tight">Aa</span>
-          <span className="text-sm text-ink-soft">Syne for headings</span>
-        </p>
-        <p>
-          <span className="block text-5xl">Aa</span>
-          <span className="text-sm text-ink-soft">Figtree for text</span>
-        </p>
+      <div className="flex flex-wrap items-center gap-3">
+        <Button size="sm">Save changes</Button>
+        <Button size="sm" variant="secondary">
+          Cancel
+        </Button>
+        <Badge tone="success">Live</Badge>
       </div>
       <ul className="grid grid-cols-5 gap-1.5">
         {SWATCHES.map((swatch) => (
@@ -116,8 +87,6 @@ function PortfolioPreview() {
 
 const PREVIEWS = {
   timer: TimerPreview,
-  system: SystemPreview,
-  playground: PlaygroundPreview,
   portfolio: PortfolioPreview,
 };
 

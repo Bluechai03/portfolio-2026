@@ -13,7 +13,7 @@ export function SiteFooter() {
             id="contact-heading"
             className="font-display max-w-[14ch] text-3xl leading-tight font-semibold tracking-tight md:text-4xl"
           >
-            {site.tagline}
+            {site.contactHeading}
           </h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-ink-soft">
             {site.contactSupport}

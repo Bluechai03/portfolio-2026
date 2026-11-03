@@ -28,7 +28,6 @@ export default function OpengraphImage() {
           <div style={{ display: "flex", fontSize: 128, fontWeight: 600, letterSpacing: -4, lineHeight: 1 }}>
             {site.name}
           </div>
-          <div style={{ display: "flex", fontSize: 36, color: "#efe2d4" }}>{site.tagline}</div>
         </div>
         <div style={{ display: "flex", fontSize: 26, color: "#e8bf96" }}>{site.url.replace("https://", "")}</div>
       </div>

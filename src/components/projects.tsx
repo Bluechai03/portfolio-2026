@@ -61,17 +61,23 @@ export function Projects() {
                     <p className="mt-4 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
                       {project.description}
                     </p>
-                    <ProjectLink
-                      href={project.href}
-                      className="mt-5 inline-flex items-center gap-1.5 text-base font-semibold text-accent hover:text-accent-deep"
-                    >
-                      <span className="link-underline">{project.linkLabel}</span>
-                      <span className="sr-only">: {project.title}</span>
-                      {/* The icon marks links that leave this site. */}
-                      {isInternal(project.href) ? null : (
-                        <ArrowUpRightIcon size={16} aria-hidden="true" />
-                      )}
-                    </ProjectLink>
+                    <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
+                      {project.links.map((link) => (
+                        <li key={link.href}>
+                          <ProjectLink
+                            href={link.href}
+                            className="inline-flex items-center gap-1.5 text-base font-semibold text-accent hover:text-accent-deep"
+                          >
+                            <span className="link-underline">{link.label}</span>
+                            <span className="sr-only">: {project.title}</span>
+                            {/* The icon marks links that leave this site. */}
+                            {isInternal(link.href) ? null : (
+                              <ArrowUpRightIcon size={16} aria-hidden="true" />
+                            )}
+                          </ProjectLink>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                   <figure className="h-56 overflow-hidden rounded-lg border border-line bg-bg-deep">
                     <figcaption className="sr-only">Live preview of {project.title}</figcaption>

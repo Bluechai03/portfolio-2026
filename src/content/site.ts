@@ -6,7 +6,6 @@ export const site = {
   github: "https://github.com/Bluechai03",
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   resume: "/resume.pdf",
-  tagline: "Shipping something small every week.",
   heroSupport:
     "I build frontend products with React, Next.js, and MUI, from early proofs of concept to dashboards and CMS-driven pages in production.",
   about: {
@@ -45,54 +44,30 @@ export const site = {
   },
   projects: [
     {
-      year: "2026",
       title: "Interval Walking Timer",
       description:
         "A timer for Japanese interval walking (3 min fast / 3 min slow). Audio cues on each phase change, screen wake lock, configurable plan, and installable as a PWA. Live cadence detection from phone motion is next.",
-      status: "In progress",
-      tone: "accent",
-      href: "https://interval-walking-timer.vercel.app",
+      status: "Live",
       preview: "timer",
-      linkLabel: "Open the app",
+      links: [{ label: "Open the app", href: "https://interval-walking-timer.vercel.app" }],
     },
     {
-      year: "2026",
-      title: "Design System + Storybook",
-      description:
-        "Shared tokens and a first set of components: Button, TextField, and Badge. Storybook once there's enough to document.",
-      status: "In progress",
-      tone: "accent",
-      href: "/system",
-      preview: "system",
-      linkLabel: "See the components",
-    },
-    {
-      year: "2026",
-      title: "UI Playground",
-      description:
-        "Small interaction details I care about, like press states, focus, and toasts, that I try out before using them in real work.",
-      status: "In progress",
-      tone: "accent",
-      href: "/playground",
-      preview: "playground",
-      linkLabel: "Try the demos",
-    },
-    {
-      year: "2026",
       title: "Portfolio 2026",
       description:
-        "This site, where I share what I'm building.",
-      status: "In progress",
-      tone: "accent",
-      href: "https://github.com/Bluechai03/portfolio-2026",
+        "This site, built on its own small design system: shared tokens plus Button, TextField, and Badge components.",
+      status: "Live",
       preview: "portfolio",
-      linkLabel: "View the code on GitHub",
+      links: [
+        { label: "View the code on GitHub", href: "https://github.com/Bluechai03/portfolio-2026" },
+        { label: "See the design system", href: "/system" },
+      ],
     },
   ],
   projectsIntro:
     "Each preview is the real thing, so try it. I'll update this list as things ship.",
+  contactHeading: "Hiring a product engineer?",
   contactSupport:
-    "If you're hiring for a Product Engineer or Design Engineer role, remote or otherwise, I'd love to hear from you.",
+    "If you're hiring for a Product Engineer role, remote or otherwise, I'd love to hear from you.",
   nav: [
     { label: "Work", href: "#work" },
     { label: "Experience", href: "#experience" },

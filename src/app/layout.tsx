@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   ...pageMetadata({
     title: `${site.name} — ${site.role}`,
-    description: `${site.tagline} Portfolio of ${site.name}, ${site.role}.`,
+    description: `Portfolio of ${site.name}, ${site.role}.`,
     path: "/",
   }),
 };
