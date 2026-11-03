@@ -46,8 +46,7 @@ export const type = {
   label: {
     size: "0.75rem",
     weight: 600,
-    tracking: "0.14em",
-    transform: "uppercase" as const,
+    tracking: "0.01em",
   },
   body: {
     size: "1rem",

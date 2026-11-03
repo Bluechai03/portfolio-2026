@@ -33,7 +33,7 @@ export function PageShell({
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-6 md:px-10">
           <Link
             href="/"
-            className="font-display text-sm font-semibold tracking-[0.08em] text-ink uppercase transition-colors hover:text-accent"
+            className="font-display text-sm font-semibold tracking-[0.01em] text-ink transition-colors hover:text-accent"
           >
             {site.name}
           </Link>
@@ -56,7 +56,7 @@ export function PageShell({
 
       <main id="main" tabIndex={-1} className="relative z-10 focus:outline-none">
         <section className="mx-auto w-full max-w-6xl px-4 pt-16 pb-12 md:px-10 md:pt-24 md:pb-16">
-          <p className="animate-rise font-display text-sm font-semibold tracking-[0.2em] text-accent uppercase">
+          <p className="animate-rise font-display text-sm font-semibold tracking-[0.01em] text-accent">
             {eyebrow}
           </p>
           <h1 className="animate-rise animate-rise-delay-1 font-display mt-4 max-w-3xl text-4xl leading-[1.05] font-semibold tracking-tight text-ink md:text-6xl">

@@ -30,7 +30,7 @@ export function QuietReveal() {
         aria-expanded={open}
         aria-controls={listId}
         onClick={toggle}
-        className="font-display text-sm font-semibold tracking-[0.08em] text-accent uppercase transition-colors hover:text-accent-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+        className="font-display text-sm font-semibold tracking-[0.01em] text-accent transition-colors hover:text-accent-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
       >
         {open ? "Hide stack" : "Reveal stack"}
       </button>
