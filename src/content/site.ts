@@ -48,7 +48,7 @@ export const site = {
     {
       title: "Interval Walking Timer",
       description:
-        "I wanted a simple, reliable way to get healthier, and a routine I'd actually stick with. This timer runs Japanese interval walking (3 minutes fast, 3 minutes slow) with audio cues, so there's nothing to decide mid-walk. Written in TypeScript and covered by tests. Installable as a PWA. Live cadence detection from phone motion is next.",
+        "I wanted a simple, reliable way to get healthier, and a routine I'd actually stick with. This timer runs Japanese interval walking (3 minutes fast, 3 minutes slow) with audio cues, so there's nothing to decide mid-walk. Written in TypeScript and covered by tests. Installable as a PWA.",
       status: "Live",
       preview: "timer",
       links: [{ label: "Open the app", href: "https://interval-walking-timer.vercel.app" }],
@@ -67,9 +67,9 @@ export const site = {
   ],
   projectsIntro:
     "Each preview is the real thing. I'll update this list as things ship. Give it a try!",
-  contactHeading: "Let's talk about the role.",
+  contactHeading: "Let's talk!",
   contactSupport:
-    "If you're hiring a product engineer, remote or in Dubai, I'd love to hear what you're building.",
+    "I'm open to frontend and product engineering roles, remote or here in Dubai. If any of my work caught your eye, I'd be really happy to chat!",
   nav: [
     { label: "Work", href: "#work" },
     { label: "Experience", href: "#experience" },
