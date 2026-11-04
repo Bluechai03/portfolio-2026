@@ -1,6 +1,6 @@
 # Anna Montero — Portfolio 2026
 
-Product engineer portfolio. North star: **build proof, not just knowledge.**
+Portfolio of a product-minded frontend developer. North star: **build proof, not just knowledge.**
 
 ## Stack
 
