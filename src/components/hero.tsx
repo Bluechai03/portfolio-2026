@@ -28,7 +28,7 @@ export function Hero() {
           <span className="block pl-[0.6em]">{rest.join(' ')}</span>
         </h1>
         <p className="animate-rise animate-rise-delay-1 mt-10 max-w-xl text-lg leading-relaxed text-ink-soft md:ml-[calc(0.6*clamp(3.75rem,15vw,10rem))] md:text-xl">
-          {site.role} in Dubai. {site.heroSupport}
+          {site.heroSupport}
         </p>
         <div className="animate-rise animate-rise-delay-2 mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 md:ml-[calc(0.6*clamp(3.75rem,15vw,10rem))]">
           <Button href="#work">See the work</Button>
