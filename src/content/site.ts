@@ -20,7 +20,7 @@ export const site = {
   experience: {
     headline: "4+ years shipping production interfaces",
     intro:
-      "What I owned in my current role.",
+      "Frontend Developer since 2022. Here is what I owned in my current role.",
     items: [
       {
         title: "Early proofs of concept",
