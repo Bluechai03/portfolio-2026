@@ -18,7 +18,7 @@ export const site = {
     ],
   },
   experience: {
-    headline: "3+ years shipping production interfaces",
+    headline: "4+ years shipping production interfaces",
     intro:
       "What I owned in my current role.",
     items: [
