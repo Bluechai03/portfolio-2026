@@ -28,3 +28,7 @@ A project being built that isn't publicly usable yet.
 **Live**:
 A project anyone can use publicly, even if work on it continues.
 _Avoid_: Shipped, Released, Done
+
+**Sentence case**:
+The style for every heading, eyebrow, badge and label on the site: capitalise the first word and proper nouns only.
+_Avoid_: Title Case, ALL CAPS
