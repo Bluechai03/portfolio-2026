@@ -27,10 +27,6 @@ pnpm start
 
 **Live:** [annamontero.dev](https://annamontero.dev/)
 
-## Journey
-
-Track vision, weekly done list, and monthly focus in [`JOURNEY.md`](./JOURNEY.md).
-
 ## Structure
 
 ```
