@@ -67,9 +67,9 @@ export const site = {
   ],
   projectsIntro:
     "Each preview is the real thing. I'll update this list as things ship. Give it a try!",
-  contactHeading: "Let's talk about the role.",
+  contactHeading: "Let's talk!",
   contactSupport:
-    "If your team is looking for a frontend or product engineer, remote or here in Dubai, I'd be so glad to hear from you. Tell me a little about the people and what you're working on, and let's see if we're a good fit.",
+    "I'm open to frontend and product engineering roles, remote or here in Dubai. If any of my work caught your eye, I'd be really happy to chat!",
   nav: [
     { label: "Work", href: "#work" },
     { label: "Experience", href: "#experience" },
