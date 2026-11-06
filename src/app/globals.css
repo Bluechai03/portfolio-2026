@@ -254,3 +254,48 @@ body {
 .confirm-toast {
   animation: confirm-toast-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+
+/* Scroll reveals and the lighter touches below only animate opacity and
+   transform, so they stay off the main thread. Browsers without scroll-driven
+   animations show everything at once, and nothing starts hidden. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .scroll-reveal {
+      animation: reveal-in linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 45%;
+    }
+  }
+
+  .project-preview {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .group:hover .project-preview,
+  .group:focus-within .project-preview {
+    transform: translateY(-0.25rem);
+  }
+
+  .menu-panel {
+    opacity: 1;
+    transform: none;
+    transform-origin: top right;
+    transition:
+      opacity 0.2s ease-out,
+      transform 0.2s ease-out,
+      display 0.2s allow-discrete;
+  }
+
+  .menu-panel[hidden] {
+    display: none;
+    opacity: 0;
+    transform: translateY(-0.5rem) scale(0.98);
+  }
+
+  @starting-style {
+    .menu-panel {
+      opacity: 0;
+      transform: translateY(-0.5rem) scale(0.98);
+    }
+  }
+}

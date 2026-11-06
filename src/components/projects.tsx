@@ -36,7 +36,7 @@ export function Projects() {
   return (
     <section id="work" className="border-t border-line" aria-labelledby="work-heading">
       <div className="mx-auto w-full max-w-6xl px-4 py-20 md:px-10 md:py-28">
-        <div className="mb-12 max-w-2xl md:mb-16">
+        <div className="scroll-reveal mb-12 max-w-2xl md:mb-16">
           <h2
             id="work-heading"
             className="font-display text-3xl leading-tight font-semibold tracking-tight text-ink md:text-4xl"
@@ -51,7 +51,7 @@ export function Projects() {
         <ul className="divide-y divide-line border-y border-line">
           {site.projects.map((project) => {
             return (
-              <li key={project.title}>
+              <li key={project.title} className="scroll-reveal group">
                 <div className="grid gap-8 py-10 md:grid-cols-[minmax(0,1fr)_minmax(0,24rem)] md:items-center md:gap-16 md:py-14">
                   <div>
                     <h3 className="font-display text-2xl font-semibold tracking-tight text-ink md:text-3xl">
@@ -79,7 +79,7 @@ export function Projects() {
                       ))}
                     </ul>
                   </div>
-                  <figure className="h-56 overflow-hidden rounded-lg border border-line bg-bg-deep">
+                  <figure className="project-preview h-56 overflow-hidden rounded-lg border border-line bg-bg-deep">
                     <figcaption className="sr-only">Live preview of {project.title}</figcaption>
                     <ProjectPreview name={project.preview} />
                   </figure>
