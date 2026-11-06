@@ -7,10 +7,10 @@ import { Badge, Button } from "@/design-system";
 // The timer preview uses the app's own countdown face.
 const barlowCondensed = Barlow_Condensed({ subsets: ["latin"], weight: ["600"] });
 
-// Colors from the interval walking timer's phase fields.
+// Colors from Strut, the interval walking timer's phase fields.
 const TIMER_PHASES = {
-  fast: { label: "Walk fast", time: "2:47", background: "#ffc21a", color: "#14213d" },
-  slow: { label: "Walk slow", time: "1:12", background: "#123f3a", color: "#e6f2ee" },
+  fast: { label: "Walk fast", time: "2:47", background: "#8a3028", color: "#e8edf3" },
+  slow: { label: "Walk slow", time: "1:12", background: "#1d3557", color: "#e8edf3" },
 } as const;
 
 function TimerPreview() {
