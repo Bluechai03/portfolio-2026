@@ -55,7 +55,7 @@ export function MobileMenu() {
         id={menuId}
         aria-label="Primary"
         hidden={!open}
-        className="absolute top-full right-0 mt-2 min-w-44 rounded-lg border border-line bg-bg-deep/95 p-2 shadow-lg backdrop-blur"
+        className="menu-panel absolute top-full right-0 mt-2 min-w-44 rounded-lg border border-line bg-bg-deep/95 p-2 shadow-lg backdrop-blur"
       >
         <ul className="flex flex-col">
           {links.map((item) => (

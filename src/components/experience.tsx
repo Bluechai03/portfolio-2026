@@ -8,7 +8,7 @@ export function Experience() {
       aria-labelledby="experience-heading"
     >
       <div className="mx-auto grid w-full max-w-6xl gap-12 px-4 py-20 md:grid-cols-[1fr_1.2fr] md:gap-16 md:px-10 md:py-28">
-        <div>
+        <div className="scroll-reveal">
           <h2
             id="experience-heading"
             className="font-display max-w-[16ch] text-3xl leading-tight font-semibold tracking-tight text-ink md:text-4xl"
@@ -20,7 +20,7 @@ export function Experience() {
           </p>
         </div>
 
-        <ul className="space-y-8 border-t border-line pt-8">
+        <ul className="scroll-reveal space-y-8 border-t border-line pt-8">
           {site.experience.items.map((item) => (
             <li key={item.title}>
               <h3 className="font-display text-lg font-semibold tracking-tight text-ink">
