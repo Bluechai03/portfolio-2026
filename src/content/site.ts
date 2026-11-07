@@ -51,7 +51,7 @@ export const site = {
         "I wanted a simple, reliable way to get healthier, and a routine I'd actually stick with. Strut is a timer for Japanese interval walking (3 minutes fast, 3 minutes slow) with audio cues, so there's nothing to decide mid-walk. Written in TypeScript and covered by tests. Installable as a PWA.",
       status: "Live",
       preview: "timer",
-      links: [{ label: "Open the app", href: "https://interval-walking-timer.vercel.app" }],
+      links: [{ label: "Open the app", href: "https://strutwalk.vercel.app" }],
     },
     {
       title: "Portfolio 2026",
