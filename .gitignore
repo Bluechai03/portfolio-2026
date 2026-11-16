@@ -49,3 +49,7 @@ yarn.lock
 
 # private working notes
 /docs/research/
+
+# Playwright output
+/test-results/
+/playwright-report/
