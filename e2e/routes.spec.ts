@@ -1,6 +1,6 @@
 import { expect, test } from "./fixtures";
 
-for (const path of ["/system", "/playground"]) {
+for (const path of ["/system", "/playground", "/work/interval-walking-timer"]) {
   test(`${path} loads`, async ({ page }) => {
     const response = await page.goto(path);
     expect(response?.status()).toBe(200);
