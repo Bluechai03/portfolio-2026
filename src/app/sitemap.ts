@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { site } from "@/content/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ["", "/system", "/playground"].map((path) => ({
+  return ["", "/work/interval-walking-timer", "/system", "/playground"].map((path) => ({
     url: `${site.url}${path}`,
     changeFrequency: "weekly",
     priority: path === "" ? 1 : 0.6,

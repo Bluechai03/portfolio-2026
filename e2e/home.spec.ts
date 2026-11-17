@@ -31,6 +31,18 @@ test.describe("home page", () => {
     }
   });
 
+  test("opens the Strut case study from the work section", async ({ page }) => {
+    await page.getByRole("link", { name: "Read the case study" }).click();
+    await expect(page).toHaveURL(/\/work\/interval-walking-timer$/);
+    await expect(page.getByRole("heading", { level: 1, name: "Strut" })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 2, name: "Walk with friends" })).toBeVisible();
+    // Every screenshot actually loaded.
+    for (const image of await page.getByRole("img").all()) {
+      await expect(image).toHaveJSProperty("complete", true);
+      expect(await image.evaluate((el) => (el as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+    }
+  });
+
   test("opens and closes the mobile menu", async ({ page, isMobile }) => {
     test.skip(!isMobile, "The menu only exists at phone width.");
     const button = page.getByRole("button", { name: "Open menu" });
