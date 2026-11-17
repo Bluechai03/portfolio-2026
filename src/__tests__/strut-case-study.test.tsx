@@ -65,6 +65,12 @@ describe("Strut case study content", () => {
     expect(study.asOf).toMatch(/\d{4}/);
   });
 
+  it("lists the shared start under what works, not under what is still to do", () => {
+    const rooms = study.sections.find((section) => section.id === "rooms");
+    expect(rooms && "works" in rooms && rooms.works.some((line) => line.includes("same beat"))).toBe(true);
+    expect(rooms && "next" in rooms && rooms.next.some((line) => line.includes("same beat"))).toBe(false);
+  });
+
   it("says plainly that it was built with an AI assistant", () => {
     const how = study.sections.find((section) => section.id === "how");
     expect(JSON.stringify(how)).toContain("Claude Code");
@@ -97,5 +103,7 @@ describe("StrutCaseStudy page", () => {
     expect(within(rooms).getByText("In progress")).toBeTruthy();
     expect(within(rooms).getByText("Working now")).toBeTruthy();
     expect(within(rooms).getByText("Still to do")).toBeTruthy();
+    // Nothing is waiting in review any more.
+    expect(within(rooms).queryByText("Built and in review")).toBeNull();
   });
 });
