@@ -99,7 +99,6 @@ export function StrutCaseStudy() {
                 </ul>
               )}
               {"works" in section && <Bullets title="Working now" items={section.works} />}
-              {"inReview" in section && <Bullets title="Built and in review" items={section.inReview} />}
               {"next" in section && <Bullets title="Still to do" items={section.next} />}
               {"links" in section && <LinkRow links={section.links} />}
             </div>

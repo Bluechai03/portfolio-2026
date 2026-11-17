@@ -10,7 +10,7 @@ export const strutCaseStudy = {
     "A phone-first timer for Japanese interval walking, and what a few real walks taught me while I built it.",
   // Numbers on this page are true on this date. Update them when they change.
   asOf: "17 November 2026",
-  testCount: 133,
+  testCount: 163,
   sections: [
     {
       id: "why",
@@ -66,14 +66,12 @@ export const strutCaseStudy = {
       id: "rooms",
       title: "Walk with friends",
       status: "In progress",
-      intro: "Shared walks are being built in seven small steps, and each one is tested on my phone before the next.",
+      intro: "Shared walks are being built in seven small steps, and each one is tested on my phone before the next. Three are done.",
       works: [
         "Start a room and share a four-letter code, a link or a QR code.",
         "A friend joins with just a name, and everyone sees who is here, live.",
         "Up to 8 people in a room. The host can remove someone, and a removed person can't rejoin.",
         "Only people in a room can read it, and every change goes through checked database functions.",
-      ],
-      inReview: [
         "The host starts everyone's countdown on the same beat. Each phone measures how far its clock is from the server's, so they stay together whatever their clocks say. A friend who joins late lands in the right place.",
       ],
       next: [
@@ -89,7 +87,7 @@ export const strutCaseStudy = {
       items: [
         {
           title: "Automated tests on every change",
-          body: "133 unit and component tests run on every pull request, as of the date above. They cover the timer maths, the room screens and the clock correction.",
+          body: "163 unit and component tests run on every pull request, as of the date above. They cover the timer maths, the room screens and the clock correction.",
         },
         {
           title: "Database rules tested in SQL",
