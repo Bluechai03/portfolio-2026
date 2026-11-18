@@ -65,6 +65,14 @@ describe("Strut case study content", () => {
     expect(study.asOf).toMatch(/\d{4}/);
   });
 
+  it("shows the two-browser test as evidence, with the wrong-clock detail and a link", () => {
+    const checks = study.sections.find((section) => section.id === "checks");
+    const item = checks && "items" in checks ? checks.items.find((entry) => entry.title === "Several browsers in one room") : undefined;
+    expect(item?.body).toContain("45 seconds fast");
+    expect(item?.body).toContain("30 seconds slow");
+    expect(item && "links" in item && item.links.some((link) => link.href.includes("interval-walking-timer/pull/40"))).toBe(true);
+  });
+
   it("no longer promises step counting or a step goal", () => {
     const text = JSON.stringify(study.sections.find((section) => section.id === "rooms"));
     expect(text).not.toMatch(/step total|step goal/i);

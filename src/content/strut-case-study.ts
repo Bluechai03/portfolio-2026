@@ -81,7 +81,7 @@ export const strutCaseStudy = {
       ],
       next: [
         "Testing the Apple Watch workout inside a room with friends.",
-        "A button to delete my data.",
+        "Checking the delete my data button on the live site.",
       ],
       links: [{ label: "Follow the work", href: `${REPO}/pulls?q=is%3Apr` }],
     },
@@ -97,6 +97,11 @@ export const strutCaseStudy = {
           title: "Database rules tested in SQL",
           body: "Who can read and change which room is tested in SQL against Supabase's own Postgres image, in CI. Each rule's test was checked by weakening the rule on purpose to see that the test failed, because a test that can't fail doesn't prove anything.",
           links: [{ label: "The SQL tests", href: `${REPO}/tree/main/supabase/tests` }],
+        },
+        {
+          title: "Several browsers in one room",
+          body: "A browser test opens several browsers in one room, against a real local database, not a fake one. One friend's phone clock is set 45 seconds fast and another's 30 seconds slow, and the test checks that the countdowns and the phases still line up and that a late joiner lands in the right place. It also checks that the host can remove a guest, that two people can't share a name, and that closing a room asks first. I broke the clock correction on purpose to see the test fail, and it did.",
+          links: [{ label: "The browser test", href: `${REPO}/pull/40` }],
         },
         {
           title: "A review before I trust it",
