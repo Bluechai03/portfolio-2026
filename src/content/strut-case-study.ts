@@ -9,8 +9,9 @@ export const strutCaseStudy = {
   support:
     "A phone-first timer for Japanese interval walking, and what a few real walks taught me while I built it.",
   // Numbers on this page are true on this date. Update them when they change.
-  asOf: "17 November 2026",
-  testCount: 220,
+  asOf: "18 November 2026",
+  // Rounded down on purpose, so it stays true as tests are added or removed.
+  testCountLabel: "Over 200",
   sections: [
     {
       id: "why",
@@ -25,8 +26,12 @@ export const strutCaseStudy = {
       title: "Decisions I made",
       items: [
         {
-          title: "I dropped live step counting",
-          body: "A web page can't read your Watch's Health data, and a phone's motion sensor only works with the screen on and is rough in a pocket. A native app would fix that, but it needs Apple's paid developer account, and I wanted this to stay free to run. So I left it out.",
+          title: "I dropped step counting and the step goal",
+          body: "A web page can't read your Watch's Health data. I built a test of a Shortcut that could, and the Shortcut needed about eleven hand-built actions for every person who uses Strut, which is too much to ask of anyone, so I took it out again. A phone's motion sensor only works with the screen on and is rough in a pocket, and a real Watch app needs Apple's paid developer account. Watches and iPhones already show your steps, so Strut leaves them out.",
+          links: [
+            { label: "The test", href: `${REPO}/pull/36` },
+            { label: "Taking it out", href: `${REPO}/pull/37` },
+          ],
         },
         {
           title: "I built rooms inside Strut instead of a separate booking app",
@@ -66,7 +71,7 @@ export const strutCaseStudy = {
       id: "rooms",
       title: "Walk with friends",
       status: "In progress",
-      intro: "Shared walks are being built in seven small steps, and each one is tested on my phone before the next. Three are done.",
+      intro: "Shared walks are being built in small steps, and each one is tested on my phone before the next. Four are done.",
       works: [
         "Start a room and share a four-letter code, a link or a QR code.",
         "A friend joins with just a name, and everyone sees who is here, live.",
@@ -75,9 +80,8 @@ export const strutCaseStudy = {
         "The host starts everyone's countdown on the same beat. Each phone measures how far its clock is from the server's, so they stay together whatever their clocks say. A friend who joins late lands in the right place.",
       ],
       next: [
-        "Starting the Apple Watch workout inside a room.",
-        "Step totals and an optional step goal.",
-        "A list of my past walks, and a button to delete my data.",
+        "Testing the Apple Watch workout inside a room with friends.",
+        "A button to delete my data.",
       ],
       links: [{ label: "Follow the work", href: `${REPO}/pulls?q=is%3Apr` }],
     },
@@ -87,7 +91,7 @@ export const strutCaseStudy = {
       items: [
         {
           title: "Automated tests on every change",
-          body: "220 unit and component tests run on every pull request, as of the date above. They cover the timer maths, the room screens and the clock correction.",
+          body: "Over 200 unit and component tests run on every pull request, as of the date above. They cover the timer maths, the room screens and the clock correction.",
         },
         {
           title: "Database rules tested in SQL",

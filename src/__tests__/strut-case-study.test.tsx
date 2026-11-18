@@ -61,8 +61,15 @@ describe("Strut case study content", () => {
   it("states the test count it was written with, and dates it", () => {
     const checks = study.sections.find((section) => section.id === "checks");
     const text = JSON.stringify(checks);
-    expect(text).toContain(`${study.testCount} unit and component tests`);
+    expect(text).toContain(`${study.testCountLabel} unit and component tests`);
     expect(study.asOf).toMatch(/\d{4}/);
+  });
+
+  it("no longer promises step counting or a step goal", () => {
+    const text = JSON.stringify(study.sections.find((section) => section.id === "rooms"));
+    expect(text).not.toMatch(/step total|step goal/i);
+    const decisions = JSON.stringify(study.sections.find((section) => section.id === "decisions"));
+    expect(decisions).toContain("I dropped step counting and the step goal");
   });
 
   it("lists the shared start under what works, not under what is still to do", () => {
