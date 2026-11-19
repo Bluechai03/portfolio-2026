@@ -46,7 +46,7 @@ export const strutCaseStudy = {
         },
         {
           title: "I built crews inside Strut instead of a separate booking app",
-          body: "I'd planned a class booking app to show a real backend and live updates. Walking with friends covers the same ground on something I already use, so I dropped the booking app and wrote the reasons down in a decision record.",
+          body: "A crew is a group of friends who walk the same plan on the same clock. I'd planned a class booking app to show a real backend and live updates. Walking with friends covers the same ground on something I already use, so I dropped the booking app and wrote the reasons down in a decision record.",
           links: [
             { label: "The decision record", href: `${REPO}/blob/main/docs/adr/0001-rooms-inside-strut-on-supabase.md` },
           ],
@@ -61,8 +61,8 @@ export const strutCaseStudy = {
           links: [{ label: "The change", href: `${REPO}/pull/42` }],
         },
         {
-          title: "A fitness-app look, and one colour scheme instead of four",
-          body: "I redesigned Strut to feel like a fitness app: a very dark blue page, a red field for fast and a deep blue one for slow, a huge countdown, a taller effort strip and one typeface. I first built four colour schemes to choose from, then took the picker out, because one good look is enough and every extra scheme needed its own checking. A test reads the real stylesheet and checks that the writing on each colour is readable, and it caught a pair of colours that were too close in brightness for people who see colour differently.",
+          title: "A fitness-app look, and one color scheme instead of four",
+          body: "I redesigned Strut to feel like a fitness app: a very dark blue page, a red field for fast and a deep blue one for slow, a huge countdown, a taller effort strip and one typeface. I first built four color schemes to choose from, then took the picker out, because one good look is enough and every extra scheme needed its own checking. A test reads the real stylesheet and checks that the writing on each color is readable, and it caught a pair of colors that were too close in brightness for people who see color differently.",
           links: [{ label: "The redesign", href: `${REPO}/pull/43` }],
         },
       ],
