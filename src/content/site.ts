@@ -48,7 +48,7 @@ export const site = {
     {
       title: "Strut",
       description:
-        "I wanted a simple, reliable way to get healthier, and a routine I'd actually stick with. Strut is a timer for Japanese interval walking (3 minutes fast, 3 minutes slow) with audio cues, so there's nothing to decide mid-walk. It also works for the elliptical and bike, installs on your Home Screen, and friends can start a crew and walk in step. Written in TypeScript, with a Supabase backend and over 200 tests.",
+        "I wanted a simple, reliable way to get healthier, and a routine I'd actually stick with. Strut is a timer for Japanese interval walking (3 minutes fast, 3 minutes slow) with audio cues, so there's nothing to decide mid-walk. It also works for the elliptical and bike, installs on your Home Screen, and friends can start a crew and walk in step. Written in TypeScript, with a Supabase backend and automated tests.",
       status: "Live",
       preview: "timer",
       links: [

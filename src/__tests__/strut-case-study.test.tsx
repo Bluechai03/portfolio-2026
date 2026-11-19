@@ -58,10 +58,11 @@ describe("Strut case study content", () => {
     expect(rooms && "status" in rooms && statuses.includes(rooms.status)).toBe(true);
   });
 
-  it("states the test count it was written with, and dates it", () => {
+  it("describes its automated tests by what they cover, not by how many there are, and dates the page", () => {
     const checks = study.sections.find((section) => section.id === "checks");
     const text = JSON.stringify(checks);
-    expect(text).toContain(`${study.testCountLabel} unit and component tests`);
+    expect(text).toContain("Automated tests run on every pull request");
+    expect(text).not.toMatch(/\d+ (unit|component|tests)/i);
     expect(study.asOf).toMatch(/\d{4}/);
   });
 
