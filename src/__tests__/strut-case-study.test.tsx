@@ -80,6 +80,20 @@ describe("Strut case study content", () => {
     expect(decisions).toContain("I dropped step counting and the step goal");
   });
 
+  it("explains Activity and the redesign as decisions, each with a link to its change", () => {
+    const decisions = study.sections.find((section) => section.id === "decisions");
+    const items = decisions && "items" in decisions ? decisions.items : [];
+    const activity = items.find((item) => item.title.startsWith("Elliptical and Bike"));
+    const look = items.find((item) => item.title.startsWith("A fitness-app look"));
+    expect(activity && "links" in activity && JSON.stringify(activity.links)).toContain("/pull/42");
+    expect(look && "links" in look && JSON.stringify(look.links)).toContain("/pull/43");
+    expect(activity?.body).toContain("Run");
+  });
+
+  it("makes no accessibility claim until the app has been tried with a screen reader", () => {
+    expect(JSON.stringify(study.sections)).not.toMatch(/accessib|screen reader|VoiceOver|WCAG/i);
+  });
+
   it("lists the shared start under what works, not under what is still to do", () => {
     const rooms = study.sections.find((section) => section.id === "rooms");
     expect(rooms && "works" in rooms && rooms.works.some((line) => line.includes("same beat"))).toBe(true);

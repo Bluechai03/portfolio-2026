@@ -9,7 +9,7 @@ export const strutCaseStudy = {
   support:
     "A phone-first timer for Japanese interval walking, and what a few real walks taught me while I built it.",
   // Numbers on this page are true on this date. Update them when they change.
-  asOf: "18 November 2026",
+  asOf: "19 November 2026",
   // Rounded down on purpose, so it stays true as tests are added or removed.
   testCountLabel: "Over 200",
   sections: [
@@ -54,6 +54,16 @@ export const strutCaseStudy = {
         {
           title: "Guests only, no sign-in, for now",
           body: "I built Google sign-in first, then took it out again. It put a login in front of someone joining a walk, it can fail from an installed iPhone app, and it meant building and testing a second kind of member. A friend now types four letters and a name and they're in. Signing in can come back later as an optional way to keep your walks.",
+        },
+        {
+          title: "Elliptical and Bike are only different words",
+          body: "I'd started using Strut on the elliptical, so I added an Activity setting: Walk, Elliptical or Bike. It changes the words (Push harder and Ease off, or Pedal hard and Pedal easy) on screen, in the spoken cues, in the lock-screen reminders and in a room, and nothing else, so the timer still does one job. I tried Run as well and took it out again, because it didn't make sense for an interval timer.",
+          links: [{ label: "The change", href: `${REPO}/pull/42` }],
+        },
+        {
+          title: "A fitness-app look, and one colour scheme instead of four",
+          body: "I redesigned Strut to feel like a fitness app: a very dark blue page, a red field for fast and a deep blue one for slow, a huge countdown, a taller effort strip and one typeface. I first built four colour schemes to choose from, then took the picker out, because one good look is enough and every extra scheme needed its own checking. A test reads the real stylesheet and checks that the writing on each colour is readable, and it caught a pair of colours that were too close in brightness for people who see colour differently.",
+          links: [{ label: "The redesign", href: `${REPO}/pull/43` }],
         },
       ],
     },
@@ -126,9 +136,9 @@ export const strutCaseStudy = {
     },
   ],
   screenshots: [
-    { src: "/work/strut/strut-start.png", alt: "Strut's start screen on a phone, with a big Start button and the plan below.", caption: "Ready to start" },
-    { src: "/work/strut/strut-get-ready.png", alt: "Strut counting down 3 before the walk begins.", caption: "A short countdown" },
-    { src: "/work/strut/strut-walking.png", alt: "Strut in the first fast phase, showing 2:59 left, a target heart rate and the trail of rounds.", caption: "Walking fast" },
+    { src: "/work/strut/strut-start.png", alt: "Strut's start screen on a phone: a red Walk fast field with a huge 3:00, a heart rate target, the effort strip of five rounds and a Start button.", caption: "Ready to start" },
+    { src: "/work/strut/strut-get-ready.png", alt: "Strut counting down before the walk begins, with a huge number, the plan in one line and a Cancel button.", caption: "A short countdown" },
+    { src: "/work/strut/strut-walking.png", alt: "Strut in the first fast phase, showing 2:57 left, a target heart rate, the effort strip and Pause and Done buttons.", caption: "Walking fast" },
   ],
   screenshotNote: "Screenshots of the app in a phone-sized browser window, not photos of my phone.",
   links: [
