@@ -1,4 +1,5 @@
 import { site } from '@/content/site'
+import { strutCaseStudy } from '@/content/strut-case-study'
 import { Button } from '@/design-system'
 
 export function Hero() {
@@ -39,6 +40,13 @@ export function Hero() {
             <span className="link-underline">Get in touch</span>
           </a>
         </div>
+        <p className="animate-rise animate-rise-delay-2 mt-6 text-sm text-ink-soft md:ml-[calc(0.6*clamp(3.75rem,15vw,10rem))]">
+          <a href={strutCaseStudy.path} className="font-semibold text-ink">
+            <span className="link-underline">Read the Strut case study</span>
+          </a>
+          <span aria-hidden="true"> · </span>
+          Live
+        </p>
       </div>
     </section>
   )

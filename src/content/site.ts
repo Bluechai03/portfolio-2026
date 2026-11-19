@@ -1,13 +1,13 @@
 export const site = {
   name: "Anna Montero",
-  role: "Product-minded Frontend Developer",
+  role: "Product-minded frontend developer, open to product engineer roles",
   url: "https://annamontero.dev",
   email: "montero.katreena@gmail.com",
   github: "https://github.com/Bluechai03",
   linkedin: "https://www.linkedin.com/in/anna-montero-3a36301a4/",
   resume: "/resume.pdf",
   heroSupport:
-    "Product-minded frontend developer in Dubai. I build React, Next.js and TypeScript interfaces that look right, feel easy to use, and hold up on a phone.",
+    "Product-minded frontend developer in Dubai, 4+ years, open to product engineer roles. I build React, Next.js and TypeScript interfaces that look right and feel easy on a phone.",
   about: {
     headline: "Interfaces people enjoy using",
     body: [

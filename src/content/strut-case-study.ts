@@ -22,6 +22,17 @@ export const strutCaseStudy = {
       ],
     },
     {
+      id: "how",
+      title: "How I built it",
+      paragraphs: [
+        "I built Strut with Claude Code, an AI coding assistant. I decide what to build and what to leave out, and the rules are written down in a glossary and decision records. Claude Code writes much of the code. I test every step on my own devices and check it with automated tests.",
+      ],
+      links: [
+        { label: "The glossary", href: `${REPO}/blob/main/GLOSSARY.md` },
+        { label: "Setting up the Watch workout", href: `${REPO}/blob/main/docs/watch-workout.md` },
+      ],
+    },
+    {
       id: "decisions",
       title: "Decisions I made",
       items: [
@@ -111,17 +122,6 @@ export const strutCaseStudy = {
           title: "My own phone and Watch",
           body: "Every step has been tried on my own iPhone, and the Watch workout with my Apple Watch. That is how the three problems above were found.",
         },
-      ],
-    },
-    {
-      id: "how",
-      title: "How I built it",
-      paragraphs: [
-        "I built Strut with Claude Code, an AI coding assistant. I decide what to build and what to leave out, and the rules are written down in a glossary and decision records. Claude Code writes much of the code. I test every step on my own devices and check it with automated tests.",
-      ],
-      links: [
-        { label: "The glossary", href: `${REPO}/blob/main/GLOSSARY.md` },
-        { label: "Setting up the Watch workout", href: `${REPO}/blob/main/docs/watch-workout.md` },
       ],
     },
   ],
