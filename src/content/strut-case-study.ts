@@ -59,9 +59,14 @@ export const strutCaseStudy = {
           links: [{ label: "The change", href: `${REPO}/pull/42` }],
         },
         {
-          title: "A fitness-app look, and one color scheme instead of four",
-          body: "I redesigned Strut to feel like a fitness app: a very dark blue page, a red field for fast and a deep blue one for slow, a huge countdown, a taller effort strip and one typeface. I first built four color schemes to choose from, then took the picker out, because one good look is enough and every extra scheme needed its own checking. A test reads the real stylesheet and checks that the writing on each color is readable, and it caught a pair of colors that were too close in brightness for people who see color differently.",
-          links: [{ label: "The redesign", href: `${REPO}/pull/43` }],
+          title: "A fitness-app look, and fewer things on the first screen",
+          body: "I redesigned Strut to feel like a fitness app. The ready screen is a calm near-black card that shows the plan as three big numbers, and the red and blue effort colors begin only when the work does. There are three tabs along the bottom (Workout, Crew and Settings), and the walk ends on a green summary with a Go again button. I made two choices I then took back. I built four color schemes to choose from and removed them, because one good look is enough. And my first ready screen put steppers, presets and tiles all on show, which was too much, so the plan now sits behind one Change plan button. I also checked that nothing on the screen moves between states: a layout shift of 0.000 in a phone-sized browser, and a test reads the real stylesheet to check that the writing on each color is readable.",
+          links: [
+            { label: "The new look", href: `${REPO}/pull/43` },
+            { label: "The ready screen", href: `${REPO}/pull/50` },
+            { label: "The tabs", href: `${REPO}/pull/51` },
+            { label: "The finished screen", href: `${REPO}/pull/53` },
+          ],
         },
       ],
     },
@@ -134,12 +139,13 @@ export const strutCaseStudy = {
     },
   ],
   screenshots: [
-    { src: "/work/strut/strut-start.png", alt: "Strut's start screen on a phone: a red Walk fast field with a huge 3:00, a heart rate target, the effort strip of five rounds and a Start button.", caption: "Ready to start" },
-    { src: "/work/strut/strut-plan.png", alt: "Strut's Plan on a phone: the Activity picker, Fast, Slow, Rounds, Get ready and Age fields, and a Walk with friends section with an Open button.", caption: "The plan, and the way into a crew" },
-    { src: "/work/strut/strut-get-ready.png", alt: "Strut counting down before the walk begins, with a huge number, the plan in one line and a Cancel button.", caption: "A short countdown" },
-    { src: "/work/strut/strut-walking.png", alt: "Strut in the first fast phase, showing the time left, a target heart rate, the effort strip and Pause and Done buttons.", caption: "Walking fast" },
+    { src: "/work/strut/strut-start.png", alt: "Strut's ready screen on a phone: a calm near-black card that says Ready to go, the plan as three big numbers (3 min fast, 3 min slow, 5 rounds), the effort strip and a Change plan button, with an amber Start button and the Workout, Crew and Settings tabs below.", caption: "Ready to go" },
+    { src: "/work/strut/strut-plan.png", alt: "Strut's plan sheet: three ready-made plans (Classic, Gentle and Short) and three number tiles for Fast, Slow and Rounds, each with minus and plus buttons, and a Done button.", caption: "Changing the plan, one tap away" },
+    { src: "/work/strut/strut-walking.png", alt: "Strut in the first fast phase on a crimson field: Walk fast, 2:58 left in huge numerals, a target heart rate, the effort strip and amber Pause and Done buttons.", caption: "Walking fast" },
+    { src: "/work/strut/strut-done.png", alt: "Strut's finished screen on a calm green field: Walk complete, 30:00 in huge numerals, Well done, 15 min fast, 15 min slow and 5 rounds, the filled effort strip and an amber Go again button.", caption: "Walk complete" },
   ],
-  screenshotNote: "Screenshots of the app in a phone-sized browser window, not photos of my phone.",
+  screenshotNote:
+    "Screenshots of the app in a phone-sized browser window, not photos of my phone. The finished screen was captured by loading a saved, completed walk.",
   links: [
     { label: "Open the app", href: "https://strutwalk.vercel.app" },
     { label: "View the code on GitHub", href: REPO },
