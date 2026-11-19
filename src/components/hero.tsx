@@ -45,7 +45,7 @@ export function Hero() {
             <span className="link-underline">Read the Strut case study</span>
           </a>
           <span aria-hidden="true"> · </span>
-          Live
+          The app is live
         </p>
       </div>
     </section>
