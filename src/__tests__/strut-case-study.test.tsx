@@ -67,7 +67,7 @@ describe("Strut case study content", () => {
 
   it("shows the two-browser test as evidence, with the wrong-clock detail and a link", () => {
     const checks = study.sections.find((section) => section.id === "checks");
-    const item = checks && "items" in checks ? checks.items.find((entry) => entry.title === "Several browsers in one room") : undefined;
+    const item = checks && "items" in checks ? checks.items.find((entry) => entry.title === "Several browsers in one crew") : undefined;
     expect(item?.body).toContain("45 seconds fast");
     expect(item?.body).toContain("30 seconds slow");
     expect(item && "links" in item && item.links.some((link) => link.href.includes("interval-walking-timer/pull/40"))).toBe(true);
@@ -78,6 +78,20 @@ describe("Strut case study content", () => {
     expect(text).not.toMatch(/step total|step goal/i);
     const decisions = JSON.stringify(study.sections.find((section) => section.id === "decisions"));
     expect(decisions).toContain("I dropped step counting and the step goal");
+  });
+
+  it("explains Activity and the redesign as decisions, each with a link to its change", () => {
+    const decisions = study.sections.find((section) => section.id === "decisions");
+    const items = decisions && "items" in decisions ? decisions.items : [];
+    const activity = items.find((item) => item.title.startsWith("Elliptical and Bike"));
+    const look = items.find((item) => item.title.startsWith("A fitness-app look"));
+    expect(activity && "links" in activity && JSON.stringify(activity.links)).toContain("/pull/42");
+    expect(look && "links" in look && JSON.stringify(look.links)).toContain("/pull/43");
+    expect(activity?.body).toContain("Run");
+  });
+
+  it("makes no accessibility claim until the app has been tried with a screen reader", () => {
+    expect(JSON.stringify(study.sections)).not.toMatch(/accessib|screen reader|VoiceOver|WCAG/i);
   });
 
   it("lists the shared start under what works, not under what is still to do", () => {

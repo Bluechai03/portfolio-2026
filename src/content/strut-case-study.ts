@@ -9,7 +9,7 @@ export const strutCaseStudy = {
   support:
     "A phone-first timer for Japanese interval walking, and what a few real walks taught me while I built it.",
   // Numbers on this page are true on this date. Update them when they change.
-  asOf: "18 November 2026",
+  asOf: "19 November 2026",
   // Rounded down on purpose, so it stays true as tests are added or removed.
   testCountLabel: "Over 200",
   sections: [
@@ -45,7 +45,7 @@ export const strutCaseStudy = {
           ],
         },
         {
-          title: "I built rooms inside Strut instead of a separate booking app",
+          title: "I built crews inside Strut instead of a separate booking app",
           body: "I'd planned a class booking app to show a real backend and live updates. Walking with friends covers the same ground on something I already use, so I dropped the booking app and wrote the reasons down in a decision record.",
           links: [
             { label: "The decision record", href: `${REPO}/blob/main/docs/adr/0001-rooms-inside-strut-on-supabase.md` },
@@ -54,6 +54,16 @@ export const strutCaseStudy = {
         {
           title: "Guests only, no sign-in, for now",
           body: "I built Google sign-in first, then took it out again. It put a login in front of someone joining a walk, it can fail from an installed iPhone app, and it meant building and testing a second kind of member. A friend now types four letters and a name and they're in. Signing in can come back later as an optional way to keep your walks.",
+        },
+        {
+          title: "Elliptical and Bike are only different words",
+          body: "I'd started using Strut on the elliptical, so I added an Activity setting: Walk, Elliptical or Bike. It changes the words (Push harder and Ease off, or Pedal hard and Pedal easy) on screen, in the spoken cues, in the lock-screen reminders and in a crew, and nothing else, so the timer still does one job. I tried Run as well and took it out again, because it didn't make sense for an interval timer.",
+          links: [{ label: "The change", href: `${REPO}/pull/42` }],
+        },
+        {
+          title: "A fitness-app look, and one colour scheme instead of four",
+          body: "I redesigned Strut to feel like a fitness app: a very dark blue page, a red field for fast and a deep blue one for slow, a huge countdown, a taller effort strip and one typeface. I first built four colour schemes to choose from, then took the picker out, because one good look is enough and every extra scheme needed its own checking. A test reads the real stylesheet and checks that the writing on each colour is readable, and it caught a pair of colours that were too close in brightness for people who see colour differently.",
+          links: [{ label: "The redesign", href: `${REPO}/pull/43` }],
         },
       ],
     },
@@ -84,14 +94,14 @@ export const strutCaseStudy = {
       status: "In progress",
       intro: "Shared walks are being built in small steps, and each one is tested on my phone before the next. Four are done.",
       works: [
-        "Start a room and share a four-letter code, a link or a QR code.",
+        "Start a crew and share a four-letter code, a link or a QR code.",
         "A friend joins with just a name, and everyone sees who is here, live.",
-        "Up to 8 people in a room. The host can remove someone, and a removed person can't rejoin.",
-        "Only people in a room can read it, and every change goes through checked database functions.",
+        "Up to 8 people in a crew. The host can remove someone, and a removed person can't rejoin.",
+        "Only people in a crew can read it, and every change goes through checked database functions.",
         "The host starts everyone's countdown on the same beat. Each phone measures how far its clock is from the server's, so they stay together whatever their clocks say. A friend who joins late lands in the right place.",
       ],
       next: [
-        "Testing the Apple Watch workout inside a room with friends.",
+        "Testing the Apple Watch workout inside a crew with friends.",
         "Checking the delete my data button on the live site.",
       ],
       links: [{ label: "Follow the work", href: `${REPO}/pulls?q=is%3Apr` }],
@@ -102,16 +112,16 @@ export const strutCaseStudy = {
       items: [
         {
           title: "Automated tests on every change",
-          body: "Over 200 unit and component tests run on every pull request, as of the date above. They cover the timer maths, the room screens and the clock correction.",
+          body: "Over 200 unit and component tests run on every pull request, as of the date above. They cover the timer maths, the crew screens and the clock correction.",
         },
         {
           title: "Database rules tested in SQL",
-          body: "Who can read and change which room is tested in SQL against Supabase's own Postgres image, in CI. Each rule's test was checked by weakening the rule on purpose to see that the test failed, because a test that can't fail doesn't prove anything.",
+          body: "Who can read and change which crew is tested in SQL against Supabase's own Postgres image, in CI. Each rule's test was checked by weakening the rule on purpose to see that the test failed, because a test that can't fail doesn't prove anything.",
           links: [{ label: "The SQL tests", href: `${REPO}/tree/main/supabase/tests` }],
         },
         {
-          title: "Several browsers in one room",
-          body: "A browser test opens several browsers in one room, against a real local database, not a fake one. One friend's phone clock is set 45 seconds fast and another's 30 seconds slow, and the test checks that the countdowns and the phases still line up and that a late joiner lands in the right place. It also checks that the host can remove a guest, that two people can't share a name, and that closing a room asks first. I broke the clock correction on purpose to see the test fail, and it did.",
+          title: "Several browsers in one crew",
+          body: "A browser test opens several browsers in one crew, against a real local database, not a fake one. One friend's phone clock is set 45 seconds fast and another's 30 seconds slow, and the test checks that the countdowns and the phases still line up and that a late joiner lands in the right place. It also checks that the host can remove a guest, that two people can't share a name, and that ending the walk for everyone asks first. I broke the clock correction on purpose to see the test fail, and it did.",
           links: [{ label: "The browser test", href: `${REPO}/pull/40` }],
         },
         {
@@ -126,9 +136,10 @@ export const strutCaseStudy = {
     },
   ],
   screenshots: [
-    { src: "/work/strut/strut-start.png", alt: "Strut's start screen on a phone, with a big Start button and the plan below.", caption: "Ready to start" },
-    { src: "/work/strut/strut-get-ready.png", alt: "Strut counting down 3 before the walk begins.", caption: "A short countdown" },
-    { src: "/work/strut/strut-walking.png", alt: "Strut in the first fast phase, showing 2:59 left, a target heart rate and the trail of rounds.", caption: "Walking fast" },
+    { src: "/work/strut/strut-start.png", alt: "Strut's start screen on a phone: a red Walk fast field with a huge 3:00, a heart rate target, the effort strip of five rounds and a Start button.", caption: "Ready to start" },
+    { src: "/work/strut/strut-plan.png", alt: "Strut's Plan on a phone: the Activity picker, Fast, Slow, Rounds, Get ready and Age fields, and a Walk with friends section with an Open button.", caption: "The plan, and the way into a crew" },
+    { src: "/work/strut/strut-get-ready.png", alt: "Strut counting down before the walk begins, with a huge number, the plan in one line and a Cancel button.", caption: "A short countdown" },
+    { src: "/work/strut/strut-walking.png", alt: "Strut in the first fast phase, showing the time left, a target heart rate, the effort strip and Pause and Done buttons.", caption: "Walking fast" },
   ],
   screenshotNote: "Screenshots of the app in a phone-sized browser window, not photos of my phone.",
   links: [

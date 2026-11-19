@@ -1,16 +1,17 @@
 "use client";
 
-import { Barlow_Condensed } from "next/font/google";
+import { Archivo } from "next/font/google";
 import { useState } from "react";
 import { Badge, Button } from "@/design-system";
 
-// The timer preview uses the app's own countdown face.
-const barlowCondensed = Barlow_Condensed({ subsets: ["latin"], weight: ["600"] });
+// The timer preview uses the app's own countdown face: one variable font whose
+// width axis gives the narrow numerals and the wide instruction.
+const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], display: "swap" });
 
-// Colors from Strut, the interval walking timer's phase fields.
+// Colours from Strut, the interval walking timer: crimson for hard, deep blue for easy.
 const TIMER_PHASES = {
-  fast: { label: "Walk fast", time: "2:47", background: "#8a3028", color: "#e8edf3" },
-  slow: { label: "Walk slow", time: "1:12", background: "#1d3557", color: "#e8edf3" },
+  fast: { label: "Walk fast", time: "2:47", background: "#c0392b", color: "#f4f6f8" },
+  slow: { label: "Walk slow", time: "1:12", background: "#163a70", color: "#f4f6f8" },
 } as const;
 
 function TimerPreview() {
@@ -21,30 +22,44 @@ function TimerPreview() {
 
   return (
     <div
-      className="flex h-full flex-col justify-between gap-3 p-5 transition-colors duration-500"
+      className={`${archivo.className} flex h-full flex-col justify-between gap-3 p-5 transition-colors duration-500`}
       style={{ background: current.background, color: current.color }}
     >
-      <div className="flex items-baseline justify-between gap-3">
-        <p className="text-lg font-semibold">{current.label}</p>
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex flex-col gap-1">
+          <p className="text-xs font-medium">Walk</p>
+          <p className="text-2xl leading-none" style={{ fontWeight: 800, fontVariationSettings: '"wdth" 112' }}>
+            {current.label}
+          </p>
+        </div>
         <button
           type="button"
           onClick={() => setPhase(phase === "fast" ? "slow" : "fast")}
-          className="rounded-md border border-current px-2.5 py-1 text-xs font-semibold focus-visible:outline-current"
+          className="rounded-full border-2 border-current px-3 py-1 text-xs font-semibold focus-visible:outline-current"
         >
           Switch phase
         </button>
       </div>
-      <p className={`${barlowCondensed.className} text-7xl leading-none tabular-nums`}>
+      <p
+        className="text-7xl leading-none tabular-nums"
+        style={{ fontWeight: 800, fontVariationSettings: '"wdth" 68' }}
+      >
         {current.time}
       </p>
-      <div className="flex h-8 items-end gap-1" aria-hidden="true">
+      <div className="flex h-10 items-end gap-1" aria-hidden="true">
         {Array.from({ length: 10 }, (_, i) => (
           <span
             key={i}
-            className={`flex-1 rounded-sm bg-current ${i % 2 === 0 ? "h-full" : "h-[40%]"} ${
-              i < walkedPhases ? "" : i === walkedPhases ? "opacity-60" : "opacity-15"
+            className={`relative flex-1 overflow-hidden rounded-sm border-2 border-current ${
+              i % 2 === 0 ? "h-full" : "h-[40%]"
             }`}
-          />
+          >
+            <span
+              className={`absolute inset-0 bg-current ${
+                i < walkedPhases ? "" : i === walkedPhases ? "opacity-60" : "opacity-15"
+              }`}
+            />
+          </span>
         ))}
       </div>
     </div>
