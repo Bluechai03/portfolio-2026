@@ -10,8 +10,6 @@ export const strutCaseStudy = {
     "A phone-first timer for Japanese interval walking, and what a few real walks taught me while I built it.",
   // Numbers on this page are true on this date. Update them when they change.
   asOf: "19 November 2026",
-  // Rounded down on purpose, so it stays true as tests are added or removed.
-  testCountLabel: "Over 200",
   sections: [
     {
       id: "why",
@@ -112,7 +110,7 @@ export const strutCaseStudy = {
       items: [
         {
           title: "Automated tests on every change",
-          body: "Over 200 unit and component tests run on every pull request, as of the date above. They cover the timer maths, the crew screens and the clock correction.",
+          body: "Automated tests run on every pull request. They cover the timer maths, the crew screens and the clock correction, and the ones that matter most are the ones that came from a real problem on my phone.",
         },
         {
           title: "Database rules tested in SQL",
