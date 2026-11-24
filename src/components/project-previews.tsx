@@ -74,7 +74,7 @@ const SWATCHES = [
   { name: "Blue", value: "var(--accent)" },
 ];
 
-// The site's own tokens and components, from its design system.
+// The site's own components and colors.
 function PortfolioPreview() {
   return (
     <div className="flex h-full flex-col justify-between gap-4 p-5">

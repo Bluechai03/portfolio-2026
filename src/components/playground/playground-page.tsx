@@ -15,8 +15,8 @@ const demos = {
 export function PlaygroundPage() {
   return (
     <PageShell
-      navLabel="System"
-      navHref="/system"
+      navLabel="Build notes"
+      navHref="/how-its-built"
       eyebrow={playground.eyebrow}
       title={playground.title}
       support={playground.support}

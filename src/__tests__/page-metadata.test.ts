@@ -2,10 +2,10 @@ import { describe, expect, it } from "vitest";
 import { pageMetadata } from "@/lib/metadata";
 
 describe("pageMetadata", () => {
-  const meta = pageMetadata({ title: "T", description: "D", path: "/system" });
+  const meta = pageMetadata({ title: "T", description: "D", path: "/how-its-built" });
 
   it("sets the canonical path", () => {
-    expect(meta.alternates?.canonical).toBe("/system");
+    expect(meta.alternates?.canonical).toBe("/how-its-built");
   });
 
   it("keeps the preview image in both openGraph and twitter", () => {

@@ -59,12 +59,12 @@ export const site = {
     {
       title: "Portfolio 2026",
       description:
-        "This site, built on its own small design system: shared tokens plus Button, TextField, and Badge components.",
+        "This site: Next.js and TypeScript, with automated checks on every pull request and a page of build notes on what I chose and what I turned down.",
       status: "Live",
       preview: "portfolio",
       links: [
         { label: "View the code on GitHub", href: "https://github.com/Bluechai03/portfolio-2026" },
-        { label: "See the design system", href: "/system" },
+        { label: "Read the build notes", href: "/how-its-built" },
       ],
     },
   ],

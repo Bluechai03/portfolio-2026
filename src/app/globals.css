@@ -196,6 +196,41 @@ body {
   transform: scaleX(1);
 }
 
+/* Every button answers a press: it sinks a little and comes back. It uses the scale
+   property, so nothing around it moves, and it is switched off when the visitor has asked
+   for reduced motion. A link that looks like a button takes the press class (the Button
+   component adds it). Utilities in a component win over this, so a component that sets its
+   own transition has to list scale in it. */
+@layer base {
+  button,
+  summary,
+  .press {
+    transition-property: scale, opacity, background-color, color;
+    transition-duration: 120ms;
+    transition-timing-function: ease-out;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    button:not(:disabled):active,
+    summary:active,
+    .press:active {
+      scale: 0.97;
+    }
+  }
+}
+
+/* Quiet text links have no box to sink, so they fade while pressed instead. This sits
+   outside the base layer on purpose: it has to win over the components' transition-colors. */
+.link-underline {
+  transition:
+    color 150ms,
+    opacity 120ms ease-out;
+}
+
+.link-underline:active {
+  opacity: 0.7;
+}
+
 @keyframes reveal-in {
   from {
     opacity: 0;
