@@ -26,7 +26,7 @@ pnpm build && pnpm test:e2e        # smoke tests (Playwright), against the produ
 pnpm exec playwright install chromium   # once, to download the browser
 ```
 
-The smoke tests run on a desktop and an iPhone-sized viewport and cover the home page, its links and mobile menu, and the `/system` and `/playground` pages.
+The smoke tests run on a desktop and an iPhone-sized viewport and cover the home page, its links and mobile menu, and the `/how-its-built` and `/playground` pages.
 
 ## Ship
 
