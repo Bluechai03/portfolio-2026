@@ -8,6 +8,11 @@ describe("Button", () => {
     expect(screen.getByRole("link", { name: "See the work" })).toHaveAttribute("href", "#work");
   });
 
+  it("gives a link the shared press class, so it answers a press like a button", () => {
+    render(<Button href="#about">Read about me</Button>);
+    expect(screen.getByRole("link", { name: "Read about me" })).toHaveClass("press");
+  });
+
   it("renders a button otherwise, and respects disabled", () => {
     render(<Button disabled>Save</Button>);
     expect(screen.getByRole("button", { name: "Save" })).toBeDisabled();
